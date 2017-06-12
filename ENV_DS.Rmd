@@ -1,0 +1,143 @@
+---
+title: "Perceptions of urban environment DataSchema"
+output: html_document
+---
+# Table of Contents
+1. [General neighborhood safety subdomain](#general-neighborhood-safety-subdomain)
+2. [Social trust subdomain](#social-trust-subdomain)
+3. [Crime subdomain](#crime-subdomain)
+4. [Vandalism subdomain](#vandalism-subdomain)
+5. [Social cohesion subdomain](#social-cohesion-subdomain)
+6. [Index of deprivation subdomain](#index-of-deprivation-subdomain)
+
+# General neighborhood safety subdomain
+
+### **Variable label**:   
+**Variable name**:   
+**Variable description**:  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+# Social trust subdomain
+
+### **Variable label**:  
+**Variable name**:  
+**Variable description**:  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+# Crime subdomain
+
+### **Variable label**:  
+**Variable name**:  
+**Variable description**:  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+# Vandalism subdomain
+
+### **Variable label**:  
+**Variable name**:  
+**Variable description**:  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+# Social cohesion subdomain
+
+### **Variable label**:  
+**Variable name**:  
+**Variable description**:  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+# Index of deprivation subdomain
+
+### **Variable label**:  
+**Variable name**:  
+**Variable description**:  
+**Value type**:  
+**Variable unit**:  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 |   
+1 |   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
