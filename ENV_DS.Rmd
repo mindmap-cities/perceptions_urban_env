@@ -12,17 +12,180 @@ output: html_document
 
 # General neighborhood safety subdomain
 
-### **Variable label**:   
-**Variable name**:   
-**Variable description**:  
-**Value type**:  
-**Variable unit**:  
+### **Variable label**:  Feels safe at night     
+**Variable name**: env_nbh_nsafe_0   
+**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Value type**: integer  
+**Variable unit**: N/A  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   
-1 |   
+1 |   yes  
+0 |   no  
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe at night     
+**Variable name**: env_nbh_nsafe_1   
+**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   yes  
+0 |   no  
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe at night     
+**Variable name**: env_nbh_nsafe_2   
+**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   yes  
+0 |   no  
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe at night     
+**Variable name**: env_nbh_nsafe_3   
+**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   yes  
+0 |   no  
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe at night     
+**Variable name**: env_nbh_nsafe_4   
+**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   yes  
+0 |   no  
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe at night     
+**Variable name**: env_nbh_nsafe_5   
+**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   yes  
+0 |   no  
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe at night     
+**Variable name**: env_nbh_nsafe_6   
+**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   yes  
+0 |   no  
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe in daytime     
+**Variable name**: env_nbh_sf_0   
+**Variable description**:  Respondent asked whether they feel safe in their neighbourhood   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | yes  
+0 | no  
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:  Perception of neighbourhood safety     
+**Variable name**: env_nbh_safety_0   
+**Variable description**:  Respondent asked whether they agree that they feel lonely in the area where they live (i.e. their community, their neighbourhood)      
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   not at all safe  
+0 |   safe 
+3 |   very safe
+999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
