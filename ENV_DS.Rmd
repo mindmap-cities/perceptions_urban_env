@@ -365,6 +365,46 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Belonging to neighbourhood        
+**Variable name**: env_nbh_belong_0      
+**Variable description**: Respondent is asked whether they feel like they belong / feel a part of,  the area where they live (i.e. their community, their neighbourhood)  
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Yes    
+0 | No   
+999 | missing  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Belonging to neighbourhood        
+**Variable name**: env_nbh_belong_1      
+**Variable description**: Respondent is asked whether they feel like they belong / feel a part of,  the area where they live (i.e. their community, their neighbourhood)  
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Yes    
+0 | No   
+999 | missing  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Index of deprivation subdomain
 
 ### **Variable label**:  
