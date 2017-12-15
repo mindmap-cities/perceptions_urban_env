@@ -122,7 +122,7 @@ output: html_document
 ```
 
 ### **Variable label**: Helpful neighbours  
-**Variable name**: env_neighbours_help_1
+**Variable name**: env_neighbours_help_1  
 **Variable description**: Respondent agrees that neighbors would help them if needed/ in case of emergency/ trouble  
 **Value type**: integer 
 **Variable unit**:  N/A  
