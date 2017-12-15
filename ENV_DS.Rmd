@@ -206,6 +206,54 @@ output: html_document
 
 ```
 
+### **Variable label**: Neighbourhood values and norms       
+**Variable name**: env_nbh_values_0   
+**Variable description**: Respondent asked if they agree that people in their neighbourhood share similar values and norms        
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree    
+2 | Agree 
+3 | Neither agree or disagree  
+4 | Disagree   
+5 | Strongly disagree   
+999 | missing      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**: Neighbourhood values and norms       
+**Variable name**: env_nbh_values_1   
+**Variable description**: Respondent asked if they agree that people in their neighbourhood share similar values and norms        
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree    
+2 | Agree 
+3 | Neither agree or disagree  
+4 | Disagree   
+5 | Strongly disagree   
+999 | missing      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
 # Index of deprivation subdomain
 
 ### **Variable label**:  
