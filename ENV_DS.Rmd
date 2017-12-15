@@ -34,17 +34,38 @@ output: html_document
 
 # Social trust subdomain
 
-### **Variable label**:  
-**Variable name**:  
-**Variable description**:  
-**Value type**:  
-**Variable unit**:  
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_0   
+**Variable description**:  Respondent is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted  
+**Value type**:  integer  
+**Variable unit**:  N/A  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   
-1 |   
+1 | yes    
+0 | no     
+999 | missing   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_1   
+**Variable description**:  Respondent is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | yes    
+0 | no     
+999 | missing   
 
 **Harmonization status**:  
 **Harmonization comment**:   
