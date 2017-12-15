@@ -175,7 +175,7 @@ output: html_document
 
 ### **Variable label**:  Perception of neighbourhood safety     
 **Variable name**: env_nbh_safety_0   
-**Variable description**:  Respondent asked whether they agree that they feel lonely in the area where they live (i.e. their community, their neighbourhood)      
+**Variable description**:  Respondent asked whether the area where they live (i.e. their neighbourhood) is safe   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -262,17 +262,42 @@ output: html_document
 
 # Vandalism subdomain
 
-### **Variable label**:  
-**Variable name**:  
-**Variable description**:  
-**Value type**:  
-**Variable unit**:  
+### **Variable label**: Neighbourhood cleanliness   
+**Variable name**:  env_nbh_clean_0  
+**Variable description**:  Respondent perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood)  
+**Value type**:  integer  
+**Variable unit**:  N/A  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 |   
-1 |   
+1 | Not very clean     
+2 | Not clean   
+3 | Mostly clean   
+4 | Clean      
+999 | missing        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood graffiti and vandalism  
+**Variable name**:  env_nbh_grfvnd_0  
+**Variable description**:  Respondent perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood)  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | A lot of graffiti and vandalism      
+2 | Some graffiti and vandalism     
+3 | A little graffiti and vandalism     
+4 | No graffiti and vandalism       
+999 | missing        
 
 **Harmonization status**:  
 **Harmonization comment**:   
