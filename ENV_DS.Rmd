@@ -367,7 +367,7 @@ output: html_document
 ```
 ### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_0      
-**Variable description**: Respondent is asked whether they feel like they belong / feel a part of,  the area where they live (i.e. their community, their neighbourhood)  
+**Variable description**: Respondent asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood)    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -387,7 +387,7 @@ output: html_document
 ```
 ### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_1      
-**Variable description**: Respondent is asked whether they feel like they belong / feel a part of,  the area where they live (i.e. their community, their neighbourhood)  
+**Variable description**: Respondent asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood)    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -397,6 +397,75 @@ output: html_document
 1 | Yes    
 0 | No   
 999 | missing  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Lonely in neighbourhood        
+**Variable name**: eenv_nbh_lone_0      
+**Variable description**: Respondent asked whether they agree that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree    
+2 | Agree 
+3 | Neither agree or disagree  
+4 | Disagree   
+5 | Strongly disagree   
+999 | missing        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Lonely in neighbourhood        
+**Variable name**: eenv_nbh_lone_1      
+**Variable description**: Respondent asked whether they agree that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree    
+2 | Agree 
+3 | Neither agree or disagree  
+4 | Disagree   
+5 | Strongly disagree   
+999 | missing        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Lonely in neighbourhood        
+**Variable name**: eenv_nbh_lone_2      
+**Variable description**: Respondent asked whether they agree that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree    
+2 | Agree 
+3 | Neither agree or disagree  
+4 | Disagree   
+5 | Strongly disagree   
+999 | missing        
 
 **Harmonization status**:  
 **Harmonization comment**:   
