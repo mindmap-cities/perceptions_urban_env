@@ -195,6 +195,28 @@ output: html_document
 
 ```
 
+### **Variable label**:  Neighbourhood violence   
+**Variable name**: env_nbh_violence_0   
+**Variable description**:  Respondent’s perception of presence of violence  in their neighbourhood   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   a lot of violence 
+2 |   some violence
+3 |   a little violence 
+4 |   no violence 
+999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Social trust subdomain
 
 ### **Variable label**:  Neighbourhood  trust  
@@ -683,7 +705,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-# Index of deprivation subdomain
+# Residential stability subdomain
 
 ### **Variable label**:  
 **Variable name**:  
