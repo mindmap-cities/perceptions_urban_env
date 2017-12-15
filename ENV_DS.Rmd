@@ -183,7 +183,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |   not at all safe  
-0 |   safe 
+2 |   safe 
 3 |   very safe
 999 | missing 
 
@@ -306,7 +306,28 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Neighbourhood noise    
+**Variable name**:  env_nbh_noise_0  
+**Variable description**:  Respondent’s perception of presence of excessive noise in their neighbourhood     
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Definitely excessive noise      
+2 | Some excessive noise    
+3 | A little excessive noise    
+4 | No excessive noise     
+999 | missing        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Social cohesion subdomain
 
 ### **Variable label**: Helpful neighbours  
