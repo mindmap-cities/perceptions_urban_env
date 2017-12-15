@@ -122,7 +122,7 @@ output: html_document
 # Social cohesion subdomain
 
 ### **Variable label**: Helpful neighbours  
-**Variable name**: env_neighbours_help_0  
+**Variable name**: env_nbhs_help_0  
 **Variable description**: Respondent agrees that neighbors would help them if needed, in case of emergency/trouble  
 **Value type**: integer  
 **Variable unit**:  N/A  
@@ -143,7 +143,7 @@ output: html_document
 ```
 
 ### **Variable label**: Helpful neighbours  
-**Variable name**: env_neighbours_help_1  
+**Variable name**: env_nbhs_help_1  
 **Variable description**: Respondent agrees that neighbors would help them if needed,  in case of emergency/trouble  
 **Value type**: integer   
 **Variable unit**:  N/A  
@@ -165,7 +165,7 @@ output: html_document
 
 
 ### **Variable label**: Neighbours cooperate  
-**Variable name**: env_neighbours_cooperate_0   
+**Variable name**: env_nbhs_coop_0   
 **Variable description**: Respondent agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out  
 **Value type**: integer  
 **Variable unit**: N/A   
@@ -186,7 +186,7 @@ output: html_document
 ```
 
 ### **Variable label**: Neighbours cooperate    
-**Variable name**: env_neighbours_cooperate_1  
+**Variable name**: env_nbhs_coop_1  
 **Variable description**: Respondent agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out    
 **Value type**: integer    
 **Variable unit**: N/A     
@@ -207,7 +207,7 @@ output: html_document
 ```
 
 ### **Variable label**: Neighbours cooperate    
-**Variable name**: env_neighbours_cooperate_2  
+**Variable name**: env_nbhs_coop_2  
 **Variable description**: Respondent agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out    
 **Value type**: integer    
 **Variable unit**: N/A     
@@ -275,7 +275,7 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours get along       
-**Variable name**: env_neighbours_along_0   
+**Variable name**: env_nbhs_along_0   
 **Variable description**: Respondent  asked whether they agree that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -298,7 +298,7 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours get along       
-**Variable name**: env_neighbours_along_1   
+**Variable name**: env_nbhs_along_1   
 **Variable description**: Respondent  asked whether they agree that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -321,7 +321,7 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours get along       
-**Variable name**: env_neighbours_along_2   
+**Variable name**: env_nbhs_along_2   
 **Variable description**: Respondent  asked whether they agree that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -343,7 +343,28 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Neighbours are friendly       
+**Variable name**: env_nbhs_friend_0     
+**Variable description**: Respondent is asked whether members of the area where their live (i.e. their neighbourhood) are friendly/ polite           
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Friendly    
+2 | Somewhat friendly 
+3 | Not really friendly  
+4 | Not friendly    
+999 | missing  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Index of deprivation subdomain
 
 ### **Variable label**:  
