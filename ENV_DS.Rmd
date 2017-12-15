@@ -8,7 +8,7 @@ output: html_document
 3. [Crime subdomain](#crime-subdomain)
 4. [Vandalism subdomain](#vandalism-subdomain)
 5. [Social cohesion subdomain](#social-cohesion-subdomain)
-6. [Index of deprivation subdomain](#index-of-deprivation-subdomain)
+6. [Index of Deprivation subdomain](#index-of-deprivation-subdomain)
 
 # General neighborhood safety subdomain
 
@@ -705,7 +705,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-# Residential stability subdomain
+# Index of deprivation subdomain
 
 ### **Variable label**:  
 **Variable name**:  
