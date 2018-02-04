@@ -8,7 +8,6 @@ output: html_document
 3. [Crime subdomain](#crime-subdomain)
 4. [Vandalism subdomain](#vandalism-subdomain)
 5. [Social cohesion subdomain](#social-cohesion-subdomain)
-6. [Index of deprivation subdomain](#index-of-deprivation-subdomain)
 
 # General neighborhood safety subdomain
 
