@@ -173,27 +173,6 @@ output: html_document
 
 ```
 
-### **Variable label**:  Perception of neighbourhood safety     
-**Variable name**: env_nbh_safety_0   
-**Variable description**:  Respondent asked whether the area where they live (i.e. their neighbourhood) is safe   
-**Value type**: integer  
-**Variable unit**: N/A  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 |   not at all safe  
-2 |   safe 
-3 |   very safe
-999 | missing 
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 
 ### **Variable label**:  Neighbourhood violence   
 **Variable name**: env_nbh_violence_0   
