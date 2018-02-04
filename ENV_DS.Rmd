@@ -309,7 +309,7 @@ output: html_document
 # Social cohesion subdomain
 
 ### **Variable label**: Helpful neighbours  
-**Variable name**: env_nbhs_help_0  
+**Variable name**: env_nbs_help_0  
 **Variable description**: Respondent agrees that neighbors would help them if needed, in case of emergency/trouble  
 **Value type**: integer  
 **Variable unit**:  N/A  
@@ -330,7 +330,7 @@ output: html_document
 ```
 
 ### **Variable label**: Helpful neighbours  
-**Variable name**: env_nbhs_help_1  
+**Variable name**: env_nbs_help_1  
 **Variable description**: Respondent agrees that neighbors would help them if needed,  in case of emergency/trouble  
 **Value type**: integer   
 **Variable unit**:  N/A  
@@ -352,7 +352,7 @@ output: html_document
 
 
 ### **Variable label**: Neighbours cooperate  
-**Variable name**: env_nbhs_coop_0   
+**Variable name**: env_nbs_coop_0   
 **Variable description**: Respondent agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out  
 **Value type**: integer  
 **Variable unit**: N/A   
@@ -373,7 +373,7 @@ output: html_document
 ```
 
 ### **Variable label**: Neighbours cooperate    
-**Variable name**: env_nbhs_coop_1  
+**Variable name**: env_nbs_coop_1  
 **Variable description**: Respondent agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out    
 **Value type**: integer    
 **Variable unit**: N/A     
@@ -394,7 +394,7 @@ output: html_document
 ```
 
 ### **Variable label**: Neighbours cooperate    
-**Variable name**: env_nbhs_coop_2  
+**Variable name**: env_nbs_coop_2  
 **Variable description**: Respondent agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out    
 **Value type**: integer    
 **Variable unit**: N/A     
@@ -462,7 +462,7 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours get along       
-**Variable name**: env_nbhs_along_0   
+**Variable name**: env_nbs_along_0   
 **Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -485,7 +485,7 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours get along       
-**Variable name**: env_nbhs_along_1   
+**Variable name**: env_nbs_along_1   
 **Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -508,7 +508,7 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours get along       
-**Variable name**: env_nbhs_along_2   
+**Variable name**: env_nbs_along_2   
 **Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -531,7 +531,7 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours are friendly       
-**Variable name**: env_nbhs_friend_0     
+**Variable name**: env_nbs_friend_0     
 **Variable description**: Respondent is asked whether members of the area where their live (i.e. their neighbourhood) are friendly/ polite           
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -594,7 +594,7 @@ output: html_document
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: eenv_nbh_lone_0      
-**Variable description**: Respondent asked whether they agree that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
+**Variable description**: Respondent agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -617,7 +617,7 @@ output: html_document
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: eenv_nbh_lone_1      
-**Variable description**: Respondent asked whether they agree that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
+**Variable description**: Respondent agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -640,7 +640,7 @@ output: html_document
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: eenv_nbh_lone_2      
-**Variable description**: Respondent asked whether they agree that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
+**Variable description**: Respondent agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood)    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
