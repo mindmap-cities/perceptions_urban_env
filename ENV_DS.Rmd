@@ -5,9 +5,8 @@ output: html_document
 # Table of Contents
 1. [General neighborhood safety subdomain](#general-neighborhood-safety-subdomain)
 2. [Social trust subdomain](#social-trust-subdomain)
-3. [Crime subdomain](#crime-subdomain)
-4. [Vandalism subdomain](#vandalism-subdomain)
-5. [Social cohesion subdomain](#social-cohesion-subdomain)
+3. [Vandalism subdomain](#vandalism-subdomain)
+4. [Social cohesion subdomain](#social-cohesion-subdomain)
 
 # General neighborhood safety subdomain
 
@@ -238,27 +237,6 @@ output: html_document
 
 ```
 
-# Crime subdomain
-
-### **Variable label**:  
-**Variable name**:  
-**Variable description**:  
-**Value type**:  
-**Variable unit**:  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 |   
-1 |   
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 
 # Vandalism subdomain
 
@@ -438,7 +416,7 @@ output: html_document
 
 ### **Variable label**: Neighbourhood values and norms       
 **Variable name**: env_nbh_values_0   
-**Variable description**: Respondent asked if they agree that people in their neighbourhood share similar values and norms        
+**Variable description**: Respondent agrees that people in their neighbourhood share similar values and norms        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -462,7 +440,7 @@ output: html_document
 
 ### **Variable label**: Neighbourhood values and norms       
 **Variable name**: env_nbh_values_1   
-**Variable description**: Respondent asked if they agree that people in their neighbourhood share similar values and norms        
+**Variable description**: Respondent agrees that people in their neighbourhood share similar values and norms        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -485,7 +463,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbhs_along_0   
-**Variable description**: Respondent  asked whether they agree that people in their neighbourhood  get along with each other        
+**Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -508,7 +486,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbhs_along_1   
-**Variable description**: Respondent  asked whether they agree that people in their neighbourhood  get along with each other        
+**Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -531,7 +509,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbhs_along_2   
-**Variable description**: Respondent  asked whether they agree that people in their neighbourhood  get along with each other        
+**Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
