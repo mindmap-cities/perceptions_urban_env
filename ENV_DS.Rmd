@@ -14,7 +14,7 @@ output: html_document
 
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_0   
-**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Variable description**:  Respondent agrees that they feel safe at night in the area where they live (i.e. their neighbourhood)   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -34,7 +34,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_1   
-**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Variable description**:  Respondent agrees that they feel safe at night in the area where they live (i.e. their neighbourhood)   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -54,7 +54,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_2   
-**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Variable description**:  Respondent agrees that they feel safe at night in the area where they live (i.e. their neighbourhood)   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -74,7 +74,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_3   
-**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Variable description**:  Respondent agrees that they feel safe at night in the area where they live (i.e. their neighbourhood)   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -94,7 +94,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_4   
-**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Variable description**:  Respondent agrees that they feel safe at night in the area where they live (i.e. their neighbourhood)   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -114,7 +114,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_5   
-**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Variable description**:  Respondent agrees that they feel safe at night in the area where they live (i.e. their neighbourhood)   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -134,7 +134,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_6   
-**Variable description**:  Respondent asked whether they feel safe at night in the area where they live (i.e. their neighbourhood)   
+**Variable description**:  Respondent agrees that they feel safe at night in the area where they live (i.e. their neighbourhood)   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -154,7 +154,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in daytime     
 **Variable name**: env_nbh_sf_0   
-**Variable description**:  Respondent asked whether they feel safe in their neighbourhood   
+**Variable description**:  Respondent agrees that they feel safe in their neighbourhood   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
