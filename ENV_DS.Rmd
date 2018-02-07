@@ -21,7 +21,7 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -41,7 +41,7 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -61,7 +61,7 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -81,7 +81,7 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -101,7 +101,7 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -121,7 +121,7 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -141,7 +141,7 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -161,7 +161,7 @@ output: html_document
 ------------- | -------------  
 1 | yes  
 0 | no  
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -185,7 +185,7 @@ output: html_document
 2 |   some violence
 3 |   a little violence 
 4 |   no violence 
-999 | missing 
+-999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -207,7 +207,7 @@ output: html_document
 ------------- | -------------  
 1 | yes    
 0 | no     
-999 | missing   
+-999 | missing   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -227,7 +227,7 @@ output: html_document
 ------------- | -------------  
 1 | yes    
 0 | no     
-999 | missing   
+-999 | missing   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -253,7 +253,7 @@ output: html_document
 2 | Not clean   
 3 | Mostly clean   
 4 | Clean      
-999 | missing        
+-999 | missing        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -275,7 +275,7 @@ output: html_document
 2 | Some graffiti and vandalism     
 3 | A little graffiti and vandalism     
 4 | No graffiti and vandalism       
-999 | missing        
+-999 | missing        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -297,7 +297,7 @@ output: html_document
 2 | Some excessive noise    
 3 | A little excessive noise    
 4 | No excessive noise     
-999 | missing        
+-999 | missing        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -319,7 +319,7 @@ output: html_document
 ------------- | -------------  
 1 | yes    
 0 | no     
-999 | missing  
+-999 | missing  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -340,7 +340,7 @@ output: html_document
 ------------- | -------------  
 1 | yes    
 0 | no     
-999 | missing  
+-999 | missing  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -362,7 +362,7 @@ output: html_document
 ------------- | -------------  
 1 | yes    
 0 | no     
-999 | missing    
+-999 | missing    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -383,7 +383,7 @@ output: html_document
 ------------- | -------------  
 1 | yes    
 0 | no     
-999 | missing      
+-999 | missing      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -404,7 +404,7 @@ output: html_document
 ------------- | -------------  
 1 | yes    
 0 | no     
-999 | missing      
+-999 | missing      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -428,7 +428,7 @@ output: html_document
 3 | Neither agree or disagree  
 4 | Disagree   
 5 | Strongly disagree   
-999 | missing      
+-999 | missing      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -452,7 +452,7 @@ output: html_document
 3 | Neither agree or disagree  
 4 | Disagree   
 5 | Strongly disagree   
-999 | missing      
+-999 | missing      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -475,7 +475,7 @@ output: html_document
 3 | Neither agree or disagree  
 4 | Disagree   
 5 | Strongly disagree   
-999 | missing      
+-999 | missing      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -498,7 +498,7 @@ output: html_document
 3 | Neither agree or disagree  
 4 | Disagree   
 5 | Strongly disagree   
-999 | missing      
+-999 | missing      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -521,7 +521,7 @@ output: html_document
 3 | Neither agree or disagree  
 4 | Disagree   
 5 | Strongly disagree   
-999 | missing      
+-999 | missing      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -543,7 +543,7 @@ output: html_document
 2 | Somewhat friendly 
 3 | Not really friendly  
 4 | Not friendly    
-999 | missing  
+-999 | missing  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -563,7 +563,7 @@ output: html_document
 ------------- | -------------  
 1 | Yes    
 0 | No   
-999 | missing  
+-999 | missing  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -583,7 +583,7 @@ output: html_document
 ------------- | -------------  
 1 | Yes    
 0 | No   
-999 | missing  
+-999 | missing  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -606,7 +606,7 @@ output: html_document
 3 | Neither agree or disagree  
 4 | Disagree   
 5 | Strongly disagree   
-999 | missing        
+-999 | missing        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -629,7 +629,7 @@ output: html_document
 3 | Neither agree or disagree  
 4 | Disagree   
 5 | Strongly disagree   
-999 | missing        
+-999 | missing        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -652,7 +652,7 @@ output: html_document
 3 | Neither agree or disagree  
 4 | Disagree   
 5 | Strongly disagree   
-999 | missing        
+-999 | missing        
 
 **Harmonization status**:  
 **Harmonization comment**:   
