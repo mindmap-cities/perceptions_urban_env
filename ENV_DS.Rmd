@@ -609,7 +609,7 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours get along       
-**Variable name**: env_nbs_along_1   
+**Variable name**: env_nbs_along_2   
 **Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -632,7 +632,30 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbours get along       
-**Variable name**: env_nbs_along_2   
+**Variable name**: env_nbs_along_3   
+**Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree    
+2 | Agree 
+3 | Neither agree or disagree  
+4 | Disagree   
+5 | Strongly disagree   
+-999 | missing      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbours get along       
+**Variable name**: env_nbs_along_4   
 **Variable description**: Respondent agrees that people in their neighbourhood  get along with each other        
 **Value type**: integer      
 **Variable unit**: N/A       
