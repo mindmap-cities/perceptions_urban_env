@@ -720,7 +720,27 @@ output: html_document
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
-**Variable name**: env_nbh_belong_1      
+**Variable name**: env_nbh_belong_2      
+**Variable description**: Respondent asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood)    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Yes    
+0 | No   
+-999 | missing  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Belonging to neighbourhood        
+**Variable name**: env_nbh_belong_4      
 **Variable description**: Respondent asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood)    
 **Value type**: integer      
 **Variable unit**: N/A       
