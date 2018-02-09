@@ -330,7 +330,7 @@ output: html_document
 ```
 
 ### **Variable label**: Helpful neighbours  
-**Variable name**: env_nbs_help_1  
+**Variable name**: env_nbs_help_2  
 **Variable description**: Respondent agrees that neighbors would help them if needed,  in case of emergency/trouble  
 **Value type**: integer   
 **Variable unit**:  N/A  
@@ -350,6 +350,26 @@ output: html_document
 
 ```
 
+### **Variable label**: Helpful neighbours  
+**Variable name**: env_nbs_help_4  
+**Variable description**: Respondent agrees that neighbors would help them if needed,  in case of emergency/trouble  
+**Value type**: integer   
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | yes    
+0 | no     
+-999 | missing  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 
 ### **Variable label**: Neighbours cooperate  
 **Variable name**: env_nbs_coop_0   
