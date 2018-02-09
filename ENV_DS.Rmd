@@ -170,7 +170,26 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Feels safe in the neighbourhood     
+**Variable name**: env_nbh_sf_2   
+**Variable description**:  Respondent agrees that they feel safe in their neighbourhood   
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | yes  
+0 | no  
+-999 | missing 
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 
 ### **Variable label**:  Neighbourhood violence   
 **Variable name**: env_nbh_violence_0   
@@ -327,6 +346,28 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood noise    
 **Variable name**:  env_nbh_noise_0  
+**Variable description**:  Respondent’s perception of presence of excessive noise in their neighbourhood     
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Definitely excessive noise      
+2 | Some excessive noise    
+3 | A little excessive noise    
+4 | No excessive noise     
+-999 | missing        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood noise    
+**Variable name**:  env_nbh_noise_1  
 **Variable description**:  Respondent’s perception of presence of excessive noise in their neighbourhood     
 **Value type**:  integer  
 **Variable unit**:  N/A  
