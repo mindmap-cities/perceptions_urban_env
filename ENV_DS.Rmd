@@ -870,3 +870,26 @@ output: html_document
 #This is where the R-script will be written
 
 ```  
+### **Variable label**: Sense of community        
+**Variable name**: env_nbh_comm_0      
+**Variable description**: Members of community in which respondent lives has a sense of community and collective identity     
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Good sense of collective identity and community in the neighbourhood   
+2 | Some sense of collective identity and community in the neighbourhood 
+3 | Not really a sense of collective identity and community in the neighbourhood  
+4 | No sense of collective identity and community at all in the neighbourhood  
+5 | Don't know if sense of collective identity and community neighbourhood   
+-999 | missing        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
