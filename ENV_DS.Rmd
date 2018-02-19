@@ -19,8 +19,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   yes  
-0 |   no  
+1 |   Feels safe at night  
+0 |   Does not feel safe at night  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -38,8 +38,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   yes  
-0 |   no  
+1 |   Feels safe at night  
+0 |   Does not feel safe at night 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -57,8 +57,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   yes  
-0 |   no  
+1 |   Feels safe at night  
+0 |   Does not feel safe at night 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -76,8 +76,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   yes  
-0 |   no  
+1 |   Feels safe at night  
+0 |   Does not feel safe at night 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -95,8 +95,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   yes  
-0 |   no  
+1 |   Feels safe at night  
+0 |   Does not feel safe at night 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -114,8 +114,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   yes  
-0 |   no   
+1 |   Feels safe at night  
+0 |   Does not feel safe at night 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -133,8 +133,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   yes  
-0 |   no   
+1 |   Feels safe at night  
+0 |   Does not feel safe at night  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -152,8 +152,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes  
-0 | no  
+1 |   Feels safe 
+0 |   Does not feel safe  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -171,8 +171,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes  
-0 | no   
+1 |   Feels safe 
+0 |   Does not feel safe   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -193,8 +193,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no        
+1 | People can be trusted    
+0 | People cannot be trusted         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -212,8 +212,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no       
+1 | People can be trusted    
+0 | People cannot be trusted       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -231,8 +231,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no       
+1 | People can be trusted    
+0 | People cannot be trusted      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -251,8 +251,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no       
+1 | People can be trusted    
+0 | People cannot be trusted       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -360,8 +360,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no      
+1 | Neighbours would help me   
+0 | Neighbours would not help me       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -380,8 +380,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no       
+1 | Neighbours would help me    
+0 | Neighbours would not help me         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -400,8 +400,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no      
+1 | Neighbours would help me   
+0 | Neighbours would not help me      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -420,8 +420,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no         
+1 | People willing to help each other   
+0 | People not willing to help each other         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -440,8 +440,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no           
+1 | People willing to help each other   
+0 | People not willing to help each other             
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -460,8 +460,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no           
+1 | People willing to help each other   
+0 | People not willing to help each other               
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -479,8 +479,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no          
+1 | People willing to help each other   
+0 | People not willing to help each other            
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -498,8 +498,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | yes    
-0 | no           
+1 | People willing to help each other   
+0 | People not willing to help each other             
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -518,11 +518,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree         
+1 | Strongly agree that people share similar values and norms    
+2 | Agree that people share similar values and norms
+3 | Neither agree or disagree that people share similar values and norms
+4 | Disagree that people share similar values and norms  
+5 | Strongly disagree that people share similar values and norms        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -541,11 +541,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree        
+1 | Strongly agree that people share similar values and norms   
+2 | Agree that people share similar values and norms
+3 | Neither agree or disagree that people share similar values and norms  
+4 | Disagree that people share similar values and norms  
+5 | Strongly disagree that people share similar values and norms       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -563,11 +563,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree        
+1 | Strongly agree that people share similar values and norms   
+2 | Agree that people share similar values and norms
+3 | Neither agree or disagree that people share similar values and norms 
+4 | Disagree that people share similar values and norms  
+5 | Strongly disagree that people share similar values and norms       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -585,11 +585,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree       
+1 | Strongly agree that people get along  
+2 | Agree that people get along  
+3 | Neither agree or disagree that people get along   
+4 | Disagree that people get along    
+5 | Strongly disagree that people get along        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -607,11 +607,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree        
+1 | Strongly agree that people get along      
+2 | Agree that people get along  
+3 | Neither agree or disagree that people get along   
+4 | Disagree that people get along     
+5 | Strongly disagree that people get along         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -629,11 +629,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree       
+1 | Strongly agree that people get along     
+2 | Agree that people get along  
+3 | Neither agree or disagree that people get along    
+4 | Disagree that people get along    
+5 | Strongly disagree that people get along        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -651,11 +651,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree       
+1 | Strongly agree that people get along     
+2 | Agree that people get along  
+3 | Neither agree or disagree that people get along   
+4 | Disagree that people get along    
+5 | Strongly disagree that people get along         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -673,10 +673,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Friendly    
-2 | Somewhat friendly 
-3 | Not really friendly  
-4 | Not friendly    
+1 | People are friendly    
+2 | People are somewhat friendly 
+3 | People are not really friendly  
+4 | People are not friendly    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -694,7 +694,7 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Yes    
+1 | Feel     
 0 | No   
 
 **Harmonization status**:  
