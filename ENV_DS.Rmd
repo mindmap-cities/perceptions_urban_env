@@ -12,7 +12,7 @@ output: html_document
 
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_0   
-**Variable description**:  Participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).     
+**Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).     
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -31,7 +31,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_1   
-**Variable description**:  Participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -50,7 +50,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_2   
-**Variable description**:  Participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -69,7 +69,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_3   
-**Variable description**:  Participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -88,7 +88,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_4   
-**Variable description**:  Participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -107,7 +107,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_5   
-**Variable description**:  Participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -126,7 +126,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsafe_6   
-**Variable description**:  Participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -145,7 +145,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in the neighbourhood     
 **Variable name**: env_nbh_sf_0   
-**Variable description**:  Participant agrees that they feel safe in their neighbourhood.   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -164,7 +164,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in the neighbourhood     
 **Variable name**: env_nbh_sf_2   
-**Variable description**:  Participant agrees that they feel safe in their neighbourhood.   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.   
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -186,7 +186,7 @@ output: html_document
 
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_0   
-**Variable description**:  Participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -205,7 +205,7 @@ output: html_document
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_1   
-**Variable description**:  Participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -224,7 +224,7 @@ output: html_document
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_2     
-**Variable description**:  Participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -244,7 +244,7 @@ output: html_document
 
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_4     
-**Variable description**:  Participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -267,7 +267,7 @@ output: html_document
 
 ### **Variable label**: Neighbourhood cleanliness   
 **Variable name**:  env_nbh_clean_0  
-**Variable description**:  Participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -288,7 +288,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
 **Variable name**:  env_nbh_grfvnd_0  
-**Variable description**:  Participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -309,7 +309,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood noise    
 **Variable name**:  env_nbh_noise_0  
-**Variable description**:  Participant’s perception of presence of excessive noise in their neighbourhood.     
+**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -330,7 +330,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood noise    
 **Variable name**:  env_nbh_noise_1  
-**Variable description**:  Participant’s perception of presence of excessive noise in their neighbourhood.     
+**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -353,7 +353,7 @@ output: html_document
 
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_0  
-**Variable description**: Participant agrees that neighbors would help them if needed, in case of emergency/trouble.  
+**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed, in case of emergency/trouble.  
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -373,7 +373,7 @@ output: html_document
 
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_2  
-**Variable description**: Participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
+**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
 **Value type**: integer   
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -393,7 +393,7 @@ output: html_document
 
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_4  
-**Variable description**: Participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
+**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
 **Value type**: integer   
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -413,7 +413,7 @@ output: html_document
 
 ### **Variable label**: Neighbours cooperate  
 **Variable name**: env_nbs_coop_0   
-**Variable description**: Participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.  
+**Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.  
 **Value type**: integer  
 **Variable unit**: N/A   
 **Category coding**:  
@@ -433,7 +433,7 @@ output: html_document
 
 ### **Variable label**: Neighbours cooperate    
 **Variable name**: env_nbs_coop_1  
-**Variable description**: Participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
+**Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
 **Value type**: integer    
 **Variable unit**: N/A     
 **Category coding**:  
@@ -453,7 +453,7 @@ output: html_document
 
 ### **Variable label**: Neighbours cooperate    
 **Variable name**: env_nbs_coop_2  
-**Variable description**: Participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
+**Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
 **Value type**: integer    
 **Variable unit**: N/A     
 **Category coding**:  
@@ -472,7 +472,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours cooperate    
 **Variable name**: env_nbs_coop_3  
-**Variable description**: Participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
+**Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
 **Value type**: integer    
 **Variable unit**: N/A     
 **Category coding**:  
@@ -491,7 +491,7 @@ output: html_document
 ```  
 ### **Variable label**: Neighbours cooperate    
 **Variable name**: env_nbs_coop_4  
-**Variable description**: Participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
+**Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
 **Value type**: integer    
 **Variable unit**: N/A     
 **Category coding**:  
@@ -511,7 +511,7 @@ output: html_document
 
 ### **Variable label**: Neighbourhood values and norms       
 **Variable name**: env_nbh_values_0   
-**Variable description**: Participant agrees that people in their neighbourhood share similar values and norms.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood share similar values and norms.        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -534,7 +534,7 @@ output: html_document
 
 ### **Variable label**: Neighbourhood values and norms       
 **Variable name**: env_nbh_values_2     
-**Variable description**: Participant agrees that people in their neighbourhood share similar values and norms.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood share similar values and norms.        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -556,7 +556,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood values and norms       
 **Variable name**: env_nbh_values_4     
-**Variable description**: Participant agrees that people in their neighbourhood share similar values and norms.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood share similar values and norms.        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -578,7 +578,7 @@ output: html_document
 ```  
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_0   
-**Variable description**: Participant agrees that people in their neighbourhood  get along with each other.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -600,7 +600,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_2   
-**Variable description**: Participant agrees that people in their neighbourhood  get along with each other.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -622,7 +622,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_3   
-**Variable description**: Participant agrees that people in their neighbourhood  get along with each other.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -644,7 +644,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_4   
-**Variable description**: Participant agrees that people in their neighbourhood  get along with each other.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -666,7 +666,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours are friendly       
 **Variable name**: env_nbs_friend_0     
-**Variable description**: Participant is asked whether members of the area where their live (i.e. their neighbourhood) are friendly/ polite.           
+**Variable description**: Indicator of whether the participant is asked whether members of the area where their live (i.e. their neighbourhood) are friendly/ polite.           
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -687,7 +687,7 @@ output: html_document
 ```
 ### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_0      
-**Variable description**: Participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
+**Variable description**: Indicator of whether the participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -706,7 +706,7 @@ output: html_document
 ```
 ### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_2      
-**Variable description**: Participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
+**Variable description**: Indicator of whether the participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -725,7 +725,7 @@ output: html_document
 ```
 ### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_4      
-**Variable description**: Participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
+**Variable description**: Indicator of whether the participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -744,7 +744,7 @@ output: html_document
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_0      
-**Variable description**: Participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
+**Variable description**: Indicator of whether the participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -766,7 +766,7 @@ output: html_document
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_2      
-**Variable description**: Participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
+**Variable description**: Indicator of whether the participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -788,7 +788,7 @@ output: html_document
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_3      
-**Variable description**: Participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
+**Variable description**: Indicator of whether the participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -810,7 +810,7 @@ output: html_document
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_4      
-**Variable description**: Participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
+**Variable description**: Indicator of whether the participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
