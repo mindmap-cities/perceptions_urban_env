@@ -21,7 +21,6 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
--999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -41,7 +40,6 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
--999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -61,7 +59,6 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
--999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -81,7 +78,6 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
--999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -101,7 +97,6 @@ output: html_document
 ------------- | -------------  
 1 |   yes  
 0 |   no  
--999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -120,8 +115,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |   yes  
-0 |   no  
--999 | missing 
+0 |   no   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -140,8 +134,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 |   yes  
-0 |   no  
--999 | missing 
+0 |   no   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -161,7 +154,6 @@ output: html_document
 ------------- | -------------  
 1 | yes  
 0 | no  
--999 | missing 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -180,8 +172,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes  
-0 | no  
--999 | missing 
+0 | no   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -203,8 +194,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing   
+0 | no        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -223,8 +213,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing   
+0 | no       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -243,8 +232,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing   
+0 | no       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -264,8 +252,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing   
+0 | no       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -290,8 +277,7 @@ output: html_document
 1 | Not very clean     
 2 | Not clean   
 3 | Mostly clean   
-4 | Clean      
--999 | missing        
+4 | Clean             
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -312,8 +298,7 @@ output: html_document
 1 | A lot of graffiti and vandalism      
 2 | Some graffiti and vandalism     
 3 | A little graffiti and vandalism     
-4 | No graffiti and vandalism       
--999 | missing        
+4 | No graffiti and vandalism              
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -334,8 +319,7 @@ output: html_document
 1 | Definitely excessive noise      
 2 | Some excessive noise    
 3 | A little excessive noise    
-4 | No excessive noise     
--999 | missing        
+4 | No excessive noise            
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -356,8 +340,7 @@ output: html_document
 1 | Definitely excessive noise      
 2 | Some excessive noise    
 3 | A little excessive noise    
-4 | No excessive noise     
--999 | missing        
+4 | No excessive noise            
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -378,8 +361,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing  
+0 | no      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -399,8 +381,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing  
+0 | no       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -420,8 +401,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing  
+0 | no      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -441,8 +421,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing    
+0 | no         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -462,8 +441,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing      
+0 | no           
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -483,8 +461,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing      
+0 | no           
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -503,8 +480,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing      
+0 | no          
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -523,8 +499,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | yes    
-0 | no     
--999 | missing      
+0 | no           
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -547,8 +522,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing      
+5 | Strongly disagree         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -571,8 +545,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing      
+5 | Strongly disagree        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -594,8 +567,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing      
+5 | Strongly disagree        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -617,8 +589,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing      
+5 | Strongly disagree       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -640,8 +611,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing      
+5 | Strongly disagree        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -663,8 +633,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing      
+5 | Strongly disagree       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -686,8 +655,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing      
+5 | Strongly disagree       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -709,7 +677,6 @@ output: html_document
 2 | Somewhat friendly 
 3 | Not really friendly  
 4 | Not friendly    
--999 | missing  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -729,7 +696,6 @@ output: html_document
 ------------- | -------------  
 1 | Yes    
 0 | No   
--999 | missing  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -748,8 +714,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | Yes    
-0 | No   
--999 | missing  
+0 | No     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -768,8 +733,7 @@ output: html_document
 **Code** | **Category Label**  
 ------------- | -------------  
 1 | Yes    
-0 | No   
--999 | missing  
+0 | No    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -791,8 +755,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing        
+5 | Strongly disagree          
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -814,8 +777,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing        
+5 | Strongly disagree         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -837,8 +799,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing        
+5 | Strongly disagree         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -860,8 +821,7 @@ output: html_document
 2 | Agree 
 3 | Neither agree or disagree  
 4 | Disagree   
-5 | Strongly disagree   
--999 | missing        
+5 | Strongly disagree          
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -883,8 +843,7 @@ output: html_document
 2 | Some sense of collective identity and community in the neighbourhood 
 3 | Not really a sense of collective identity and community in the neighbourhood  
 4 | No sense of collective identity and community at all in the neighbourhood  
-5 | Don't know if sense of collective identity and community neighbourhood   
--999 | missing        
+5 | Don't know if sense of collective identity and community neighbourhood          
 
 **Harmonization status**:  
 **Harmonization comment**:   
