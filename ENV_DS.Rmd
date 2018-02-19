@@ -274,10 +274,10 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Not very clean     
-2 | Not clean   
-3 | Mostly clean   
-4 | Clean             
+1 | Area not very clean     
+2 | Area not clean   
+3 | Area mostly clean   
+4 | Area clean             
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -694,8 +694,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Feel     
-0 | No   
+1 | Feels part of area     
+0 | Does not feel part of area   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -713,8 +713,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Yes    
-0 | No     
+1 | Feels part of area     
+0 | Does not feel part of area       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -732,8 +732,8 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Yes    
-0 | No    
+1 | Feels part of area     
+0 | Does not feel part of area    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -751,11 +751,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree          
+1 | Strongly agree that they feel lonely   
+2 | Agree that they feel lonely
+3 | Neither agree or disagree that they feel lonely 
+4 | Disagree that they feel lonely  
+5 | Strongly disagree that they feel lonely         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -773,11 +773,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree         
+1 | Strongly agree that they feel lonely   
+2 | Agree that they feel lonely
+3 | Neither agree or disagree that they feel lonely 
+4 | Disagree that they feel lonely 
+5 | Strongly disagree that they feel lonely         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -795,11 +795,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree         
+1 | Strongly agree that they feel lonely   
+2 | Agree that they feel lonely
+3 | Neither agree or disagree that they feel lonely  
+4 | Disagree that they feel lonely   
+5 | Strongly disagree that they feel lonely        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -817,11 +817,11 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Strongly agree    
-2 | Agree 
-3 | Neither agree or disagree  
-4 | Disagree   
-5 | Strongly disagree          
+1 | Strongly agree that they feel lonely   
+2 | Agree that they feel lonely
+3 | Neither agree or disagree that they feel lonely 
+4 | Disagree that they feel lonely  
+5 | Strongly disagree that they feel lonely         
 
 **Harmonization status**:  
 **Harmonization comment**:   
