@@ -143,7 +143,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Feels safe in the neighbourhood     
+### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_0   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.   
 **Value type**: integer  
@@ -162,7 +162,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Feels safe in the neighbourhood     
+### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_2   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.   
 **Value type**: integer  
@@ -431,7 +431,7 @@ output: html_document
 
 ```
 
-### **Variable label**: Neighbours cooperate    
+### **Variable label**: Cooperating neighbours    
 **Variable name**: env_nbs_coop_1  
 **Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
 **Value type**: integer    
@@ -451,7 +451,7 @@ output: html_document
 
 ```
 
-### **Variable label**: Neighbours cooperate    
+### **Variable label**: Cooperating neighbours      
 **Variable name**: env_nbs_coop_2  
 **Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
 **Value type**: integer    
@@ -470,7 +470,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbours cooperate    
+### **Variable label**: Cooperating neighbours      
 **Variable name**: env_nbs_coop_3  
 **Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
 **Value type**: integer    
@@ -489,7 +489,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```  
-### **Variable label**: Neighbours cooperate    
+### **Variable label**: Cooperating neighbours      
 **Variable name**: env_nbs_coop_4  
 **Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.    
 **Value type**: integer    
@@ -664,7 +664,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbours are friendly       
+### **Variable label**: Friendly neighbours       
 **Variable name**: env_nbs_friend_0     
 **Variable description**: Indicator of whether the participant is asked whether members of the area where their live (i.e. their neighbourhood) are friendly/ polite.           
 **Value type**: integer      
@@ -830,7 +830,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```  
-### **Variable label**: Sense of community        
+### **Variable label**: Community        
 **Variable name**: env_nbh_comm_0      
 **Variable description**: Members of community in which participant lives has a sense of community and collective identity.     
 **Value type**: integer      
