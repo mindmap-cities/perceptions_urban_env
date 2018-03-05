@@ -145,7 +145,26 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_0   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.      
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   Feels safe 
+0 |   Does not feel safe  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe in neighbourhood     
+**Variable name**: env_nbh_sf_1   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.    
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -164,7 +183,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_2   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -181,7 +200,82 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Feels safe in neighbourhood     
+**Variable name**: env_nbh_sf_3   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   Feels safe 
+0 |   Does not feel safe   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe in neighbourhood     
+**Variable name**: env_nbh_sf_4   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   Feels safe 
+0 |   Does not feel safe   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe in neighbourhood     
+**Variable name**: env_nbh_sf_5   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   Feels safe 
+0 |   Does not feel safe   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Feels safe in neighbourhood     
+**Variable name**: env_nbh_sf_6   
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Value type**: integer  
+**Variable unit**: N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 |   Feels safe 
+0 |   Does not feel safe   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Social trust subdomain
 
 ### **Variable label**:  Neighbourhood  trust  
@@ -267,7 +361,7 @@ output: html_document
 
 ### **Variable label**: Neighbourhood cleanliness   
 **Variable name**:  env_nbh_clean_0  
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable does not include GLOBE study harmonization and has more answer categories than the dichotomized version.   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -286,19 +380,95 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Neighbourhood cleanliness   
+**Variable name**:  env_nbh_clean_1  
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable does not include GLOBE study harmonization and has more answer categories than the dichotomized version.   
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Area not very clean     
+2 | Area not clean   
+3 | Area mostly clean   
+4 | Area clean             
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood cleanliness dichotomized     
+**Variable name**:  env_nbh_clean_dich_0  
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable includes GLOBE study harmonization.   
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Area clean             
+0 | Area not clean  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood cleanliness dichotomized     
+**Variable name**:  env_nbh_clean_dich_1    
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable includes GLOBE study harmonization.   
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Area clean             
+0 | Area not clean  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood cleanliness dichotomized     
+**Variable name**:  env_nbh_clean_dich_2    
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable includes GLOBE study harmonization.   
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Area clean             
+0 | Area not clean  
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
-**Variable name**:  env_nbh_grfvnd_0  
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
+**Variable name**:  env_nbh_gv_0  
+**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | A lot of graffiti and vandalism      
-2 | Some graffiti and vandalism     
-3 | A little graffiti and vandalism     
-4 | No graffiti and vandalism              
+1 | Graffiti and/or vandalism  
+0 | No graffiti and/or vandalism              
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -307,9 +477,28 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood noise    
-**Variable name**:  env_nbh_noise_0  
-**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.     
+### **Variable label**: Neighbourhood graffiti and vandalism  
+**Variable name**:  env_nbh_gv_2  
+**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | No graffiti and/or vandalism   
+0 | Graffiti and/or vandalism            
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood noisiness     
+**Variable name**:  env_nbh_noisiness_0  
+**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  Note: there is also a dichotomized version of this variable which includes GLOBE study.      
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -328,9 +517,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood noise    
-**Variable name**:  env_nbh_noise_1  
-**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.     
+### **Variable label**: Neighbourhood noisiness      
+**Variable name**:  env_nbh_noisiness_1  
+**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  Note: there is also a dichotomized version of this variable which includes GLOBE study.         
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -341,6 +530,44 @@ output: html_document
 2 | Some excessive noise    
 3 | A little excessive noise    
 4 | No excessive noise            
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood noisy    
+**Variable name**:  env_nbh_noisy_0  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood. Note: GLOBE is included in this dichotomized noise variable, GLOBE does not ask about excessive noise in particular as RECORD and MESA do (it asks: In the past year have you often dealt with: Traffic noise, noise from passing airplanes, street noise, noise from businesses in your neighborhood?).        
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Not noisy         
+0 | Noisy        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood noisy    
+**Variable name**:  env_nbh_noisy_1  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood. Note: GLOBE is included in this dichotomized noise variable, GLOBE does not ask about excessive noise in particular as RECORD and MESA do (it asks: In the past year have you often dealt with: Traffic noise, noise from passing airplanes, street noise, noise from businesses in your neighborhood?).        
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Not noisy         
+0 | Noisy        
 
 **Harmonization status**:  
 **Harmonization comment**:   
