@@ -6,7 +6,8 @@ output: html_document
 1. [General neighborhood safety subdomain](#general-neighborhood-safety-subdomain)
 2. [Social trust subdomain](#social-trust-subdomain)
 3. [Vandalism subdomain](#vandalism-subdomain)
-4. [Social cohesion subdomain](#social-cohesion-subdomain)
+4. [Social cohesion subdomain](#social-cohesion-subdomain)  
+5. [Crime subdomain](#crime-subdomain)  
 
 # General neighborhood safety subdomain
 
@@ -1057,20 +1058,20 @@ output: html_document
 #This is where the R-script will be written
 
 ```  
-### **Variable label**: Community        
+### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_0      
-**Variable description**: Members of community in which participant lives has a sense of community and collective identity.     
+**Variable description**: Members of community in which participant lives is close-knit.  
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Good sense of collective identity and community in the neighbourhood   
-2 | Some sense of collective identity and community in the neighbourhood 
-3 | Not really a sense of collective identity and community in the neighbourhood  
-4 | No sense of collective identity and community at all in the neighbourhood  
-5 | Don't know if sense of collective identity and community neighbourhood          
+1 |   
+2 | 
+3 | 
+4 |                        
+5 |                   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1079,3 +1080,119 @@ output: html_document
 #This is where the R-script will be written
 
 ```  
+# Crime subdomain
+
+### **Variable label**: Neighbourhood violence  
+**Variable name**: env_nbh_violence_0     
+**Variable description**: Respondent’s perception of presence of violence in their neighbourhood.   
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | No violence in neighbourhood
+0 | Violence in neighbourhood     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood violence  
+**Variable name**: env_nbh_violence_1     
+**Variable description**: Respondent’s perception of presence of violence in their neighbourhood.   
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | No violence in neighbourhood
+0 | Violence in neighbourhood     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood violence  
+**Variable name**: env_nbh_violence_2     
+**Variable description**: Respondent’s perception of presence of violence in their neighbourhood.   
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | No violence in neighbourhood
+0 | Violence in neighbourhood     
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
+**Variable name**: env_nbs_anti_0  
+**Variable description**: Respondent’s perception of antisocial and aggressive behaviour in their neighbourhood.  
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | No antisocial and aggressive behavior in neighbourhood
+0 | Antisocial and aggressive behavior in neighbourhood      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
+**Variable name**: env_nbs_anti_1  
+**Variable description**: Respondent’s perception of antisocial and aggressive behaviour in their neighbourhood.  
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | No antisocial and aggressive behavior in neighbourhood
+0 | Antisocial and aggressive behavior in neighbourhood      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
+**Variable name**: env_nbs_anti_2  
+**Variable description**: Respondent’s perception of antisocial and aggressive behaviour in their neighbourhood.  
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | No antisocial and aggressive behavior in neighbourhood
+0 | Antisocial and aggressive behavior in neighbourhood      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
