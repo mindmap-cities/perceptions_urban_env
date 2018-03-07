@@ -8,7 +8,7 @@ output: html_document
 2. [Social trust subdomain](#social-trust-subdomain)
 3. [Social cohesion subdomain](#social-cohesion-subdomain)  
 4. [Neighbourhood aesthetics subdomain](#vandalism-subdomain)
-5. [Crime & vandalism subdomain](#crime-subdomain)  
+5. [Crime and vandalism subdomain](#crime-subdomain)  
 
 # General neighborhood safety subdomain
 
@@ -962,44 +962,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood graffiti and vandalism  
-**Variable name**:  env_nbh_gv_0  
-**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
-**Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  
 
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Graffiti and/or vandalism  
-0 | No graffiti and/or vandalism              
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Neighbourhood graffiti and vandalism  
-**Variable name**:  env_nbh_gv_2  
-**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
-**Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | No graffiti and/or vandalism   
-0 | Graffiti and/or vandalism            
-
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
 ### **Variable label**: Neighbourhood noisiness     
 **Variable name**:  env_nbh_noisiness_0  
 **Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  Note: there is also a dichotomized version of this variable which includes GLOBE study.      
@@ -1080,7 +1043,7 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-# Crime & Vandalism subdomain
+# Crime and vandalism subdomain
 
 ### **Variable label**: Neighbourhood violence  
 **Variable name**: env_nbh_violence_0     
@@ -1188,6 +1151,44 @@ output: html_document
 ------------- | -------------  
 1 | No antisocial and aggressive behavior in neighbourhood
 0 | Antisocial and aggressive behavior in neighbourhood      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood graffiti and vandalism  
+**Variable name**:  env_nbh_gv_0  
+**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Graffiti and/or vandalism  
+0 | No graffiti and/or vandalism              
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood graffiti and vandalism  
+**Variable name**:  env_nbh_gv_2  
+**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | No graffiti and/or vandalism   
+0 | Graffiti and/or vandalism            
 
 **Harmonization status**:  
 **Harmonization comment**:   
