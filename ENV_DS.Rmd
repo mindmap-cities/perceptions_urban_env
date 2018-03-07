@@ -5,7 +5,7 @@ output: html_document
 # Table of Contents
 1. [General neighborhood safety subdomain](#general-neighborhood-safety-subdomain)
 2. [Social trust subdomain](#social-trust-subdomain)
-3. [Vandalism subdomain](#vandalism-subdomain)
+3. [Vandalism & aesthetics subdomain](#vandalism-subdomain)
 4. [Social cohesion subdomain](#social-cohesion-subdomain)  
 5. [Crime subdomain](#crime-subdomain)  
 
@@ -358,7 +358,7 @@ output: html_document
 ```
 
 
-# Vandalism subdomain
+# Vandalism & Aesthetics subdomain
 
 ### **Variable label**: Neighbourhood cleanliness   
 **Variable name**:  env_nbh_clean_0  
