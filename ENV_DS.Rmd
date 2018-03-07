@@ -337,7 +337,25 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_3     
+**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | People can be trusted    
+0 | People cannot be trusted      
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_4     
 **Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
@@ -379,7 +397,25 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Helpful neighbours  
+**Variable name**: env_nbs_help_1  
+**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
+**Value type**: integer   
+**Variable unit**:  N/A  
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Neighbours would help me    
+0 | Neighbours would not help me         
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_2  
 **Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
@@ -399,7 +435,25 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Helpful neighbours  
+**Variable name**: env_nbs_help_3    
+**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
+**Value type**: integer   
+**Variable unit**:  N/A  
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Neighbours would help me    
+0 | Neighbours would not help me         
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_4  
 **Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
@@ -540,9 +594,52 @@ output: html_document
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Neighbourhood values and norms       
+**Variable name**: env_nbh_values_1     
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood share similar values and norms.        
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree that people share similar values and norms    
+2 | Agree that people share similar values and norms
+3 | Neither agree or disagree that people share similar values and norms
+4 | Disagree that people share similar values and norms  
+5 | Strongly disagree that people share similar values and norms        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 ### **Variable label**: Neighbourhood values and norms       
 **Variable name**: env_nbh_values_2     
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood share similar values and norms.        
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree that people share similar values and norms   
+2 | Agree that people share similar values and norms
+3 | Neither agree or disagree that people share similar values and norms  
+4 | Disagree that people share similar values and norms  
+5 | Strongly disagree that people share similar values and norms       
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood values and norms       
+**Variable name**: env_nbh_values_3     
 **Variable description**: Indicator of whether the participant agrees that people in their neighbourhood share similar values and norms.        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -587,6 +684,28 @@ output: html_document
 ```  
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_0   
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree that people get along  
+2 | Agree that people get along  
+3 | Neither agree or disagree that people get along   
+4 | Disagree that people get along    
+5 | Strongly disagree that people get along        
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbours get along       
+**Variable name**: env_nbs_along_1     
 **Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -674,7 +793,7 @@ output: html_document
 
 ```
 ### **Variable label**: Friendly neighbours       
-**Variable name**: env_nbs_friend_0     
+**Variable name**: env_nbs_friendly_0     
 **Variable description**: Indicator of whether the participant is asked whether members of the area where their live (i.e. their neighbourhood) are friendly/ polite.           
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -714,7 +833,45 @@ output: html_document
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
+**Variable name**: env_nbh_belong_1        
+**Variable description**: Indicator of whether the participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Feels part of area     
+0 | Does not feel part of area   
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_2      
+**Variable description**: Indicator of whether the participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Feels part of area     
+0 | Does not feel part of area       
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Belonging to neighbourhood        
+**Variable name**: env_nbh_belong_3        
 **Variable description**: Indicator of whether the participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -753,6 +910,28 @@ output: html_document
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_0      
+**Variable description**: Indicator of whether the participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree that they feel lonely   
+2 | Agree that they feel lonely
+3 | Neither agree or disagree that they feel lonely 
+4 | Disagree that they feel lonely  
+5 | Strongly disagree that they feel lonely         
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Lonely in neighbourhood        
+**Variable name**: env_nbh_lone_1      
 **Variable description**: Indicator of whether the participant agrees that they feel lonely in the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -1161,6 +1340,25 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
 **Variable name**:  env_nbh_gv_0  
+**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Graffiti and/or vandalism  
+0 | No graffiti and/or vandalism              
+
+**Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood graffiti and vandalism  
+**Variable name**:  env_nbh_gv_1    
 **Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
 **Value type**:  integer  
 **Variable unit**:  N/A  
