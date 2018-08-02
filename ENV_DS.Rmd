@@ -1141,9 +1141,9 @@ output: html_document
 
 ```
 
-### **Variable label**: Neighbourhood noisiness     
-**Variable name**:  env_nbh_noisiness_0  
-**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  Note: there is also a dichotomized version of this variable which includes GLOBE study.      
+### **Variable label**: Neighbourhood noisiness (4-level)       
+**Variable name**:  env_nbh_noise_0  
+**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1162,9 +1162,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood noisiness      
-**Variable name**:  env_nbh_noisiness_1  
-**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  Note: there is also a dichotomized version of this variable which includes GLOBE study.         
+### **Variable label**: Neighbourhood noisiness (4-level)       
+**Variable name**:  env_nbh_noise_1  
+**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1183,9 +1183,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood noisy    
-**Variable name**:  env_nbh_noisy_0  
-**Variable description**:  Respondent’s perception of noise in their neighbourhood. Note: GLOBE is included in this dichotomized noise variable, GLOBE does not ask about excessive noise in particular as RECORD and MESA do (it asks: In the past year have you often dealt with: Traffic noise, noise from passing airplanes, street noise, noise from businesses in your neighborhood?).        
+### **Variable label**: Neighbourhood noisy (2-level)     
+**Variable name**:  env_nbh_noise_0  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood.          
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1202,9 +1202,9 @@ output: html_document
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood noisy    
-**Variable name**:  env_nbh_noisy_1  
-**Variable description**:  Respondent’s perception of noise in their neighbourhood. Note: GLOBE is included in this dichotomized noise variable, GLOBE does not ask about excessive noise in particular as RECORD and MESA do (it asks: In the past year have you often dealt with: Traffic noise, noise from passing airplanes, street noise, noise from businesses in your neighborhood?).        
+### **Variable label**: Neighbourhood noisy (2-level)     
+**Variable name**:  env_nbh_noise_1  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood.          
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1339,7 +1339,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
 **Variable name**:  env_nbh_gv_0  
-**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
+**Variable description**:  Indicator of the participant's perception of graffiti and/or vandalism in the area where the respondent lives (i.e. their neighbourhood).    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1358,7 +1358,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
 **Variable name**:  env_nbh_gv_1    
-**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
+**Variable description**:  Indicator of the participant's perception of graffiti and/or vandalism in the area where the respondent lives (i.e. their neighbourhood).   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1377,7 +1377,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
 **Variable name**:  env_nbh_gv_2  
-**Variable description**:  Respondent perception of graffiti and/or vandalism in  area where respondent lives (i.e. their neighbourhood).  
+**Variable description**:  Indicator of the participant's perception of graffiti and/or vandalism in the area where the respondent lives (i.e. their neighbourhood).   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
