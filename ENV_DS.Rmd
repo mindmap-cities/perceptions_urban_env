@@ -814,7 +814,7 @@ output: html_document
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
-**Variable name**: env_nbh_belong_0      
+**Variable name**: env_nbh_belong_0        
 **Variable description**: Indicator of whether the participant asked whether they feel a part of the area where they live (i.e. their community, their neighbourhood).    
 **Value type**: integer      
 **Variable unit**: N/A       
@@ -1225,7 +1225,7 @@ output: html_document
 
 ### **Variable label**: Neighbourhood violence  
 **Variable name**: env_nbh_violence_0     
-**Variable description**: Respondent’s perception of presence of violence in their neighbourhood.   
+**Variable description**:  Indicator of the participant's perception of violence in their neighbourhood.  
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1244,7 +1244,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood violence  
 **Variable name**: env_nbh_violence_1     
-**Variable description**: Respondent’s perception of presence of violence in their neighbourhood.   
+**Variable description**: Indicator of the participant's perception of violence in their neighbourhood.       
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1263,7 +1263,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood violence  
 **Variable name**: env_nbh_violence_2     
-**Variable description**: Respondent’s perception of presence of violence in their neighbourhood.   
+**Variable description**: Indicator of the participant's perception of violence in their neighbourhood.      
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1282,7 +1282,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
 **Variable name**: env_nbs_anti_0  
-**Variable description**: Respondent’s perception of antisocial and aggressive behaviour in their neighbourhood.  
+**Variable description**: Indicator of the participant's perception of antisocial and aggressive behaviour in their neighbourhood.    
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1301,7 +1301,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
 **Variable name**: env_nbs_anti_1  
-**Variable description**: Respondent’s perception of antisocial and aggressive behaviour in their neighbourhood.  
+**Variable description**: Indicator of the participant's perception of antisocial and aggressive behaviour in their neighbourhood.   
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1320,7 +1320,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
 **Variable name**: env_nbs_anti_2  
-**Variable description**: Respondent’s perception of antisocial and aggressive behaviour in their neighbourhood.  
+**Variable description**: Indicator of the participant's perception of antisocial and aggressive behaviour in their neighbourhood.    
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
