@@ -20,9 +20,9 @@ output: html_document
 **Category coding**:  
 
 **Code** | **Category Label**  
-------------- | -------------  
-1 |   Feels safe at night  
-0 |   Does not feel safe at night  
+------------- | -------------   
+0 |   Does not feel safe at night
+1 |   Feels safe at night 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -39,9 +39,9 @@ output: html_document
 **Category coding**:  
 
 **Code** | **Category Label**  
-------------- | -------------  
-1 |   Feels safe at night  
+------------- | -------------   
 0 |   Does not feel safe at night 
+1 |   Feels safe at night 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -58,9 +58,9 @@ output: html_document
 **Category coding**:  
 
 **Code** | **Category Label**  
-------------- | -------------  
-1 |   Feels safe at night  
+------------- | -------------   
 0 |   Does not feel safe at night 
+1 |   Feels safe at night 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -78,8 +78,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   Feels safe at night  
 0 |   Does not feel safe at night 
+1 |   Feels safe at night  
+
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -97,8 +98,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   Feels safe at night  
 0 |   Does not feel safe at night 
+1 |   Feels safe at night  
+
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -116,8 +118,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe at night
 1 |   Feels safe at night  
-0 |   Does not feel safe at night 
+ 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -135,8 +138,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe at night
 1 |   Feels safe at night  
-0 |   Does not feel safe at night  
+  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -154,8 +158,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe 
 1 |   Feels safe 
-0 |   Does not feel safe  
+ 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -173,8 +178,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe
 1 |   Feels safe 
-0 |   Does not feel safe  
+  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -192,8 +198,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe 
 1 |   Feels safe 
-0 |   Does not feel safe   
+  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -211,8 +218,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe  
 1 |   Feels safe 
-0 |   Does not feel safe   
+ 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -230,8 +238,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe  
 1 |   Feels safe 
-0 |   Does not feel safe   
+ 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -249,8 +258,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe  
 1 |   Feels safe 
-0 |   Does not feel safe   
+ 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -268,8 +278,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 |   Does not feel safe 
 1 |   Feels safe 
-0 |   Does not feel safe   
+  
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -289,8 +300,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People cannot be trusted 
 1 | People can be trusted    
-0 | People cannot be trusted         
+        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -308,8 +320,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People cannot be trusted
 1 | People can be trusted    
-0 | People cannot be trusted       
+       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -327,8 +340,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People cannot be trusted  
 1 | People can be trusted    
-0 | People cannot be trusted      
+    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -346,8 +360,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People cannot be trusted   
 1 | People can be trusted    
-0 | People cannot be trusted      
+   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -365,8 +380,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People cannot be trusted 
 1 | People can be trusted    
-0 | People cannot be trusted       
+      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -387,8 +403,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Neighbours would not help me
 1 | Neighbours would help me   
-0 | Neighbours would not help me       
+       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -406,8 +423,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Neighbours would not help me  
 1 | Neighbours would help me    
-0 | Neighbours would not help me         
+       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -425,8 +443,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Neighbours would not help me
 1 | Neighbours would help me    
-0 | Neighbours would not help me         
+         
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -444,8 +463,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Neighbours would not help me 
 1 | Neighbours would help me    
-0 | Neighbours would not help me         
+        
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -463,8 +483,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Neighbours would not help me  
 1 | Neighbours would help me   
-0 | Neighbours would not help me      
+    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -483,8 +504,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People not willing to help each other  
 1 | People willing to help each other   
-0 | People not willing to help each other         
+       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -503,8 +525,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People not willing to help each other
 1 | People willing to help each other   
-0 | People not willing to help each other             
+             
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -523,8 +546,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People not willing to help each other  
 1 | People willing to help each other   
-0 | People not willing to help each other               
+             
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -542,8 +566,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People not willing to help each other  
 1 | People willing to help each other   
-0 | People not willing to help each other            
+          
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -561,8 +586,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | People not willing to help each other 
 1 | People willing to help each other   
-0 | People not willing to help each other             
+            
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -706,7 +732,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_1     
-**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.  
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -728,7 +754,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_2   
-**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.   
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -750,7 +776,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_3   
-**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.  
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -772,7 +798,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_4   
-**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.  
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -822,8 +848,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Does not feel part of area
 1 | Feels part of area     
-0 | Does not feel part of area   
+   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -841,8 +868,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Does not feel part of area
 1 | Feels part of area     
-0 | Does not feel part of area   
+   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -860,8 +888,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Does not feel part of area  
 1 | Feels part of area     
-0 | Does not feel part of area       
+     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -879,8 +908,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Does not feel part of area  
 1 | Feels part of area     
-0 | Does not feel part of area       
+     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -898,8 +928,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Does not feel part of area 
 1 | Feels part of area     
-0 | Does not feel part of area    
+   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1092,8 +1123,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Area clean             
 0 | Area not clean  
+1 | Area clean             
+
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1111,8 +1143,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Area not clean 
 1 | Area clean             
-0 | Area not clean  
+ 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1130,8 +1163,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Area not clean 
 1 | Area clean             
-0 | Area not clean  
+ 
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1192,8 +1226,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Noisy 
 1 | Not noisy         
-0 | Noisy        
+       
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1211,8 +1246,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Noisy  
 1 | Not noisy         
-0 | Noisy        
+      
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1232,8 +1268,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Violence in neighbourhood  
 1 | No violence in neighbourhood
-0 | Violence in neighbourhood     
+   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1251,8 +1288,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Violence in neighbourhood
 1 | No violence in neighbourhood
-0 | Violence in neighbourhood     
+     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1270,8 +1308,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Violence in neighbourhood  
 1 | No violence in neighbourhood
-0 | Violence in neighbourhood     
+   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1289,8 +1328,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Antisocial and aggressive behavior in neighbourhood 
 1 | No antisocial and aggressive behavior in neighbourhood
-0 | Antisocial and aggressive behavior in neighbourhood      
+     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1308,8 +1348,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Antisocial and aggressive behavior in neighbourhood 
 1 | No antisocial and aggressive behavior in neighbourhood
-0 | Antisocial and aggressive behavior in neighbourhood      
+     
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1327,8 +1368,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Antisocial and aggressive behavior in neighbourhood  
 1 | No antisocial and aggressive behavior in neighbourhood
-0 | Antisocial and aggressive behavior in neighbourhood      
+    
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1346,8 +1388,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | No graffiti and/or vandalism 
 1 | Graffiti and/or vandalism  
-0 | No graffiti and/or vandalism              
+             
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1365,8 +1408,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | No graffiti and/or vandalism 
 1 | Graffiti and/or vandalism  
-0 | No graffiti and/or vandalism              
+             
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1384,8 +1428,9 @@ output: html_document
 
 **Code** | **Category Label**  
 ------------- | -------------  
+0 | Graffiti and/or vandalism 
 1 | No graffiti and/or vandalism   
-0 | Graffiti and/or vandalism            
+           
 
 **Harmonization status**:  
 **Harmonization comment**:   
