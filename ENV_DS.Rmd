@@ -13,7 +13,7 @@ output: html_document
 # General neighborhood safety subdomain
 
 ### **Variable label**:  Feels safe at night     
-**Variable name**: env_nbh_nsafe_0   
+**Variable name**: env_nbh_nsf_0   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).     
 **Value type**: integer  
 **Variable unit**: N/A  
@@ -32,7 +32,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Feels safe at night     
-**Variable name**: env_nbh_nsafe_1   
+**Variable name**: env_nbh_nsf_1   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
@@ -51,7 +51,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Feels safe at night     
-**Variable name**: env_nbh_nsafe_2   
+**Variable name**: env_nbh_nsf_2   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
@@ -70,7 +70,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Feels safe at night     
-**Variable name**: env_nbh_nsafe_3   
+**Variable name**: env_nbh_nsf_3   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
@@ -89,7 +89,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Feels safe at night     
-**Variable name**: env_nbh_nsafe_4   
+**Variable name**: env_nbh_nsf_4   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
@@ -108,7 +108,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Feels safe at night     
-**Variable name**: env_nbh_nsafe_5   
+**Variable name**: env_nbh_nsf_5   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
@@ -127,7 +127,7 @@ output: html_document
 
 ```
 ### **Variable label**:  Feels safe at night     
-**Variable name**: env_nbh_nsafe_6   
+**Variable name**: env_nbh_nsf_6   
 **Variable description**:  Indicator of whether the participant agrees that they feel safe at night in the area where they live (i.e. their neighbourhood).   
 **Value type**: integer  
 **Variable unit**: N/A  
@@ -282,7 +282,7 @@ output: html_document
 
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_0   
-**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -301,7 +301,7 @@ output: html_document
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_1   
-**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -320,7 +320,7 @@ output: html_document
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_2     
-**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -339,7 +339,7 @@ output: html_document
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_3     
-**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -358,7 +358,7 @@ output: html_document
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_4     
-**Variable description**:  Indicator of whether the participant is asked if most people in the area where they live  (i.e. in their neighbourhood)  can be trusted.  
+**Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1020,18 +1020,17 @@ output: html_document
 ```  
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_0      
-**Variable description**: Members of community in which participant lives is close-knit.  
+**Variable description**: Members of community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 |   
-2 | 
-3 | 
-4 |                        
-5 |                   
+1 | Definitely neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
 
 **Harmonization status**:  
 **Harmonization comment**:   
@@ -1044,7 +1043,7 @@ output: html_document
 
 ### **Variable label**: Neighbourhood cleanliness   
 **Variable name**:  env_nbh_clean_0  
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable does not include GLOBE study harmonization and has more answer categories than the dichotomized version.   
+**Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).      
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1065,7 +1064,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood cleanliness   
 **Variable name**:  env_nbh_clean_1  
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable does not include GLOBE study harmonization and has more answer categories than the dichotomized version.   
+**Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1086,7 +1085,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
 **Variable name**:  env_nbh_clean_dich_0  
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable includes GLOBE study harmonization.   
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1105,7 +1104,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
 **Variable name**:  env_nbh_clean_dich_1    
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable includes GLOBE study harmonization.   
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1124,7 +1123,7 @@ output: html_document
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
 **Variable name**:  env_nbh_clean_dich_2    
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  This variable includes GLOBE study harmonization.   
+**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
