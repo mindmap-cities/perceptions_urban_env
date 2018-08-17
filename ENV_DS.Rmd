@@ -1238,8 +1238,8 @@ output: html_document
 
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
-**Variable name**:  env_nbh_noise_dich_1
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.          
+**Variable name**:  env_nbh_noise_dich_1  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood.            
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
