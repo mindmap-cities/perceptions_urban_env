@@ -151,7 +151,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_0   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.      
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.        
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -171,7 +171,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_1   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.    
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.     
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -191,7 +191,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_2   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.       
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -211,7 +211,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_3   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.       
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -231,7 +231,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_4   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.    
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -251,7 +251,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_5   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.       
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
@@ -271,7 +271,7 @@ output: html_document
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_6   
-**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood. Note: GLOBE variable used is the version which asks about daytime safety, RECORD does not denote time of day, HAPIEE and LASA ask about night time safety.     
+**Variable description**:  Indicator of whether the participant agrees that they feel safe in their neighbourhood.      
 **Value type**: integer  
 **Variable unit**: N/A  
 **Category coding**:  
