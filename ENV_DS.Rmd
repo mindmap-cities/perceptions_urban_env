@@ -1051,14 +1051,14 @@ output: html_document
 ```  
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_0      
-**Variable description**: Members of community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
 
 **Code** | **Category Label**  
 ------------- | -------------  
-1 | Definitely neighbourhood solidarity     
+1 | Strong neighbourhood solidarity     
 2 | Some neighbourhood solidarity    
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
