@@ -14,13 +14,13 @@ erasmus_opal <- opal.login()
 ## When you are done with your work, logout of Opal server
 opal.logout(erasmus_opal) 
 # Login to Opal server and assign the content of the HUNT table(s) to your RStudio environment
-opal.assign.table.tibble(erasmus_opal, 'HUNT1','HUNT.HUNT1', variables = list()) 
+opal.assign.table.tibble(erasmus_opal, 'HUNT1','HUNT.HUNT1', variables = list('id')) 
 HUNT1 <- opal.execute(erasmus_opal,'HUNT1')
 
-opal.assign.table.tibble(erasmus_opal, 'HUNT2', 'HUNT.HUNT2', variables = list()) 
+opal.assign.table.tibble(erasmus_opal, 'HUNT2', 'HUNT.HUNT2', variables = list('id')) 
 HUNT2 <- opal.execute(erasmus_opal,'HUNT2')
 
-opal.assign.table.tibble(erasmus_opal, 'HUNT3', 'HUNT.HUNT3', variables = list()) 
+opal.assign.table.tibble(erasmus_opal, 'HUNT3', 'HUNT.HUNT3', variables = list('id')) 
 HUNT3 <- opal.execute(erasmus_opal,'HUNT3')
 
 ```
@@ -52,7 +52,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 0 |   Does not feel safe at night
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -71,7 +71,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -90,7 +90,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -110,7 +110,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -130,7 +130,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -150,7 +150,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe at night  
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -170,7 +170,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe at night  
   
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -190,7 +190,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -210,7 +210,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -230,7 +230,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -250,7 +250,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -270,7 +270,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -290,7 +290,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -310,7 +310,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -332,7 +332,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People can be trusted    
         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -352,7 +352,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People can be trusted    
        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -372,7 +372,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People can be trusted    
     
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -392,7 +392,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People can be trusted    
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -412,7 +412,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People can be trusted    
       
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -435,7 +435,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Neighbours would help me   
        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -455,7 +455,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Neighbours would help me    
        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -475,7 +475,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Neighbours would help me    
          
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -495,7 +495,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Neighbours would help me    
         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -515,7 +515,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Neighbours would help me   
     
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -523,7 +523,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 
 ```
 
-### **Variable label**: Neighbours cooperate  
+### **Variable label**: Cooperating neighbours   
 **Variable name**: env_nbs_coop_0   
 **Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.  
 **Value type**: integer  
@@ -536,7 +536,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People willing to help each other   
        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -557,7 +557,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People willing to help each other   
              
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -578,7 +578,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People willing to help each other   
              
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -598,7 +598,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People willing to help each other   
           
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -618,7 +618,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | People willing to help each other   
             
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -641,7 +641,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -663,7 +663,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -685,7 +685,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -707,7 +707,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -729,7 +729,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -751,7 +751,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -773,7 +773,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -795,7 +795,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people get along     
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -817,7 +817,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -839,7 +839,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -860,7 +860,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 3 | People are not really friendly  
 4 | People are not friendly    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -880,7 +880,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -900,7 +900,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -920,7 +920,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Feels part of area     
      
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -940,7 +940,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Feels part of area     
      
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -960,7 +960,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -982,7 +982,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1004,7 +1004,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1026,7 +1026,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that they feel lonely 
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1048,7 +1048,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that they feel lonely   
 5 | Strongly disagree that they feel lonely        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1070,7 +1070,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1091,13 +1091,97 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
 
 ``` 
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_1      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_2      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_3      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_4      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Neighbourhood aesthetics subdomain
 
 ### **Variable label**: Neighbourhood cleanliness   
@@ -1114,7 +1198,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1135,7 +1219,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1155,7 +1239,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Area clean             
 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1175,7 +1259,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Area clean             
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1195,7 +1279,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Area clean             
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1217,7 +1301,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1238,7 +1322,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1247,7 +1331,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)       
 **Variable name**:  env_nbh_noise_dich_0    
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.          
+**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.          
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1258,8 +1342,8 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Not noisy         
        
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  impossible
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -1267,7 +1351,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
 **Variable name**:  env_nbh_noise_dich_1  
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.            
+**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.            
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1278,8 +1362,48 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | Not noisy         
       
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood traffic noise        
+**Variable name**:  env_nbh_traf_noise_0    
+**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise         
+       
+
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood traffic noise      
+**Variable name**:  env_nbh_traf_noise_1  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise          
+      
+
+**Harmonization status**:  impossible 
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -1300,7 +1424,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1320,7 +1444,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | No violence in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1340,7 +1464,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1360,7 +1484,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1380,7 +1504,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1400,7 +1524,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 1 | No antisocial and aggressive behavior in neighbourhood
     
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1416,11 +1540,11 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | No graffiti and/or vandalism 
+0 | No graffiti and no vandalism 
 1 | Graffiti and/or vandalism  
              
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1436,11 +1560,11 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | No graffiti and/or vandalism 
+0 | No graffiti and no vandalism 
 1 | Graffiti and/or vandalism  
              
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1456,11 +1580,71 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Graffiti and/or vandalism 
-1 | No graffiti and/or vandalism   
+0 | No graffiti and no vandalism 
+1 | Graffiti and/or vandalism     
            
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_0     
+**Variable description**:  Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.  
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_1     
+**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.         
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+     
+
+**Harmonization status**: impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_2     
+**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.        
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
