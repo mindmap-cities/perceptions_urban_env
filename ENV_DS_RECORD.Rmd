@@ -16,16 +16,18 @@ opal.logout(erasmus_opal)
 # Login to Opal server and assign the content of the RECORD table(s) to your RStudio environment
 
 # Record wave 1 part 1
-opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_1','RECORD.RECORD_w1_1', variables=list()) 
+opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_1','RECORD.RECORD_w1_1', variables=list('Q6_b_1','Q6_b_2','Q6_b_3','Q6_b_4','Q8_1_a','Q8_1_b','Q8_1_c','Q8_1_d')) 
 RECORD_w1_1 <- opal.execute(erasmus_opal,'RECORD_w1_1')
 
 # RECORD wave 1 part 2
-opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_2', 'RECORD.RECORD_w1_2',variables=list()) 
+opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_2', 'RECORD.RECORD_w1_2',variables=list('q12_no_securite','q6_no_confianc','q10_no_pbordure','q10_no_vandalis','q10_no_bruitgen','q16_no_aidetach','q11_no_aimables','q8_no_inidcoll','q11_no_habsoude'))
 RECORD_w1_2 <- opal.execute(erasmus_opal,'RECORD_w1_2')
+#RECORD_w1_2$
 
 # RECORD wave 2
-opal.assign.table.tibble(erasmus_opal, 'RECORD_w2', 'RECORD.RECORD_W2', variables=list()) 
+opal.assign.table.tibble(erasmus_opal, 'RECORD_w2', 'RECORD.RECORD_W2', variables=list('P45_Q1_994','P45_Q1_995','P45_Q1_996','P45_Q1_997','P43_Q5_960','P43_Q5_961','P43_Q5_962','P43_Q5_963','P44_Q2_972','P44_Q2_973','P44_Q2_974','P44_Q2_975','P46_Q1_1016','P46_Q1_1017','P43_Q2_945','P43_Q2_946','P43_Q2_947','P43_Q2_948','P40_Q2_881','P40_Q2_882','P40_Q2_883','P40_Q2_885','P48_Q2_1060','P48_Q2_1061','P48_Q2_1062','P48_Q2_1063','P46_Q5_1028','P46_Q5_1029','P46_Q6_1030','P46_Q6_1031','P44_Q5_987','P44_Q5_988','P44_Q5_989','P44_Q5_990','P46_Q3_1022','P46_Q3_1023'))  
 RECORD_w2 <- opal.execute(erasmus_opal,'RECORD_w2')
+#RECORD_w2$
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r,echo=FALSE}
@@ -54,11 +56,16 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 0 |   Does not feel safe at night
 1 |   Feels safe at night 
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete 
+**Harmonization comment**:   RECORD item does not ask about night safety in particular but item is comparable to being asked about night safety per B.Chaix. 'Always feels safe' and 'mostly feels safe' have been recoded as 'feels safe'.
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q12_no_securite)
+summary(RECORD_w1_2$q12_no_securite)
+#not an integer
+#1 and 2 = no not safe,  3 and 4=yes safe 
+env_RECORD_0$env_nbh_nsf_0 <-recode(as.integer(RECORD_w1_2$q12_no_securite),'1'=0L,'2'=0L,'3'=1L,'4'=1L)
+table(env_RECORD_0$env_nbh_nsf_0)
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -73,11 +80,20 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:   complete
+**Harmonization comment**: RECORD item does not ask about night safety in particular but item is comparable to being asked about night safety per B.Chaix. 'Always feels safe' and 'mostly feels safe' have been recoded as 'feels safe'.
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w2$P45_Q1_994) #1= safe
+table(RECORD_w2$P45_Q1_995)  #1= safe 
+table(RECORD_w2$P45_Q1_996)  #1= not 88
+table(RECORD_w2$P45_Q1_997)   #1= not  477  
+summary(RECORD_w2$P45_Q1_997)
+typeof(RECORD_w2$P45_Q1_997)
+#not an integer, recode as an integer 
+
+env_RECORD_1$env_nbh_nsf_1 <- as.integer(ifelse((RECORD_w2$P45_Q1_994 == '1' | RECORD_w2$P45_Q1_995 == '1'), 1,                                               (ifelse (RECORD_w2$P45_Q1_996 == '1' | RECORD_w2$P45_Q1_997 == '1', 0, NA))))
+table(env_RECORD_1$env_nbh_nsf_1)
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -92,7 +108,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -112,7 +128,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -132,7 +148,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -152,7 +168,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe at night  
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -172,7 +188,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe at night  
   
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -192,11 +208,16 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:   complete
+**Harmonization comment**:  'Always feels safe' and 'mostly feels safe' have been recoded as 'feels safe'. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q12_no_securite)
+summary(RECORD_w1_2$q12_no_securite)
+#not an integer
+#1 and 2 = no not safe,  3 and 4=yes safe 
+env_RECORD_0$env_nbh_sf_0 <-recode(as.integer(RECORD_w1_2$q12_no_securite),'1'=0L,'2'=0L,'3'=1L,'4'=1L)
+table(env_RECORD_0$env_nbh_sf_0)
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -212,11 +233,20 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:   complete
+**Harmonization comment**:   'Always feels safe' and 'mostly feels safe' have been recoded as 'feels safe'.
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w2$P45_Q1_994) #1= safe
+table(RECORD_w2$P45_Q1_995)  #1= safe 
+table(RECORD_w2$P45_Q1_996)  #1= not 88
+table(RECORD_w2$P45_Q1_997)   #1= not  477  
+summary(RECORD_w2$P45_Q1_997)
+typeof(RECORD_w2$P45_Q1_997)
+#not an integer, recode as an integer 
+
+env_RECORD_1$env_nbh_sf_1 <- as.integer(ifelse((RECORD_w2$P45_Q1_994 == '1' | RECORD_w2$P45_Q1_995 == '1'), 1,                                               (ifelse (RECORD_w2$P45_Q1_996 == '1' | RECORD_w2$P45_Q1_997 == '1', 0, NA))))
+table(env_RECORD_1$env_nbh_sf_1)
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -232,7 +262,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -252,7 +282,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -272,7 +302,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -292,7 +322,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -312,7 +342,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -334,11 +364,16 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People can be trusted    
         
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:   complete
+**Harmonization comment**:   RECORD asks if respondent trusts neighbours with belongings. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q6_no_confianc)
+summary(RECORD_w1_2$q6_no_confianc)
+#not an integer
+#1 and 2 = agree, trust ,  3 and 4=disagree
+env_RECORD_0$env_nbh_trust_0 <-recode(as.integer(RECORD_w1_2$q6_no_confianc),'1'=1L,'2'=1L,'3'=0L,'4'=0L)
+table(env_RECORD_0$env_nbh_trust_0)
 
 ```
 ### **Variable label**:  Neighbourhood  trust  
@@ -354,8 +389,8 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People can be trusted    
        
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:   impossible 
+**Harmonization comment**:  RECORD asks if people in the neighbourhood distrust one another, as opposed to if respondent 
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -374,7 +409,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People can be trusted    
     
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -394,7 +429,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People can be trusted    
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -414,7 +449,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People can be trusted    
       
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -437,11 +472,16 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Neighbours would help me   
        
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:   complete
+**Harmonization comment**:  RECORD asks if neighbours would help with chores if sick. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q16_no_aidetach)
+summary(RECORD_w1_2$q16_no_aidetach)
+#not an integer
+#1 and 2 = yes help, trust ,  3 and 4=no
+env_RECORD_0$env_nbs_help_0 <-recode(as.integer(RECORD_w1_2$q16_no_aidetach),'1'=1L,'2'=1L,'3'=0L,'4'=0L)
+table(env_RECORD_0$env_nbs_help_0)
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -457,7 +497,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Neighbours would help me    
        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -477,7 +517,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Neighbours would help me    
          
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -497,7 +537,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Neighbours would help me    
         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -517,7 +557,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Neighbours would help me   
     
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -525,7 +565,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 
 ```
 
-### **Variable label**: Neighbours cooperate  
+### **Variable label**: Cooperating neighbours  
 **Variable name**: env_nbs_coop_0   
 **Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.  
 **Value type**: integer  
@@ -538,11 +578,18 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People willing to help each other   
        
 
-**Harmonization status**:  
+**Harmonization status**:   complete 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_1$Q6_b_1)  #Neighbours definitely help each other
+table(RECORD_w1_1$Q6_b_2)  #Neighbours help each other
+table(RECORD_w1_1$Q6_b_3)  # not
+table(RECORD_w1_1$Q6_b_4)  # not 
+
+env_RECORD_0$env_nbs_coop_0  <- as.integer(ifelse((RECORD_w1_1$Q6_b_1 == '1' | RECORD_w1_1$Q6_b_2 == '1'), 1,                                               (ifelse (RECORD_w1_1$Q6_b_3 == '1' | RECORD_w1_1$Q6_b_4 == '1', 0, NA))))
+
+table(env_RECORD_0$env_nbs_coop_0)
 
 ```
 
@@ -559,7 +606,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People willing to help each other   
              
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -580,7 +627,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People willing to help each other   
              
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -600,7 +647,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People willing to help each other   
           
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -620,7 +667,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | People willing to help each other   
             
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -643,7 +690,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -665,7 +712,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -687,7 +734,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -709,7 +756,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -731,7 +778,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -753,29 +800,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
-```
-### **Variable label**: Neighbours get along       
-**Variable name**: env_nbs_along_1     
-**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.  
-**Value type**: integer      
-**Variable unit**: N/A       
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Strongly agree that people get along  
-2 | Agree that people get along  
-3 | Neither agree or disagree that people get along   
-4 | Disagree that people get along    
-5 | Strongly disagree that people get along        
-
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -797,7 +822,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people get along     
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -819,7 +844,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -841,7 +866,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -862,11 +887,16 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 3 | People are not really friendly  
 4 | People are not friendly    
 
-**Harmonization status**:  
+**Harmonization status**:   complete 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q11_no_aimables)
+summary(RECORD_w1_2$q11_no_aimables)
+#not an integer
+#1 strongly agree polite neighbours etc.....
+env_RECORD_0$env_nbs_friendly_0 <-recode(as.integer(RECORD_w1_2$q11_no_aimables),'1'=1L,'2'=2L,'3'=3L,'4'=4L)
+table(env_RECORD_0$env_nbs_friendly_0)
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -882,7 +912,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -902,7 +932,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -922,7 +952,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Feels part of area     
      
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -942,7 +972,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Feels part of area     
      
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -962,7 +992,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -984,7 +1014,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1006,7 +1036,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1028,7 +1058,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that they feel lonely 
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1050,7 +1080,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that they feel lonely   
 5 | Strongly disagree that they feel lonely        
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1072,7 +1102,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1093,13 +1123,110 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**:  
+**Harmonization status**:   complete 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+table(RECORD_w1_2$q11_no_habsoude)
+summary(RECORD_w1_2$q11_no_habsoude)
+#not an integer
+#1 and 2 = agree, solidarity ,  3 and 4=disagree
+env_RECORD_0$env_nbh_comm_0 <-recode(as.integer(RECORD_w1_2$q11_no_habsoude),'1'=1L,'2'=2L,'3'=3L,'4'=4L)
+table(env_RECORD_0$env_nbh_comm_0)
+
+``` 
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_1      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   complete 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+table(RECORD_w2$P48_Q2_1060) #1= Inhabitants definitely live apart in neighbourhood
+table(RECORD_w2$P48_Q2_1061)
+table(RECORD_w2$P48_Q2_1062)
+table(RECORD_w2$P48_Q2_1063) #4 Inhabitants don't live apart in neighbourhood at all
+
+env_RECORD_1$env_nbh_comm_1  <- as.integer(ifelse(RECORD_w2$P48_Q2_1060 == '1', 4,                                                                                                                      (ifelse (RECORD_w2$P48_Q2_1061 == '1', 3,
+                                                         (ifelse (RECORD_w2$P48_Q2_1062 == '1', 2,
+                                                                 (ifelse (RECORD_w2$P48_Q2_1063 == '1', 1, NA))))))))
+table(env_RECORD_1$env_nbh_comm_1)
+
+``` 
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_2      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
 
-``` 
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_3      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_4      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Neighbourhood aesthetics subdomain
 
 ### **Variable label**: Neighbourhood cleanliness   
@@ -1116,11 +1243,14 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  
+**Harmonization status**:   complete 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q10_no_pbordure)
+#1 and 2 = yes, garbage 
+env_RECORD_0$env_nbh_clean_0 <-recode(as.integer(RECORD_w1_2$q10_no_pbordure),'1'=1L,'2'=2L,'3'=3L,'4'=4L)
+table(env_RECORD_0$env_nbh_clean_0)
 
 ```
 ### **Variable label**: Neighbourhood cleanliness   
@@ -1137,11 +1267,19 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  
+**Harmonization status**:   complete 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w2$P43_Q5_960) #1= rubbish 
+table(RECORD_w2$P43_Q5_961)  #1= rubbish 
+table(RECORD_w2$P43_Q5_962)  #1= not really 1162
+table(RECORD_w2$P43_Q5_963)   #1= not  1726 
+
+env_RECORD_1$env_nbh_clean_1 <- as.integer(ifelse(RECORD_w2$P43_Q5_960 == '1', 1,                                                                            (ifelse (RECORD_w2$P43_Q5_961 == '1', 2,
+                                                         (ifelse (RECORD_w2$P43_Q5_962 == '1', 3,
+                                                                 (ifelse (RECORD_w2$P43_Q5_963 == '1', 4, NA))))))))
+table(env_RECORD_1$env_nbh_clean_1)
 
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
@@ -1157,11 +1295,14 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Area clean             
 
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:   complete 
+**Harmonization comment**:   'No, not really' rubbish was coded as area clean. 'Yes, a bit of russbish' was recoded as 'area not clean'.
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q10_no_pbordure)
+#1 and 2 = yes, garbage 
+env_RECORD_0$env_nbh_clean_dich_0<-recode(as.integer(RECORD_w1_2$q10_no_pbordure),'1'=0L,'2'=0L,'3'=1L,'4'=1L)
+table(env_RECORD_0$env_nbh_clean_dich_0)
 
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
@@ -1177,11 +1318,33 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Area clean             
  
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:   complete 
+**Harmonization comment**:  'No, not really' rubbish was coded as area clean. 'Yes, a bit of russbish' was recoded as 'area not clean'.
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w2$P43_Q5_960) #1= rubbish 462
+RECORD_w2$P43_Q5_960 <-as.integer(RECORD_w2$P43_Q5_960)
+summary(RECORD_w2$P43_Q5_960)
+
+table(RECORD_w2$P43_Q5_961)  #1= rubbish 1162
+RECORD_w2$P43_Q5_961 <-as.integer(RECORD_w2$P43_Q5_961)
+summary(RECORD_w2$P43_Q5_961)
+
+table(RECORD_w2$P43_Q5_962)  #1= not really 3107
+RECORD_w2$P43_Q5_962 <-as.integer(RECORD_w2$P43_Q5_962)
+summary(RECORD_w2$P43_Q5_962)
+
+table(RECORD_w2$P43_Q5_963)   #1= not  1726 
+RECORD_w2$P43_Q5_963 <-as.integer(RECORD_w2$P43_Q5_963)
+summary(RECORD_w2$P43_Q5_963)
+
+env_RECORD_1$env_nbh_clean_dich_1 <- as.integer(ifelse((RECORD_w2$P43_Q5_960 == '1' | RECORD_w2$P43_Q5_961 == '1'), 0,                                               (ifelse (RECORD_w2$P43_Q5_962 == '1' | RECORD_w2$P43_Q5_963 == '1', 1, NA))))
+table(env_RECORD_1$env_nbh_clean_dich_1)
+summary(env_RECORD_1$env_nbh_clean_dich_1)
+#not clean should be 1162+462=1624 , clean should be 1726+3107=4833, check but why is there 1 NA?!!!!
+
+#one person said 0 to all 4 variables, thus I consider this person as if they did not answer these 4 qs, 
+#cannot know what they meant 
 
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
@@ -1197,7 +1360,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | Area clean             
  
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1219,11 +1382,16 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  
+**Harmonization status**:   complete
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q10_no_bruitgen)
+summary(RECORD_w1_2$q10_no_bruitgen)
+#not an integer
+#1 and 2 = yes noise,  3 and 4=no noise 
+env_RECORD_0$env_nbh_noise_0 <-recode(as.integer(RECORD_w1_2$q10_no_bruitgen),'1'=1L,'2'=2L,'3'=3L,'4'=4L)
+table(env_RECORD_0$env_nbh_noise_0)
 
 ```
 ### **Variable label**: Neighbourhood noisiness (4-level)       
@@ -1240,51 +1408,120 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  
+**Harmonization status**:   complete
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w2$P43_Q2_945) #1= excessive noise 
+table(RECORD_w2$P43_Q2_946)  #1= noise 
+table(RECORD_w2$P43_Q2_947)  #1= not really 
+table(RECORD_w2$P43_Q2_948)   #1= not  
+
+env_RECORD_1$env_nbh_noise_1 <- as.integer(ifelse(RECORD_w2$P43_Q2_945 == '1', 1,                                                                                                              (ifelse (RECORD_w2$P43_Q2_946 == '1', 2,
+                                                         (ifelse (RECORD_w2$P43_Q2_947 == '1', 3,
+                                                                 (ifelse (RECORD_w2$P43_Q2_948 == '1', 4, NA))))))))
+table(env_RECORD_1$env_nbh_noise_1)
 
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)       
 **Variable name**:  env_nbh_noise_dich_0    
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.          
+**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.          
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
-
+  
 **Code** | **Category Label**  
 ------------- | -------------  
 0 | Noisy 
 1 | Not noisy         
-       
 
-**Harmonization status**:  
-**Harmonization comment**:   
+
+**Harmonization status**:   complete
+**Harmonization comment**: 
+**R script**:  
+```{r, echo=TRUE}
+table(RECORD_w1_2$q10_no_bruitgen)
+summary(RECORD_w1_2$q10_no_bruitgen)
+#not an integer
+#1 and 2 = yes noise,  3 and 4=no noise 
+env_RECORD_0$env_nbh_noise_dich_0 <-recode(as.integer(RECORD_w1_2$q10_no_bruitgen),'1'=0L,'2'=0L,'3'=1L,'4'=1L)
+table(env_RECORD_0$env_nbh_noise_dich_0)
+
+```
+### **Variable label**: Neighbourhood noisiness (2-level)     
+**Variable name**:  env_nbh_noise_dich_1  
+**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.            
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Noisy  
+1 | Not noisy         
+
+
+**Harmonization status**:   complete
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+table(RECORD_w2$P43_Q2_945) #1= excessive noise 
+table(RECORD_w2$P43_Q2_946)  #1= noise 
+table(RECORD_w2$P43_Q2_947)  #1= not really 
+table(RECORD_w2$P43_Q2_948)   #1= not  
+
+env_RECORD_1$env_nbh_noise_dich_1 <- as.integer(ifelse((RECORD_w2$P43_Q2_945 == '1' | RECORD_w2$P43_Q2_946 == '1'), 0,
+                                                         (ifelse (RECORD_w2$P43_Q2_947 == '1'| RECORD_w2$P43_Q2_948 == '1', 1, NA))))
+
+table(env_RECORD_1$env_nbh_noise_dich_1)
+
+```
+### **Variable label**: Neighbourhood traffic noise        
+**Variable name**:  env_nbh_traf_noise_0    
+**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise         
+
+
+**Harmonization status**:   impossible
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood noisiness (2-level)     
-**Variable name**:  env_nbh_noise_dich_1  
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.            
+### **Variable label**: Neighbourhood traffic noise      
+**Variable name**:  env_nbh_traf_noise_1  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
-
+  
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Noisy  
-1 | Not noisy         
-      
+0 | Traffic noise 
+1 | No traffic noise         
 
-**Harmonization status**:  
-**Harmonization comment**:   
+
+**Harmonization status**:   complete
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w2$P40_Q2_881) #1= Not at all traffic noise neighbourhoo 
+table(RECORD_w2$P40_Q2_882)  #1= 
+table(RECORD_w2$P40_Q2_883)  #1= 
+table(RECORD_w2$P40_Q2_885)   #1= Definitely traffic noise neighbourhood  
+
+env_RECORD_1$env_nbh_traf_noise_1 <- as.integer(ifelse((RECORD_w2$P40_Q2_881 == '1' | RECORD_w2$P40_Q2_882 == '1'), 1,
+                                                         (ifelse (RECORD_w2$P40_Q2_883 == '1'| RECORD_w2$P40_Q2_885 == '1', 0, NA))))
+
+table(env_RECORD_1$env_nbh_traf_noise_1)
 
 ```
 # Crime and vandalism subdomain
@@ -1302,11 +1539,11 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood violence  
@@ -1322,12 +1559,26 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | No violence in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:   complete 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w2$P46_Q5_1028)	# Heard about gunshots fired in neighbourhood
+table(RECORD_w2$P46_Q5_1029)   #not heard P46_Q3_1022
+table(RECORD_w2$P46_Q3_1022) #rape P46_Q3_1022
+table(RECORD_w2$P46_Q3_1023) #have not heard of rape
+table(RECORD_w2$P46_Q6_1030)  # Haven't heard about burglary in neighbourhood
+table(RECORD_w2$P46_Q6_1031)  #Heard about burglary in neighbourhood
+table(RECORD_w2$P44_Q5_987)  #Definitely gangs make law in neighbourhood
+table(RECORD_w2$P44_Q5_988)
+table(RECORD_w2$P44_Q5_989)
+table(RECORD_w2$P44_Q5_990)   # no gang 
 
+
+env_RECORD_1$env_nbh_violence_1  <- as.integer(ifelse((RECORD_w2$P46_Q5_1028 == '1' | RECORD_w2$P46_Q3_1022 == '1' | RECORD_w2$P46_Q6_1031 == '1' | RECORD_w2$P44_Q5_987 == '1'| RECORD_w2$P44_Q5_988 == '1'), 0,                                               
+                                                      (ifelse (RECORD_w2$P46_Q5_1029 == '1' | RECORD_w2$P46_Q3_1023 == '1'| RECORD_w2$P46_Q6_1030 == '1'| RECORD_w2$P44_Q5_989 == '1'| RECORD_w2$P44_Q5_990 == '1', 1, NA))))
+
+table(env_RECORD_1$env_nbh_violence_1)
 ```
 ### **Variable label**: Neighbourhood violence  
 **Variable name**: env_nbh_violence_2     
@@ -1342,7 +1593,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1362,7 +1613,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:   complete
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1382,7 +1633,7 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1402,11 +1653,11 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 1 | No antisocial and aggressive behavior in neighbourhood
     
 
-**Harmonization status**:  
+**Harmonization status**:   
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
@@ -1418,15 +1669,20 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | No graffiti and/or vandalism 
-1 | Graffiti and/or vandalism  
+0 | No graffiti and no vandalism 
+1 | Graffiti and/or vandalism   
              
 
-**Harmonization status**:  
+**Harmonization status**:   complete 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w1_2$q10_no_vandalis)
+summary(RECORD_w1_2$q10_no_vandalis)
+#not an integer
+#1 and 2 = yes vandalism and graffiti,  3 and 4=none
+env_RECORD_0$env_nbh_gv_0 <-recode(as.integer(RECORD_w1_2$q10_no_vandalis),'1'=1L,'2'=1L,'3'=0L,'4'=0L)
+table(env_RECORD_0$env_nbh_gv_0)
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
@@ -1438,15 +1694,22 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | No graffiti and/or vandalism 
-1 | Graffiti and/or vandalism  
+0 | No graffiti and no vandalism 
+1 | Graffiti and/or vandalism   
              
 
-**Harmonization status**:  
+**Harmonization status**:   complete 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(RECORD_w2$P44_Q2_972) #1= graf and vand
+table(RECORD_w2$P44_Q2_973)  #1= graf and vand 
+table(RECORD_w2$P44_Q2_974)  #1= not
+table(RECORD_w2$P44_Q2_975)   #1= not    
+ 
+env_RECORD_1$env_nbh_gv_1 <- as.integer(ifelse((RECORD_w2$P44_Q2_972 == '1' | RECORD_w2$P44_Q2_973 == '1'), 1,                                               (ifelse (RECORD_w2$P44_Q2_974 == '1' | RECORD_w2$P44_Q2_975 == '1', 0, NA))))
+table(env_RECORD_1$env_nbh_gv_1)
+summary(env_RECORD_1$env_nbh_gv_1)
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism    
@@ -1458,11 +1721,75 @@ env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Graffiti and/or vandalism 
-1 | No graffiti and/or vandalism   
+0 | No graffiti and no vandalism 
+1 | Graffiti and/or vandalism    
            
 
-**Harmonization status**:  
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_0     
+**Variable description**:  Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.  
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_1     
+**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.         
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:   complete
+**Harmonization comment**:   RECORD asks if respondent has heard or not about vehicle theft. 
+**R script**:  
+```{r, echo=TRUE}
+table(RECORD_w2$P46_Q1_1016) # 1=heard about theft 
+table(RECORD_w2$P46_Q1_1017) #2 1= not heard
+env_RECORD_1$env_nbh_theft_1 <- as.integer(ifelse((RECORD_w2$P46_Q1_1016 == '1'), 0,                                              
+                                                  (ifelse (RECORD_w2$P46_Q1_1017 == '1', 1, NA))))
+table(env_RECORD_1$env_nbh_theft_1)
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_2     
+**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.        
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
