@@ -15,19 +15,19 @@ erasmus_opal <- opal.login()
 ## When you are done with your work, logout of Opal server
 opal.logout(erasmus_opal) 
 # Login to Opal server and assign the content of the GLOBE table(s) to your RStudio environment
-opal.assign.table.tibble(erasmus_opal, 'GLOBE1991','GLOBE.GLOBE1991', variables = list()) 
+opal.assign.table.tibble(erasmus_opal, 'GLOBE1991','GLOBE.GLOBE1991', variables = list('v161','v160')) 
 GLOBE1991 <- opal.execute(erasmus_opal,'GLOBE1991')
 
-opal.assign.table.tibble(erasmus_opal, 'GLOBE1997','GLOBE.GLOBE1997', variables =list())
+opal.assign.table.tibble(erasmus_opal, 'GLOBE1997','GLOBE.GLOBE1997', variables =list('v14a','v14b'))
 GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
 
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2004','GLOBE.GLOBE2004', variables = list()) 
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2004','GLOBE.GLOBE2004', variables = list('w069', 'w070','w052','w058','w060','w059','w057','w054','w049','w053','w050','w047','w068','w061','w062')) 
 GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE2004')
 
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2011','GLOBE.GLOBE2011', variables = list()) 
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2011','GLOBE.GLOBE2011', variables = list('v53_d_buur4','v53_c_buur3','v53_a_buur1')) 
 GLOBE2011 <- opal.execute(erasmus_opal,'GLOBE2011')
 
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2014','GLOBE.GLOBE2014', variables = list()) 
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2014','GLOBE.GLOBE2014', variables = list('G14v90_h','G14v90_m','G14v90_j','G14v90_e','G14v90_i','G14v90_f','G14v90_c')) 
 GLOBE2014 <- opal.execute(erasmus_opal,'GLOBE2014')
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -46,7 +46,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4. [Neighbourhood aesthetics subdomain](#vandalism-subdomain)
 5. [Crime and vandalism subdomain](#crime-and-vandalism-subdomain)  
 
-# General neighborhood safety subdomain
+# General neighborhood safety subdomain  
 
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_0   
@@ -60,7 +60,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 0 |   Does not feel safe at night
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -79,7 +79,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -98,12 +98,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  completed
+**Harmonization comment**:   The response 'neither agree nor disagree' is collapsed with the negative response 'agree' (I am sometimes afraid to walk...) into the category 'does not feel safe at night', since a neutral response is often chosen due to an individual's reluctance to answer negatively. 	
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+env_GLOBE_2$env_nbh_nsf_2<-recode(as.integer(GLOBE2004$w069),'1'=0L,'2'=0L,'3'=1L)
+table(GLOBE2004$w069)
+table(env_GLOBE_2$env_nbh_nsf_2)
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_3   
@@ -118,7 +119,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -138,7 +139,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -158,7 +159,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe at night  
  
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -178,7 +179,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe at night  
   
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -198,7 +199,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -218,7 +219,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -238,11 +239,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:    The response 'neither agree nor disagree' is collapsed with the negative response 'agree' (I am sometimes afraid....) into the category 'does not feel safe at night', since a neutral response is often chosen due to an individual's reluctance to answer negatively. 	
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+env_GLOBE_2$env_nbh_sf_2<-recode(as.integer(GLOBE2004$w070),'1'=0L,'2'=0L,'3'=1L)
+table(env_GLOBE_2$env_nbh_sf_2)
+table(GLOBE2004$w070)
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -258,7 +261,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -278,7 +281,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -298,7 +301,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -318,7 +321,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -340,7 +343,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People can be trusted    
         
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -360,7 +363,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People can be trusted    
        
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -380,12 +383,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People can be trusted    
     
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  completed
+**Harmonization comment**:   The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (people...can be trusted) into the category 'people cannot be trusted', since a neutral response is often chosen due to an individual's reluctance to answer negatively.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+env_GLOBE_2$env_nbh_trust_2<-recode(as.integer(GLOBE2004$w052),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L )
+table(env_GLOBE_2$env_nbh_trust_2)
+table(GLOBE2004$w052)
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_3     
@@ -400,7 +404,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People can be trusted    
    
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -409,7 +413,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_4     
-**Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
+**Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.      
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -420,12 +424,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People can be trusted    
       
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  completed
+**Harmonization comment**:   The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (people...can be trusted) into the category 'people cannot be trusted', since a neutral response is often chosen due to an individual's reluctance to answer negatively. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+env_GLOBE_4$env_nbh_trust_4<-recode(as.integer(GLOBE2014$G14v90_h),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L )
+table(env_GLOBE_4$env_nbh_trust_4)
+table(GLOBE2014$G14v90_h)
 ```
 
 # Social cohesion subdomain
@@ -443,7 +448,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Neighbours would help me   
        
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -463,7 +468,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Neighbours would help me    
        
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -483,12 +488,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Neighbours would help me    
          
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (my neighbours help...) into the category 'neighbours would not help me', since a neutral response is often chosen due to an individual's reluctance to answer negatively. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+env_GLOBE_2$env_nbs_help_2<-recode(as.integer(GLOBE2004$w057),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L )
+table(env_GLOBE_2$env_nbs_help_2)
+table(GLOBE2004$w057)
 ```
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_3    
@@ -503,7 +509,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Neighbours would help me    
         
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -523,15 +529,18 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Neighbours would help me   
     
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:    The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (my neighbours help...) into the category 'neighbours would not help me', since a neutral response is often chosen due to an individual's reluctance to answer negatively. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+env_GLOBE_4$env_nbs_help_4<-recode(as.integer(GLOBE2014$G14v90_m),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L )
+table(env_GLOBE_4$env_nbs_help_4)
+table(GLOBE2014$G14v90_m)
+
 
 ```
 
-### **Variable label**: Neighbours cooperate  
+### **Variable label**: Cooperating neighbours   
 **Variable name**: env_nbs_coop_0   
 **Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.  
 **Value type**: integer  
@@ -544,7 +553,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People willing to help each other   
        
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -565,7 +574,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People willing to help each other   
              
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -586,11 +595,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People willing to help each other   
              
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:  The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (people...help each other) into the category 'people not willing to help each other', since a neutral response is often chosen due to an individual's reluctance to answer negatively. 	 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+env_GLOBE_2$env_nbs_coop_2<-recode(as.integer(GLOBE2004$w054),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L )
+table(env_GLOBE_2$env_nbs_coop_2)
+table(GLOBE2004$w054)
 
 ```
 ### **Variable label**: Cooperating neighbours      
@@ -606,12 +617,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People willing to help each other   
           
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**: The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (people...help each other) into the category 'people not willing to help each other', since a neutral response is often chosen due to an individual's reluctance to answer negatively.   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2011$v53_d_buur4)
+env_GLOBE_3$env_nbs_coop_3<-recode(as.integer(GLOBE2011$v53_d_buur4),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L)
+table(env_GLOBE_3$env_nbs_coop_3)
 ```  
 ### **Variable label**: Cooperating neighbours      
 **Variable name**: env_nbs_coop_4  
@@ -626,11 +638,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | People willing to help each other   
             
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:  The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (people...help each other) into the category 'people not willing to help each other', since a neutral response is often chosen due to an individual's reluctance to answer negatively.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2014$G14v90_j)
+env_GLOBE_4$env_nbs_coop_4<-recode(as.integer(GLOBE2014$G14v90_j),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L)
+table(env_GLOBE_4$env_nbs_coop_4)
 
 ```  
 
@@ -649,7 +663,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -671,7 +685,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -693,11 +707,14 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   no transformation needed since categories match DataSchema categories 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE2004$w049)
+env_GLOBE_2$env_nbh_values_2<-recode(as.integer(GLOBE2004$w049),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+table(env_GLOBE_2$env_nbh_values_2)
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -715,7 +732,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -737,12 +754,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   no transformation needed since categories match DataSchema categories 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2014$G14v90_e)
+env_GLOBE_4$env_nbh_values_4<-recode(as.integer(GLOBE2014$G14v90_e),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+table(env_GLOBE_4$env_nbh_values_4)
 ```  
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_0   
@@ -759,7 +777,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -781,7 +799,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -803,12 +821,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people get along     
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   no transformation needed since categories match DataSchema categories 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2004$w053)
+env_GLOBE_2$env_nbs_along_2<-recode(as.integer(GLOBE2004$w053),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+table(env_GLOBE_2$env_nbs_along_2)
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_3   
@@ -825,12 +844,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   no transformation needed since categories match DataSchema categories 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2011$v53_c_buur3)
+env_GLOBE_3$env_nbs_along_3<-recode(as.integer(GLOBE2011$v53_c_buur3),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+table(env_GLOBE_3$env_nbs_along_3)
 ```
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_4   
@@ -847,12 +867,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:  no transformation needed since categories match DataSchema categories  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2014$G14v90_i)
+env_GLOBE_4$env_nbs_along_4<-recode(as.integer(GLOBE2014$G14v90_i),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+table(env_GLOBE_4$env_nbs_along_4)
 ```
 ### **Variable label**: Friendly neighbours       
 **Variable name**: env_nbs_friendly_0     
@@ -868,7 +889,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 3 | People are not really friendly  
 4 | People are not friendly    
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -888,7 +909,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -908,7 +929,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -928,12 +949,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Feels part of area     
      
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (I feel at home in neighbourhood) into the category 'does not feel part of area', since a neutral response is often chosen due to an individual's reluctance to answer negatively. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2004$w050)
+env_GLOBE_2$env_nbh_belong_2<-recode(as.integer(GLOBE2004$w050),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L)
+table(env_GLOBE_2$env_nbh_belong_2)
 ```
 ### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_3        
@@ -948,7 +970,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Feels part of area     
      
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -968,12 +990,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   The response 'neither agree nor disagree' is collapsed with the negative responses 'disagree' and 'strongly disagree' (I feel at home in neighbourhood) into the category 'does not feel part of area', since a neutral response is often chosen due to an individual's reluctance to answer negatively.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2014$G14v90_f)
+env_GLOBE_4$env_nbh_belong_4<-recode(as.integer(GLOBE2014$G14v90_f),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L)
+table(env_GLOBE_4$env_nbh_belong_4)
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_0      
@@ -990,7 +1013,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1012,7 +1035,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1034,12 +1057,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that they feel lonely 
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:  no transformation needed since categories match DataSchema categories  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2004$w047)
+env_GLOBE_2$env_nbh_lone_2<-recode(as.integer(GLOBE2004$w047),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+table(env_GLOBE_2$env_nbh_lone_2)
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_3      
@@ -1056,12 +1080,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that they feel lonely   
 5 | Strongly disagree that they feel lonely        
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**: no transformation needed since categories match DataSchema categories   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2011$v53_a_buur1)
+env_GLOBE_3$env_nbh_lone_3<-recode(as.integer(GLOBE2011$v53_a_buur1),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+table(env_GLOBE_3$env_nbh_lone_3)
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_4      
@@ -1078,12 +1103,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   no transformation needed since categories match DataSchema categories 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2014$G14v90_c)
+env_GLOBE_4$env_nbh_lone_4<-recode(as.integer(GLOBE2014$G14v90_c),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+table(env_GLOBE_4$env_nbh_lone_4)
 ```  
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_0      
@@ -1099,13 +1125,100 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
 
 ``` 
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_1      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_2      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   complete 
+**Harmonization comment**:   "neither agree nor disagree" recoded as "a little neighbourhood solidarity"
+**R script**:  
+```{r, echo=TRUE}
+table(GLOBE2004$w053) # 1= Strongly agree that people get along 
+env_GLOBE_2$env_nbh_comm_2<-recode(as.integer(GLOBE2004$w053),'1'=1L,'2'=2L,'3'=3L,'4'=3L,'5'=4L)
+table(env_GLOBE_2$env_nbh_comm_2)
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_3      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_4      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   complete 
+**Harmonization comment**:   "neither agree nor disagree" recoded as "a little neighbourhood solidarity"  
+**R script**:  
+```{r, echo=TRUE}
+table(GLOBE2014$G14v90_f)
+env_GLOBE_4$env_nbh_comm_4<-recode(as.integer(GLOBE2014$G14v90_f),'1'=1L,'2'=2L,'3'=3L,'4'=3L,'5'=4L)
+table(env_GLOBE_4$env_nbh_comm_4)
+```
 # Neighbourhood aesthetics subdomain
 
 ### **Variable label**: Neighbourhood cleanliness   
@@ -1122,7 +1235,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1143,7 +1256,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1163,7 +1276,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Area clean             
 
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1183,7 +1296,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Area clean             
  
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1203,12 +1316,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Area clean             
  
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete 
+**Harmonization comment**:   category 2, 'sometimes' (how often does litter occur in your neighbourhood) is recoded as area not clean for the DataSchema 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2004$w058)
+env_GLOBE_2$env_nbh_clean_dich_2<-recode(as.integer(GLOBE2004$w058),'1'=1L,'2'=1L,'3'=0L)
+table(env_GLOBE_2$env_nbh_clean_dich_2)
 ```
 
 ### **Variable label**: Neighbourhood noisiness (4-level)       
@@ -1225,7 +1339,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1246,7 +1360,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1255,7 +1369,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)       
 **Variable name**:  env_nbh_noise_dich_0    
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.          
+**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.          
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1266,16 +1380,17 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Not noisy         
        
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**: no transformation needed since categories match those of DataSchema
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE1991$v160)
+env_GLOBE_0$env_nbh_noise_dich_0<-recode(as.integer(GLOBE1991$v160),'1'=0L,'2'=1L)
+table(env_GLOBE_0$env_nbh_noise_dich_0)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
 **Variable name**:  env_nbh_noise_dich_1  
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.            
+**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.            
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1286,12 +1401,55 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | Not noisy         
       
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:  no transformation needed since categories match those of DataSchema
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(GLOBE1997$v14a)
+env_GLOBE_1$env_nbh_noise_dich_1<-recode(as.integer(GLOBE1997$v14a),'1'=0L,'2'=1L)
+table(env_GLOBE_1$env_nbh_noise_dich_1)
+```
+### **Variable label**: Neighbourhood traffic noise        
+**Variable name**:  env_nbh_traf_noise_0    
+**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
 
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise          
+       
+
+**Harmonization status**:  complete
+**Harmonization comment**: no transformation needed since categories match those of DataSchema
+**R script**:  
+```{r, echo=TRUE}
+table(GLOBE1991$v161)
+env_GLOBE_0$env_nbh_traf_noise_0<-recode(as.integer(GLOBE1991$v161),'1'=0L,'2'=1L)
+table(env_GLOBE_0$env_nbh_traf_noise_0)
+```
+### **Variable label**: Neighbourhood traffic noise      
+**Variable name**:  env_nbh_traf_noise_1  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise         
+      
+
+**Harmonization status**:  complete
+**Harmonization comment**:  no transformation needed since categories match those of DataSchema
+**R script**:  
+```{r, echo=TRUE}
+table(GLOBE1997$v14b)
+env_GLOBE_1$env_nbh_traf_noise_1<-recode(as.integer(GLOBE1997$v14b),'1'=0L,'2'=1L)
+table(env_GLOBE_1$env_nbh_traf_noise_1)
 ```
 # Crime and vandalism subdomain
 
@@ -1308,7 +1466,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1328,7 +1486,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | No violence in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1348,12 +1506,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   category 2 response 'sometimes' (... crimes of violence occur) is coded as 'violence in the neighbourhood'
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2004$w068)
+env_GLOBE_2$env_nbh_violence_2<-recode(as.integer(GLOBE2004$w068),'1'=0L,'2'=0L,'3'=1L)
+table(env_GLOBE_2$env_nbh_violence_2)
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
 **Variable name**: env_nbs_anti_0  
@@ -1368,7 +1527,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1388,7 +1547,7 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1408,12 +1567,13 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 1 | No antisocial and aggressive behavior in neighbourhood
     
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   category 2 response 'sometimes' (... youth nuisance occurs) is coded as 'antisocial and aggressive behavior in neighbourhood'; GLOBE asks about youth nuisance in particular
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(GLOBE2004$w061)
+env_GLOBE_2$env_nbs_anti_2<-recode(as.integer(GLOBE2004$w061),'1'=0L,'2'=0L,'3'=1L)
+table(env_GLOBE_2$env_nbs_anti_2)
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
 **Variable name**:  env_nbh_gv_0  
@@ -1424,11 +1584,11 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | No graffiti and/or vandalism 
+0 | No graffiti and no vandalism 
 1 | Graffiti and/or vandalism  
              
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1444,11 +1604,11 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | No graffiti and/or vandalism 
-1 | Graffiti and/or vandalism  
+0 | No graffiti and no vandalism 
+1 | Graffiti and no vandalism  
              
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1464,14 +1624,87 @@ env_GLOBE_4 <- data.frame(id= GLOBE2014$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Graffiti and/or vandalism 
-1 | No graffiti and/or vandalism   
+0 | No graffiti and no vandalism 
+1 | Graffiti and/or vandalism  
            
 
-**Harmonization status**:  
+**Harmonization status**:  complete
+**Harmonization comment**:  composite variable from 2 items asking separately about graffiti and vadalism; category 2 response 'sometimes' (... vadalism/ graffiti occurs) is coded 'Graffiti and/or vandalism'. Presence of at least graffitti or vandalism, or both, is coded as 1, thus a NA on one of the variables plus a 1 on the other is coded as a 1. A 0 response on one variable and a NA on the other variable is coded as NA. 
+**R script**:  
+```{r, echo=TRUE}
+table(GLOBE2004$w060)
+GLOBE2004$w060<-recode(as.integer(GLOBE2004$w060),'1'=1L,'2'=1L,'3'=0L)
+table(GLOBE2004$w060)
+table(GLOBE2004$w059)
+GLOBE2004$w059<-recode(as.integer(GLOBE2004$w059),'1'=1L,'2'=1L,'3'=0L)
+table(GLOBE2004$w059)
+
+env_GLOBE_2$env_nbh_gv_2<- ifelse((GLOBE2004$w060 == 0 & GLOBE2004$w059 == 0), 0, 
+      (ifelse (GLOBE2004$w060 == 1 | GLOBE2004$w059 == 1, 1, NA)))
+
+table(env_GLOBE_2$env_nbh_gv_2)
+
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_0     
+**Variable description**:  Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.  
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  impossible 
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_1     
+**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.         
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+     
+
+**Harmonization status**:  impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_2     
+**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.        
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  complete
+**Harmonization comment**:   GLOBE asks about bicycle theft, RECORD asks about vehicle theft. Category 2, 'sometimes' (bicycle theft occurs in the neighbourhood) is coded as there if theft in the neighbourhood 
+**R script**: 
+```{r, echo=TRUE}
+table(GLOBE2004$w062)
+env_GLOBE_2$env_nbs_theft_2<-recode(as.integer(GLOBE2004$w062),'1'=0L,'2'=0L,'3'=1L)
+table(env_GLOBE_2$env_nbs_theft_2)
 
 ```
