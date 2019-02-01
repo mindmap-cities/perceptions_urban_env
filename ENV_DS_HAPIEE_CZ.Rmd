@@ -526,7 +526,7 @@ env_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id)
 
 ```
 
-### **Variable label**: Neighbours cooperate  
+### **Variable label**: Cooperating neighbours   
 **Variable name**: env_nbs_coop_0   
 **Variable description**: Indicator of whether the participant agrees that members of the area where they live (i.e. their community or their neighbourhood) help each other out.  
 **Value type**: integer  
@@ -1100,7 +1100,91 @@ env_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id)
 ```{r, echo=TRUE}
 #This is where the R-script will be written
 
-``` 
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_1      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_2      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_3      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_4      
+**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
 # Neighbourhood aesthetics subdomain
 
 ### **Variable label**: Neighbourhood cleanliness   
@@ -1250,19 +1334,19 @@ env_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)       
 **Variable name**:  env_nbh_noise_dich_0    
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.          
+**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.          
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
-
+  
 **Code** | **Category Label**  
 ------------- | -------------  
 0 | Noisy 
 1 | Not noisy         
-       
 
-**Harmonization status**:  
-**Harmonization comment**:   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -1270,19 +1354,59 @@ env_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
 **Variable name**:  env_nbh_noise_dich_1  
-**Variable description**:  Respondent’s perception of noise in their neighbourhood.            
+**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.            
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
-
+  
 **Code** | **Category Label**  
 ------------- | -------------  
 0 | Noisy  
 1 | Not noisy         
-      
 
-**Harmonization status**:  
-**Harmonization comment**:   
+
+**Harmonization status**:  impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood traffic noise        
+**Variable name**:  env_nbh_traf_noise_0    
+**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise         
+
+
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Neighbourhood traffic noise      
+**Variable name**:  env_nbh_traf_noise_1  
+**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise         
+
+
+**Harmonization status**:  impossible 
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -1419,8 +1543,8 @@ env_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | No graffiti and/or vandalism 
-1 | Graffiti and/or vandalism  
+0 | No graffiti and no vandalism 
+1 | Graffiti and/or vandalism   
              
 
 **Harmonization status**:  
@@ -1439,8 +1563,8 @@ env_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | No graffiti and/or vandalism 
-1 | Graffiti and/or vandalism  
+0 | No graffiti and no vandalism 
+1 | Graffiti and/or vandalism   
              
 
 **Harmonization status**:  
@@ -1459,11 +1583,71 @@ env_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Graffiti and/or vandalism 
-1 | No graffiti and/or vandalism   
+0 | No graffiti and no vandalism 
+1 | Graffiti and/or vandalism     
            
 
 **Harmonization status**:  
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_0     
+**Variable description**:  Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.  
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_1     
+**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.         
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**: impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_2     
+**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.        
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
