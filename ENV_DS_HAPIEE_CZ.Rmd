@@ -348,7 +348,7 @@ summary(env_HAPIEE_CZ_0$env_nbh_sf_0)
 **Harmonization comment**:  'sometimes trust among people in area of residence' is recoded as 'people cannot be trusted'  
 **R script**:  
 ```{r, echo=TRUE}
-table(HAPIEE_W1$p59d) #1=Always feels safe in area of residence at night 5=never 
+table(HAPIEE_W1$p59d) #1=Always trust among people in area  5=never 
 summary(HAPIEE_W1$p59d)
 env_HAPIEE_CZ_0$env_nbh_trust_0 <- as.integer(ifelse((HAPIEE_W1$p59d == '1' | HAPIEE_W1$p59d == '2'), 1,
                                                          (ifelse (HAPIEE_W1$p59d == '3'|HAPIEE_W1$p59d == '4'| HAPIEE_W1$p59d == '5', 0, NA))))
@@ -1132,7 +1132,7 @@ summary(env_HAPIEE_CZ_0$env_nbs_help_0)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**: impossible  impossible
+**Harmonization status**: impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1153,7 +1153,7 @@ summary(env_HAPIEE_CZ_0$env_nbs_help_0)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**: impossible  impossible
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1174,7 +1174,7 @@ summary(env_HAPIEE_CZ_0$env_nbs_help_0)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**: impossible  impossible
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1195,7 +1195,7 @@ summary(env_HAPIEE_CZ_0$env_nbs_help_0)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**: impossible  impossible
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}

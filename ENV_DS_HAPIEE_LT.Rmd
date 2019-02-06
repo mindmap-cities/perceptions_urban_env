@@ -16,7 +16,7 @@ opal.logout(erasmus_opal)
 # Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
 
 # HAPIEE wave 2 
-opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables=list('country')) 
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables=list('country','p59a_lt','p59b_lt','p59c_lt','p59d_lt')) 
 HAPIEE_W2 <- opal.execute(erasmus_opal,'HAPIEE_W2')
 ```
 ## Select country-specific sample
@@ -49,11 +49,16 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 0 |   Does not feel safe at night
 1 |   Feels safe at night 
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**:  complete
+**Harmonization comment**:   category 3: 'sometimes feels safe at night' is recoded as 'does not feel safe at night' 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(HAPIEE_W2$p59b_lt) #1=Always feels safe in area of residence at night 5=never 8=NA 9=NA
+summary(HAPIEE_W2$p59b_lt)
+env_HAPIEE_LT_0$env_nbh_nsf_0 <- as.integer(ifelse((HAPIEE_W2$p59b_lt == '1' | HAPIEE_W2$p59b_lt == '2'), 1,
+                                                         (ifelse (HAPIEE_W2$p59b_lt == '3'|HAPIEE_W2$p59b_lt == '4'| HAPIEE_W2$p59b_lt == '5', 0, NA))))
+table(env_HAPIEE_LT_0$env_nbh_nsf_0)
+summary(env_HAPIEE_LT_0$env_nbh_nsf_0)
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -68,7 +73,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -87,7 +92,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -107,7 +112,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -127,7 +132,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -147,7 +152,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe at night  
  
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -167,7 +172,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe at night  
   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -187,12 +192,16 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**: complete 
+**Harmonization comment**:  category 3: 'sometimes feels safe' is recoded as 'does not feel safe' 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(HAPIEE_W2$p59a_lt) #1=Always feels safe in area of residence at night 5=never 8=NA 9=NA
+summary(HAPIEE_W2$p59a_lt)
+env_HAPIEE_LT_0$env_nbh_sf_0 <- as.integer(ifelse((HAPIEE_W2$p59a_lt == '1' | HAPIEE_W2$p59a_lt == '2'), 1,
+                                                         (ifelse (HAPIEE_W2$p59a_lt == '3'|HAPIEE_W2$p59a_lt == '4'| HAPIEE_W2$p59a_lt == '5', 0, NA))))
+table(env_HAPIEE_LT_0$env_nbh_sf_0)
+summary(env_HAPIEE_LT_0$env_nbh_sf_0)
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_1   
@@ -207,7 +216,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -227,7 +236,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -247,7 +256,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -267,7 +276,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -287,7 +296,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe 
  
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -307,7 +316,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 |   Feels safe 
   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -329,12 +338,16 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People can be trusted    
         
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**: complete 
+**Harmonization comment**:  'sometimes trust among people in area of residence' is recoded as 'people cannot be trusted'  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+table(HAPIEE_W2$p59d_lt) #1=Always trust among people in area  5=never 
+summary(HAPIEE_W2$p59d_lt)
+env_HAPIEE_LT_0$env_nbh_trust_0 <- as.integer(ifelse((HAPIEE_W2$p59d_lt == '1' | HAPIEE_W2$p59d_lt == '2'), 1,
+                                                         (ifelse (HAPIEE_W2$p59d_lt == '3'|HAPIEE_W2$p59d_lt == '4'| HAPIEE_W2$p59d_lt == '5', 0, NA))))
+table(env_HAPIEE_LT_0$env_nbh_trust_0)
+summary(env_HAPIEE_LT_0$env_nbh_trust_0)
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_1   
@@ -349,7 +362,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People can be trusted    
        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -369,7 +382,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People can be trusted    
     
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -389,7 +402,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People can be trusted    
    
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -409,7 +422,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People can be trusted    
       
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -432,11 +445,16 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Neighbours would help me   
        
 
-**Harmonization status**:  
-**Harmonization comment**:   
+**Harmonization status**: complete 
+**Harmonization comment**:   'sometimes neighbours would help' is recoded as 'neighbours would not help'. Asks for help in gerneral not in case of trouble.
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+table(HAPIEE_W2$p59c_lt) #1=Always neighbours would help  5=never 
+summary(HAPIEE_W2$p59c_lt)
+env_HAPIEE_LT_0$env_nbs_help_0 <- as.integer(ifelse((HAPIEE_W2$p59c_lt == '1' | HAPIEE_W2$p59c_lt == '2'), 1,
+                                                         (ifelse (HAPIEE_W2$p59c_lt == '3'|HAPIEE_W2$p59c_lt == '4'| HAPIEE_W2$p59c_lt == '5', 0, NA))))
+table(env_HAPIEE_LT_0$env_nbs_help_0)
+summary(env_HAPIEE_LT_0$env_nbs_help_0)
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -452,7 +470,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Neighbours would help me    
        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -472,7 +490,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Neighbours would help me    
          
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -492,7 +510,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Neighbours would help me    
         
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -512,7 +530,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Neighbours would help me   
     
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -533,7 +551,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People willing to help each other   
        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -554,7 +572,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People willing to help each other   
              
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -575,7 +593,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People willing to help each other   
              
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -595,7 +613,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People willing to help each other   
           
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -615,7 +633,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | People willing to help each other   
             
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -638,7 +656,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -660,7 +678,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -682,7 +700,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -704,7 +722,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -726,7 +744,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -748,7 +766,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -770,7 +788,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -792,7 +810,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people get along     
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -814,7 +832,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -836,7 +854,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -857,7 +875,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 3 | People are not really friendly  
 4 | People are not friendly    
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -877,7 +895,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -897,7 +915,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -917,7 +935,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Feels part of area     
      
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -937,7 +955,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Feels part of area     
      
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -957,7 +975,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Feels part of area     
    
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -979,7 +997,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1001,7 +1019,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1023,7 +1041,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that they feel lonely 
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1045,7 +1063,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that they feel lonely   
 5 | Strongly disagree that they feel lonely        
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1067,7 +1085,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1088,7 +1106,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1195,7 +1213,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1216,7 +1234,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1236,7 +1254,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Area clean             
 
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1256,7 +1274,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Area clean             
  
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1276,7 +1294,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Area clean             
  
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1298,7 +1316,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1319,7 +1337,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1421,7 +1439,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1441,7 +1459,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | No violence in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1461,7 +1479,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1481,7 +1499,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1501,7 +1519,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1521,7 +1539,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | No antisocial and aggressive behavior in neighbourhood
     
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1541,7 +1559,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Graffiti and/or vandalism   
              
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1561,7 +1579,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Graffiti and/or vandalism  
              
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
@@ -1581,7 +1599,7 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 1 | Graffiti and/or vandalism   
            
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
