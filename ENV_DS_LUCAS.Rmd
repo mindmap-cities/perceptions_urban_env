@@ -1083,8 +1083,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```  
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_0      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
-**Value type**: integer      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
 
@@ -1104,8 +1103,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ``` 
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_1      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
-**Value type**: integer      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
 
@@ -1125,8 +1123,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_2      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
-**Value type**: integer      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).  **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
 
@@ -1146,8 +1143,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_3      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
-**Value type**: integer      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
 
@@ -1167,8 +1163,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_4      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
-**Value type**: integer      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
 
@@ -1188,7 +1183,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 # Neighbourhood aesthetics subdomain
 
-### **Variable label**: Neighbourhood cleanliness   
+### **Variable label**: Neighbourhood cleanliness (4-level)    
 **Variable name**:  env_nbh_clean_0  
 **Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).      
 **Value type**:  integer  
@@ -1209,7 +1204,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood cleanliness   
+### **Variable label**: Neighbourhood cleanliness (4-level)    
 **Variable name**:  env_nbh_clean_1  
 **Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).     
 **Value type**:  integer  
@@ -1230,9 +1225,9 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood cleanliness dichotomized     
+### **Variable label**: Neighbourhood cleanliness (2-level)       
 **Variable name**:  env_nbh_clean_dich_0  
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).     
+**Variable description**: Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood), dichotomized.   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1250,9 +1245,9 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood cleanliness dichotomized     
+### **Variable label**: Neighbourhood cleanliness (2-level)     
 **Variable name**:  env_nbh_clean_dich_1    
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
+**Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood), dichotomized.    
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1270,9 +1265,9 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood cleanliness dichotomized     
+### **Variable label**: Neighbourhood cleanliness (2-level)      
 **Variable name**:  env_nbh_clean_dich_2    
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).    
+**Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood), dichotomized.       
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1293,7 +1288,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 
 ### **Variable label**: Neighbourhood noisiness (4-level)       
 **Variable name**:  env_nbh_noise_0  
-**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  
+**Variable description**:  Indicator of the participant's perception of presence of excessive noise in their neighbourhood.     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1314,7 +1309,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 ### **Variable label**: Neighbourhood noisiness (4-level)       
 **Variable name**:  env_nbh_noise_1  
-**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  
+**Variable description**:  Indicator of the participant's perception of presence of excessive noise in their neighbourhood.     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1335,8 +1330,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)       
 **Variable name**:  env_nbh_noise_dich_0    
-**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.          
-**Value type**:  integer  
+**Variable description**:  Indicator of the participant's perception of presence of excessive noise in of excessive noise in their neighbourhood, dichotomized.   **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
   
@@ -1355,8 +1349,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
 **Variable name**:  env_nbh_noise_dich_1  
-**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.            
-**Value type**:  integer  
+**Variable description**:  Indicator of the participant's perception of presence of excessive noise in of excessive noise in their neighbourhood, dichotomized.   **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
   
@@ -1375,7 +1368,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 ### **Variable label**: Neighbourhood traffic noise        
 **Variable name**:  env_nbh_traf_noise_0    
-**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.  
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1395,7 +1388,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 ### **Variable label**: Neighbourhood traffic noise      
 **Variable name**:  env_nbh_traf_noise_1  
-**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+**Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.           
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  

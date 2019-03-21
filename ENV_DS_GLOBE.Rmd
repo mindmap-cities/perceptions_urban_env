@@ -1113,7 +1113,7 @@ table(env_GLOBE_4$env_nbh_lone_4)
 ```  
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_0      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -1134,7 +1134,7 @@ table(env_GLOBE_4$env_nbh_lone_4)
 ``` 
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_1      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -1155,7 +1155,7 @@ table(env_GLOBE_4$env_nbh_lone_4)
 ```
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_2      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -1167,18 +1167,16 @@ table(env_GLOBE_4$env_nbh_lone_4)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**:   complete 
-**Harmonization comment**:   "neither agree nor disagree" recoded as "a little neighbourhood solidarity"
+**Harmonization status**:   impossible
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-table(GLOBE2004$w053) # 1= Strongly agree that people get along 
-env_GLOBE_2$env_nbh_comm_2<-recode(as.integer(GLOBE2004$w053),'1'=1L,'2'=2L,'3'=3L,'4'=3L,'5'=4L)
-table(env_GLOBE_2$env_nbh_comm_2)
+#This is where the R-script will be written
 
 ```
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_3      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -1199,7 +1197,7 @@ table(env_GLOBE_2$env_nbh_comm_2)
 ```
 ### **Variable label**: Close-knit community        
 **Variable name**: env_nbh_comm_4      
-**Variable description**: Community in which participant lives is close-knit (i.e. neighbourhood solidarity).    
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).
 **Value type**: integer      
 **Variable unit**: N/A       
 **Category coding**:  
@@ -1211,17 +1209,16 @@ table(env_GLOBE_2$env_nbh_comm_2)
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**:   complete 
-**Harmonization comment**:   "neither agree nor disagree" recoded as "a little neighbourhood solidarity"  
+**Harmonization status**:   impossible
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-table(GLOBE2014$G14v90_f)
-env_GLOBE_4$env_nbh_comm_4<-recode(as.integer(GLOBE2014$G14v90_f),'1'=1L,'2'=2L,'3'=3L,'4'=3L,'5'=4L)
-table(env_GLOBE_4$env_nbh_comm_4)
+#This is where the R-script will be written
+
 ```
 # Neighbourhood aesthetics subdomain
 
-### **Variable label**: Neighbourhood cleanliness   
+### **Variable label**: Neighbourhood cleanliness (4-level)   
 **Variable name**:  env_nbh_clean_0  
 **Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).      
 **Value type**:  integer  
@@ -1242,7 +1239,7 @@ table(env_GLOBE_4$env_nbh_comm_4)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood cleanliness   
+### **Variable label**: Neighbourhood cleanliness (4-level)     
 **Variable name**:  env_nbh_clean_1  
 **Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).     
 **Value type**:  integer  
@@ -1263,9 +1260,9 @@ table(env_GLOBE_4$env_nbh_comm_4)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood cleanliness dichotomized     
+### **Variable label**: Neighbourhood cleanliness (2-level)       
 **Variable name**:  env_nbh_clean_dich_0  
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).     
+**Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1283,9 +1280,9 @@ table(env_GLOBE_4$env_nbh_comm_4)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood cleanliness dichotomized     
+### **Variable label**: Neighbourhood cleanliness (2-level)       
 **Variable name**:  env_nbh_clean_dich_1    
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).  
+**Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1303,9 +1300,9 @@ table(env_GLOBE_4$env_nbh_comm_4)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood cleanliness dichotomized     
+### **Variable label**: Neighbourhood cleanliness (2-level)      
 **Variable name**:  env_nbh_clean_dich_2    
-**Variable description**:  Indicator of whether the participant perception of the cleanliness (presence of rubbish) of the area where respondent lives (i.e. their neighbourhood).    
+**Variable description**:  Indicator of the participant's perception of the cleanliness (presence of rubbish) of the area where the respondent lives (i.e. their neighbourhood).     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1327,7 +1324,7 @@ table(env_GLOBE_2$env_nbh_clean_dich_2)
 
 ### **Variable label**: Neighbourhood noisiness (4-level)       
 **Variable name**:  env_nbh_noise_0  
-**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  
+**Variable description**:  Indicator of the participant's perception of presence of excessive noise in their neighbourhood.   
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1348,7 +1345,7 @@ table(env_GLOBE_2$env_nbh_clean_dich_2)
 ```
 ### **Variable label**: Neighbourhood noisiness (4-level)       
 **Variable name**:  env_nbh_noise_1  
-**Variable description**:  Indicator of whether the participant’s perception of presence of excessive noise in their neighbourhood.  
+**Variable description**:  Indicator of the participant's perception of presence of excessive noise in their neighbourhood.     
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1369,7 +1366,7 @@ table(env_GLOBE_2$env_nbh_clean_dich_2)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)       
 **Variable name**:  env_nbh_noise_dich_0    
-**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.          
+**Variable description**:  Indicator of the participant's perception of presence of excessive noise in their neighbourhood, dichotomized.       
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1390,7 +1387,7 @@ table(env_GLOBE_0$env_nbh_noise_dich_0)
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
 **Variable name**:  env_nbh_noise_dich_1  
-**Variable description**:  Respondent’s perception of excessive noise from people in their neighbourhood.            
+**Variable description**:  Indicator of the participant's perception of presence of excessive noise in their neighbourhood, dichotomized.          
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1409,9 +1406,8 @@ table(GLOBE1997$v14a)
 env_GLOBE_1$env_nbh_noise_dich_1<-recode(as.integer(GLOBE1997$v14a),'1'=0L,'2'=1L)
 table(env_GLOBE_1$env_nbh_noise_dich_1)
 ```
-### **Variable label**: Neighbourhood traffic noise        
-**Variable name**:  env_nbh_traf_noise_0    
-**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+### **Variable label**: Neighbourhood traffic noise     **Variable name**:  env_nbh_traf_noise_0    
+**Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.            
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1430,9 +1426,8 @@ table(GLOBE1991$v161)
 env_GLOBE_0$env_nbh_traf_noise_0<-recode(as.integer(GLOBE1991$v161),'1'=0L,'2'=1L)
 table(env_GLOBE_0$env_nbh_traf_noise_0)
 ```
-### **Variable label**: Neighbourhood traffic noise      
-**Variable name**:  env_nbh_traf_noise_1  
-**Variable description**:  Respondent’s perception of noise in their neighbourhood from traffic.          
+### **Variable label**: Neighbourhood traffic noise     **Variable name**:  env_nbh_traf_noise_1  
+**Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.            
 **Value type**:  integer  
 **Variable unit**:  N/A  
 **Category coding**:  
