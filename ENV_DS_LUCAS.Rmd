@@ -323,7 +323,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 ```
 # Social trust subdomain
 
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours   
 **Variable name**:  env_nbh_trust_0   
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.    
 **Value type**:  integer  
@@ -343,7 +343,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_1   
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
@@ -363,7 +363,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_2     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
@@ -383,7 +383,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_3     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.    
 **Value type**:  integer  
@@ -403,7 +403,7 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_4     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
@@ -419,6 +419,47 @@ env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 **Harmonization status**:  impossible  
 **Harmonization comment**:   
 **R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_among_0   
+**Variable description**:  Indicator of whether the participant agrees that there is trust among the people in the area where they live (i.e. in their neighbourhood).    
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | People do not trust one another 
+1 | People trust one another  
+
+
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**: 
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_among_1   
+**Variable description**:  Indicator of whether the participant agrees that there is trust among the people in the area where they live (i.e. in their neighbourhood).    
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | People do not trust one another 
+1 | People trust one another 
+
+
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**: 
 ```{r, echo=TRUE}
 #This is where the R-script will be written
 

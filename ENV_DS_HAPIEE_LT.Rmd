@@ -16,7 +16,7 @@ opal.logout(erasmus_opal)
 # Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
 
 # HAPIEE wave 2 
-opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables=list('country','p59a_lt','p59b_lt','p59c_lt','p59d_lt')) 
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables=list('country','p59a_lt','p59b_lt','p59c_lt','p59d_lt','p59e_lt')) 
 HAPIEE_W2 <- opal.execute(erasmus_opal,'HAPIEE_W2')
 ```
 ## Select country-specific sample
@@ -193,13 +193,16 @@ summary(env_HAPIEE_LT_0$env_nbh_nsf_0)
  
 
 **Harmonization status**: complete 
-**Harmonization comment**:  category 3: 'sometimes feels safe' is recoded as 'does not feel safe' 
+**Harmonization comment**:  Two variables p59a (Do you feel safe in your area of residence during the day?) and p59b(Do you feel safe in your area of residence at night?) are combined. Category 3: 'sometimes feels safe' is recoded as 'does not feel safe' 
 **R script**:  
 ```{r, echo=TRUE}
 table(HAPIEE_W2$p59a_lt) #1=Always feels safe in area of residence at night 5=never 8=NA 9=NA
 summary(HAPIEE_W2$p59a_lt)
-env_HAPIEE_LT_0$env_nbh_sf_0 <- as.integer(ifelse((HAPIEE_W2$p59a_lt == '1' | HAPIEE_W2$p59a_lt == '2'), 1,
-                                                         (ifelse (HAPIEE_W2$p59a_lt == '3'|HAPIEE_W2$p59a_lt == '4'| HAPIEE_W2$p59a_lt == '5', 0, NA))))
+
+env_HAPIEE_LT_0$env_nbh_sf_0 <- as.integer(ifelse((HAPIEE_W2$p59a_lt == '1' | HAPIEE_W2$p59a_lt == '2') & (HAPIEE_W2$p59b_lt == '1'
+                                                   | HAPIEE_W2$p59b_lt == '2'), 1,
+                                                         (ifelse (HAPIEE_W2$p59a_lt == '3'|HAPIEE_W2$p59a_lt == '4'| HAPIEE_W2$p59a_lt == '5' | HAPIEE_W2$p59b_lt == '3'|HAPIEE_W2$p59b_lt == '4'| HAPIEE_W2$p59b_lt == '5' , 0, NA))))
+
 table(env_HAPIEE_LT_0$env_nbh_sf_0)
 summary(env_HAPIEE_LT_0$env_nbh_sf_0)
 ```
@@ -325,7 +328,7 @@ summary(env_HAPIEE_LT_0$env_nbh_sf_0)
 ```
 # Social trust subdomain
 
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_0   
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.    
 **Value type**:  integer  
@@ -339,17 +342,18 @@ summary(env_HAPIEE_LT_0$env_nbh_sf_0)
         
 
 **Harmonization status**: complete 
-**Harmonization comment**:  'sometimes trust among people in area of residence' is recoded as 'people cannot be trusted'  
+**Harmonization comment**:  'sometimes can trust people in area of residence' is recoded as 'people cannot be trusted'  
 **R script**:  
 ```{r, echo=TRUE}
-table(HAPIEE_W2$p59d_lt) #1=Always trust among people in area  5=never 
-summary(HAPIEE_W2$p59d_lt)
-env_HAPIEE_LT_0$env_nbh_trust_0 <- as.integer(ifelse((HAPIEE_W2$p59d_lt == '1' | HAPIEE_W2$p59d_lt == '2'), 1,
-                                                         (ifelse (HAPIEE_W2$p59d_lt == '3'|HAPIEE_W2$p59d_lt == '4'| HAPIEE_W2$p59d_lt == '5', 0, NA))))
+table(HAPIEE_W2$p59e_lt) #1=Always can trust people in area  ... 5=never can trust people 9=NA
+summary(HAPIEE_W2$p59e_lt)
+env_HAPIEE_LT_0$env_nbh_trust_0 <- as.integer(ifelse((HAPIEE_W2$p59e_lt == '1' | HAPIEE_W2$p59e_lt == '2'), 1,
+                                                         (ifelse (HAPIEE_W2$p59e_lt == '3'|HAPIEE_W2$p59e_lt == '4'| HAPIEE_W2$p59e_lt == '5', 0, NA))))
 table(env_HAPIEE_LT_0$env_nbh_trust_0)
 summary(env_HAPIEE_LT_0$env_nbh_trust_0)
+
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_1   
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
@@ -369,7 +373,7 @@ summary(env_HAPIEE_LT_0$env_nbh_trust_0)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_2     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
@@ -389,7 +393,7 @@ summary(env_HAPIEE_LT_0$env_nbh_trust_0)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_3     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.    
 **Value type**:  integer  
@@ -409,7 +413,7 @@ summary(env_HAPIEE_LT_0$env_nbh_trust_0)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_4     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
@@ -425,6 +429,52 @@ summary(env_HAPIEE_LT_0$env_nbh_trust_0)
 **Harmonization status**: impossible  
 **Harmonization comment**:   
 **R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_among_0   
+**Variable description**:  Indicator of whether the participant agrees that there is trust among the people in the area where they live (i.e. in their neighbourhood).    
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | People do not trust one another 
+1 | People trust one another  
+
+
+**Harmonization status**:   complete
+**Harmonization comment**:   'sometimes there is trust among people in area of residence' is recoded as 'people do not trust one another'  
+**R script**: 
+```{r, echo=TRUE}
+table(HAPIEE_W2$p59d_lt) #1=Always trust among people in area  ... 5=never trust among people 9=NA
+summary(HAPIEE_W2$p59d_lt)
+env_HAPIEE_LT_0$env_nbh_trust_among_0 <- as.integer(ifelse((HAPIEE_W2$p59d_lt == '1' | HAPIEE_W2$p59d_lt == '2'), 1,
+                                                         (ifelse (HAPIEE_W2$p59d_lt == '3'|HAPIEE_W2$p59d_lt == '4'| HAPIEE_W2$p59d_lt == '5', 0, NA))))
+table(env_HAPIEE_LT_0$env_nbh_trust_among_0)
+summary(env_HAPIEE_LT_0$env_nbh_trust_amoung_0)
+
+```
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_among_1   
+**Variable description**:  Indicator of whether the participant agrees that there is trust among the people in the area where they live (i.e. in their neighbourhood).    
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | People do not trust one another 
+1 | People trust one another 
+
+
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**: 
 ```{r, echo=TRUE}
 #This is where the R-script will be written
 
@@ -1404,7 +1454,8 @@ summary(env_HAPIEE_LT_0$env_nbs_help_0)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood traffic noise     **Variable name**:  env_nbh_traf_noise_1  
+### **Variable label**: Neighbourhood traffic noise     
+**Variable name**:  env_nbh_traf_noise_1  
 **Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.           
 **Value type**:  integer  
 **Variable unit**:  N/A  

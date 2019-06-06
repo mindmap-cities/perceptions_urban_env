@@ -240,10 +240,14 @@ table(env_GLOBE_2$env_nbh_nsf_2)
   
 
 **Harmonization status**:  complete
-**Harmonization comment**:    The response 'neither agree nor disagree' is collapsed with the negative response 'agree' (I am sometimes afraid....) into the category 'does not feel safe at night', since a neutral response is often chosen due to an individual's reluctance to answer negatively. 	
+**Harmonization comment**:    Using 2 variables to construct this. If the participant answers “disagree” to both (I am sometimes afraid….) day and night , is coded as “feels safe”, otherwise is coded as unsafe or missing.
 **R script**:  
 ```{r, echo=TRUE}
-env_GLOBE_2$env_nbh_sf_2<-recode(as.integer(GLOBE2004$w070),'1'=0L,'2'=0L,'3'=1L)
+#env_GLOBE_2$env_nbh_sf_2<-recode(as.integer(GLOBE2004$w070),'1'=0L,'2'=0L,'3'=1L)
+
+env_GLOBE_2$env_nbh_sf_2<-ifelse(as.integer(GLOBE2004$w070)<=2 | as.integer(GLOBE2004$w069)<=2,0L,
+                                 ifelse(as.integer(GLOBE2004$w070)==3 & as.integer(GLOBE2004$w069)==3,1L,NA))
+
 table(env_GLOBE_2$env_nbh_sf_2)
 table(GLOBE2004$w070)
 
@@ -330,7 +334,7 @@ table(GLOBE2004$w070)
 ```
 # Social trust subdomain
 
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_0   
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.    
 **Value type**:  integer  
@@ -350,7 +354,7 @@ table(GLOBE2004$w070)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_1   
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
@@ -370,7 +374,7 @@ table(GLOBE2004$w070)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_2     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.     
 **Value type**:  integer  
@@ -391,7 +395,7 @@ env_GLOBE_2$env_nbh_trust_2<-recode(as.integer(GLOBE2004$w052),'1'=1L,'2'=1L,'3'
 table(env_GLOBE_2$env_nbh_trust_2)
 table(GLOBE2004$w052)
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_3     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.    
 **Value type**:  integer  
@@ -411,7 +415,7 @@ table(GLOBE2004$w052)
 #This is where the R-script will be written
 
 ```
-### **Variable label**:  Neighbourhood  trust  
+### **Variable label**:  Trust in neighbours    
 **Variable name**:  env_nbh_trust_4     
 **Variable description**:  Indicator of whether the participant agrees that most people in the area where they live (i.e. in their neighbourhood) can be trusted.      
 **Value type**:  integer  
@@ -431,6 +435,47 @@ table(GLOBE2004$w052)
 env_GLOBE_4$env_nbh_trust_4<-recode(as.integer(GLOBE2014$G14v90_h),'1'=1L,'2'=1L,'3'=0L,'4'=0L,'5'=0L )
 table(env_GLOBE_4$env_nbh_trust_4)
 table(GLOBE2014$G14v90_h)
+```
+
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_among_0   
+**Variable description**:  Indicator of whether the participant agrees that there is trust among the people in the area where they live (i.e. in their neighbourhood).    
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | People do not trust one another 
+1 | People trust one another  
+
+
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**: 
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```
+### **Variable label**:  Neighbourhood  trust  
+**Variable name**:  env_nbh_trust_among_1   
+**Variable description**:  Indicator of whether the participant agrees that there is trust among the people in the area where they live (i.e. in their neighbourhood).    
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | People do not trust one another 
+1 | People trust one another 
+
+
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**: 
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
 ```
 
 # Social cohesion subdomain
@@ -845,11 +890,11 @@ table(env_GLOBE_2$env_nbs_along_2)
 5 | Strongly disagree that people get along        
 
 **Harmonization status**:  complete
-**Harmonization comment**:   no transformation needed since categories match DataSchema categories 
+**Harmonization comment**:   Original variable was reverse coded to match DataSchema categories.  
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2011$v53_c_buur3)
-env_GLOBE_3$env_nbs_along_3<-recode(as.integer(GLOBE2011$v53_c_buur3),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+env_GLOBE_3$env_nbs_along_3<-recode(as.integer(GLOBE2011$v53_c_buur3),'5'=1L,'4'=2L,'3'=3L,'2'=4L,'1'=5L)
 table(env_GLOBE_3$env_nbs_along_3)
 ```
 ### **Variable label**: Neighbours get along       
@@ -1081,11 +1126,11 @@ table(env_GLOBE_2$env_nbh_lone_2)
 5 | Strongly disagree that they feel lonely        
 
 **Harmonization status**:  complete
-**Harmonization comment**: no transformation needed since categories match DataSchema categories   
+**Harmonization comment**: Original variable was reverse coded to match DataSchema categories.    
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2011$v53_a_buur1)
-env_GLOBE_3$env_nbh_lone_3<-recode(as.integer(GLOBE2011$v53_a_buur1),'1'=1L,'2'=2L,'3'=3L,'4'=4L,'5'=5L)
+env_GLOBE_3$env_nbh_lone_3<-recode(as.integer(GLOBE2011$v53_a_buur1),'1'=5L,'2'=4L,'3'=3L,'4'=2L,'5'=1L)
 table(env_GLOBE_3$env_nbh_lone_3)
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1314,11 +1359,11 @@ table(env_GLOBE_4$env_nbh_lone_4)
  
 
 **Harmonization status**:  complete 
-**Harmonization comment**:   category 2, 'sometimes' (how often does litter occur in your neighbourhood) is recoded as area not clean for the DataSchema 
+**Harmonization comment**:   category 2, 'sometimes' (how often does litter occur in your neighbourhood) is recoded as area not clean for the DataSchema.  
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2004$w058)
-env_GLOBE_2$env_nbh_clean_dich_2<-recode(as.integer(GLOBE2004$w058),'1'=1L,'2'=1L,'3'=0L)
+env_GLOBE_2$env_nbh_clean_dich_2<-recode(as.integer(GLOBE2004$w058),'1'=0L,'2'=0L,'3'=1L)
 table(env_GLOBE_2$env_nbh_clean_dich_2)
 ```
 
@@ -1378,10 +1423,11 @@ table(env_GLOBE_2$env_nbh_clean_dich_2)
        
 
 **Harmonization status**:  complete
-**Harmonization comment**: no transformation needed since categories match those of DataSchema
+**Harmonization comment**: no transformation needed since categories match those of DataSchema. 
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1991$v160)
+#1 yes nuisance 2  no noise nuisance 
 env_GLOBE_0$env_nbh_noise_dich_0<-recode(as.integer(GLOBE1991$v160),'1'=0L,'2'=1L)
 table(env_GLOBE_0$env_nbh_noise_dich_0)
 ```
