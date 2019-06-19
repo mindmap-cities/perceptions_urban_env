@@ -1423,7 +1423,7 @@ table(env_GLOBE_2$env_nbh_clean_dich_2)
        
 
 **Harmonization status**:  complete
-**Harmonization comment**: no transformation needed since categories match those of DataSchema. 
+**Harmonization comment**: GLOBE variable asks about noise nuissance in particular and is also binary.    
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1991$v160)
@@ -1445,14 +1445,15 @@ table(env_GLOBE_0$env_nbh_noise_dich_0)
       
 
 **Harmonization status**:  complete
-**Harmonization comment**:  no transformation needed since categories match those of DataSchema
+**Harmonization comment**:  GLOBE variable asks about noise nuissance in particular and is also binary.    
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1997$v14a)
 env_GLOBE_1$env_nbh_noise_dich_1<-recode(as.integer(GLOBE1997$v14a),'1'=0L,'2'=1L)
 table(env_GLOBE_1$env_nbh_noise_dich_1)
 ```
-### **Variable label**: Neighbourhood traffic noise     **Variable name**:  env_nbh_traf_noise_0    
+### **Variable label**: Neighbourhood traffic noise     
+**Variable name**:  env_nbh_traf_noise_0    
 **Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.            
 **Value type**:  integer  
 **Variable unit**:  N/A  
@@ -1465,14 +1466,15 @@ table(env_GLOBE_1$env_nbh_noise_dich_1)
        
 
 **Harmonization status**:  complete
-**Harmonization comment**: no transformation needed since categories match those of DataSchema
+**Harmonization comment**: GLOBE variable asks in particular regarding the past 12 months, has respondent dealt with: traffic noise, noise from passing airplanes, street noise, noise from businesses in  neighborhood? and variable is also binary.  
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1991$v161)
 env_GLOBE_0$env_nbh_traf_noise_0<-recode(as.integer(GLOBE1991$v161),'1'=0L,'2'=1L)
 table(env_GLOBE_0$env_nbh_traf_noise_0)
 ```
-### **Variable label**: Neighbourhood traffic noise     **Variable name**:  env_nbh_traf_noise_1  
+### **Variable label**: Neighbourhood traffic noise    
+**Variable name**:  env_nbh_traf_noise_1  
 **Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.            
 **Value type**:  integer  
 **Variable unit**:  N/A  
@@ -1485,8 +1487,8 @@ table(env_GLOBE_0$env_nbh_traf_noise_0)
       
 
 **Harmonization status**:  complete
-**Harmonization comment**:  no transformation needed since categories match those of DataSchema
-**R script**:  
+**Harmonization comment**: GLOBE variable asks in particular regarding the past 12 months, has respondent dealt with: traffic noise, noise from passing airplanes, street noise, noise from businesses in  neighborhood? and variable is also binary.  
+**R script**:   
 ```{r, echo=TRUE}
 table(GLOBE1997$v14b)
 env_GLOBE_1$env_nbh_traf_noise_1<-recode(as.integer(GLOBE1997$v14b),'1'=0L,'2'=1L)
