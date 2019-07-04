@@ -112,7 +112,7 @@ table(env_RECORD_1$env_nbh_nsf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -132,7 +132,7 @@ table(env_RECORD_1$env_nbh_nsf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -152,7 +152,7 @@ table(env_RECORD_1$env_nbh_nsf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -172,7 +172,7 @@ table(env_RECORD_1$env_nbh_nsf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -192,7 +192,7 @@ table(env_RECORD_1$env_nbh_nsf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -266,7 +266,7 @@ table(env_RECORD_1$env_nbh_sf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -286,7 +286,7 @@ table(env_RECORD_1$env_nbh_sf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -306,7 +306,7 @@ table(env_RECORD_1$env_nbh_sf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -326,7 +326,7 @@ table(env_RECORD_1$env_nbh_sf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -346,7 +346,7 @@ table(env_RECORD_1$env_nbh_sf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Social trust subdomain
@@ -393,7 +393,7 @@ table(env_RECORD_0$env_nbh_trust_0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours  
@@ -413,7 +413,7 @@ table(env_RECORD_0$env_nbh_trust_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -433,7 +433,7 @@ table(env_RECORD_0$env_nbh_trust_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours  
@@ -453,7 +453,7 @@ table(env_RECORD_0$env_nbh_trust_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood  trust  
@@ -473,7 +473,7 @@ table(env_RECORD_0$env_nbh_trust_0)
 **Harmonization comment**:   
 **R script**: 
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood  trust  
@@ -552,7 +552,7 @@ table(env_RECORD_0$env_nbs_help_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -572,7 +572,7 @@ table(env_RECORD_0$env_nbs_help_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -592,7 +592,7 @@ table(env_RECORD_0$env_nbs_help_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -612,7 +612,7 @@ table(env_RECORD_0$env_nbs_help_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -694,7 +694,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Cooperating neighbours      
@@ -714,7 +714,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Cooperating neighbours      
@@ -734,7 +734,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 
@@ -757,7 +757,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -779,7 +779,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -801,7 +801,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -823,7 +823,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -845,7 +845,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Neighbours get along       
@@ -867,7 +867,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -889,7 +889,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -911,7 +911,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -933,7 +933,7 @@ table(env_RECORD_1$env_nbs_coop_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Friendly neighbours       
@@ -979,7 +979,7 @@ table(env_RECORD_0$env_nbs_friendly_0)
 **Harmonization comment**:  Caution, the RECORD item used is only asked of a subset of the sample: the respondents that said yes to the RECORD item preceeding this one, which asks respondent if they agree that there is collective efficacy in their neighbourhood. Respondent that did not indicate that they feel that there is collective efficacy in their neighbourhood were not asked if they feel part of the area where they live. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 table(RECORD_w1_2$q8_no_inidcoll) 
 table(RECORD_w1_1$Q8_1_a) 
 summary(RECORD_w1_2$q8_no_inidcoll) # 1 = yes feels part of the community ...4 does not 
@@ -1005,7 +1005,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1025,7 +1025,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1045,7 +1045,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1065,7 +1065,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1087,7 +1087,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1109,7 +1109,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1131,7 +1131,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1153,7 +1153,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1175,7 +1175,7 @@ table(env_RECORD_0$env_nbh_belong_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Close-knit community        
@@ -1251,7 +1251,7 @@ table(env_RECORD_1$env_nbh_comm_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Close-knit community        
@@ -1272,7 +1272,7 @@ table(env_RECORD_1$env_nbh_comm_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Close-knit community        
@@ -1293,7 +1293,7 @@ table(env_RECORD_1$env_nbh_comm_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Neighbourhood aesthetics subdomain
@@ -1433,7 +1433,7 @@ summary(env_RECORD_1$env_nbh_clean_dich_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1562,7 +1562,7 @@ table(env_RECORD_1$env_nbh_noise_dich_1)
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood traffic noise      
@@ -1668,7 +1668,7 @@ table(env_RECORD_1$env_nbh_violence_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
@@ -1799,7 +1799,7 @@ summary(env_RECORD_1$env_nbh_gv_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Theft of transportation method   
@@ -1819,7 +1819,7 @@ summary(env_RECORD_1$env_nbh_gv_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Theft of transportation method   
@@ -1863,6 +1863,6 @@ table(env_RECORD_1$env_nbh_theft_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
