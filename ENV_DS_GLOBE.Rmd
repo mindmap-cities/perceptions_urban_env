@@ -1423,7 +1423,7 @@ table(env_GLOBE_2$env_nbh_clean_dich_2)
        
 
 **Harmonization status**:  complete
-**Harmonization comment**: GLOBE variable asks about noise nuissance in particular and is also binary.    
+**Harmonization comment**: GLOBE variable asks about noise nuisance in particular and is also binary.    
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1991$v160)
@@ -1445,7 +1445,7 @@ table(env_GLOBE_0$env_nbh_noise_dich_0)
       
 
 **Harmonization status**:  complete
-**Harmonization comment**:  GLOBE variable asks about noise nuissance in particular and is also binary.    
+**Harmonization comment**:  GLOBE variable asks about noise nuisance in particular and is also binary.    
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE1997$v14a)
@@ -1672,7 +1672,7 @@ table(env_GLOBE_2$env_nbs_anti_2)
            
 
 **Harmonization status**:  complete
-**Harmonization comment**:  composite variable from 2 items asking separately about graffiti and vadalism; category 2 response 'sometimes' (... vadalism/ graffiti occurs) is coded 'Graffiti and/or vandalism'. Presence of at least graffitti or vandalism, or both, is coded as 1, thus a NA on one of the variables plus a 1 on the other is coded as a 1. A 0 response on one variable and a NA on the other variable is coded as NA. 
+**Harmonization comment**:  composite variable from 2 items asking separately about graffiti and vandalism; category 2 response 'sometimes' (... vandalism/ graffiti occurs) is coded 'Graffiti and/or vandalism'. Presence of at least graffiti or vandalism, or both, is coded as 1, thus a NA on one of the variables plus a 1 on the other is coded as a 1. A 0 response on one variable and a NA on the other variable is coded as NA. 
 **R script**:  
 ```{r, echo=TRUE}
 table(GLOBE2004$w060)
@@ -1691,7 +1691,7 @@ table(env_GLOBE_2$env_nbh_gv_2)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_0     
-**Variable description**:  Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.  
+**Variable description**:  Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.  
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1711,7 +1711,7 @@ table(env_GLOBE_2$env_nbh_gv_2)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_1     
-**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.         
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.         
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1731,7 +1731,7 @@ table(env_GLOBE_2$env_nbh_gv_2)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_2     
-**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.        
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.        
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  

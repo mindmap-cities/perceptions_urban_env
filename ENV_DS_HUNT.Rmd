@@ -1633,7 +1633,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_0     
-**Variable description**:  Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.  
+**Variable description**:  Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.  
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1653,7 +1653,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_1     
-**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.         
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.         
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1673,7 +1673,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_2     
-**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.        
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.        
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  

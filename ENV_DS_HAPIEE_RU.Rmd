@@ -498,7 +498,7 @@ summary(env_HAPIEE_RU_0$env_nbh_trust_among_0)
        
 
 **Harmonization status**: complete 
-**Harmonization comment**:   'sometimes neighbours would help' is recoded as 'neighbours would not help'. Asks for help in gerneral not in case of trouble.
+**Harmonization comment**:   'sometimes neighbours would help' is recoded as 'neighbours would not help'. Asks for help in general not in case of trouble.
 **R script**:  
 ```{r, echo=TRUE}
 table(HAPIEE_W1$p59c) #1=Always neighbours would help  5=never 
@@ -1659,7 +1659,7 @@ summary(env_HAPIEE_RU_0$env_nbs_help_0)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_0     
-**Variable description**:  Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.  
+**Variable description**:  Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.  
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1679,7 +1679,7 @@ summary(env_HAPIEE_RU_0$env_nbs_help_0)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_1     
-**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.         
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.         
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1699,7 +1699,7 @@ summary(env_HAPIEE_RU_0$env_nbs_help_0)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_2     
-**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.        
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.        
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
