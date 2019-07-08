@@ -29,13 +29,13 @@ env_HAPIEE_LT_0 <- data.frame(id = HAPIEE_W2$id)
 ```
 # Table of Contents
 
-1. [General neighborhood safety subdomain](#general-neighborhood-safety-subdomain)
+1. [General neighbourhood safety subdomain](#general-neighbourhood-safety-subdomain)
 2. [Social trust subdomain](#social-trust-subdomain)
 3. [Social cohesion subdomain](#social-cohesion-subdomain)  
 4. [Neighbourhood aesthetics subdomain](#vandalism-subdomain)
 5. [Crime and vandalism subdomain](#crime-and-vandalism-subdomain)  
 
-# General neighborhood safety subdomain
+# General neighbourhood safety subdomain
 
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_0   
@@ -484,7 +484,7 @@ summary(env_HAPIEE_LT_0$env_nbh_trust_amoung_0)
 
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_0  
-**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed, in case of emergency/trouble.  
+**Variable description**: Indicator of whether the participant agrees that neighbours would help them if needed, in case of emergency/trouble.  
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -509,7 +509,7 @@ summary(env_HAPIEE_LT_0$env_nbs_help_0)
 ```
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_1  
-**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
+**Variable description**: Indicator of whether the participant agrees that neighbours would help them if needed,  in case of emergency/trouble.  
 **Value type**: integer   
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -529,7 +529,7 @@ summary(env_HAPIEE_LT_0$env_nbs_help_0)
 ```
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_2  
-**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
+**Variable description**: Indicator of whether the participant agrees that neighbours would help them if needed,  in case of emergency/trouble.  
 **Value type**: integer   
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -549,7 +549,7 @@ summary(env_HAPIEE_LT_0$env_nbs_help_0)
 ```
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_3    
-**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
+**Variable description**: Indicator of whether the participant agrees that neighbours would help them if needed,  in case of emergency/trouble.  
 **Value type**: integer   
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -569,7 +569,7 @@ summary(env_HAPIEE_LT_0$env_nbs_help_0)
 ```
 ### **Variable label**: Helpful neighbours  
 **Variable name**: env_nbs_help_4  
-**Variable description**: Indicator of whether the participant agrees that neighbors would help them if needed,  in case of emergency/trouble.  
+**Variable description**: Indicator of whether the participant agrees that neighbours would help them if needed,  in case of emergency/trouble.  
 **Value type**: integer   
 **Variable unit**:  N/A  
 **Category coding**:  
