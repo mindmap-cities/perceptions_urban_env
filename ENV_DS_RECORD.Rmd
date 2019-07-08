@@ -661,7 +661,7 @@ table(env_RECORD_0$env_nbs_coop_0)
              
 
 **Harmonization status**:   complete 
-**Harmonization comment**:  The RECORD item used asks "Do residents of your nrighbourhood work together to solve problems in the neighborhood?" and therefore differs slightly from the items used to develop env_nbs_coop_0 (which ask if neighbours help or support each other.)    
+**Harmonization comment**:  The RECORD item used asks "Do residents of your neighborhood work together to solve problems in the neighborhood?" and therefore differs slightly from the items used to develop env_nbs_coop_0 (which ask if neighbours help or support each other.)    
 **R script**:  
 ```{r, echo=TRUE}
 table(RECORD_w2$P47_Q3_1049)  #1 =  neighbours definitely work together to solve problems 
@@ -976,7 +976,7 @@ table(env_RECORD_0$env_nbs_friendly_0)
    
 
 **Harmonization status**:   complete 
-**Harmonization comment**:  Caution, the RECORD item used is only asked of a subset of the sample: the respondents that said yes to the RECORD item preceeding this one, which asks respondent if they agree that there is collective efficacy in their neighbourhood. Respondent that did not indicate that they feel that there is collective efficacy in their neighbourhood were not asked if they feel part of the area where they live. 
+**Harmonization comment**:  Caution, the RECORD item used is only asked of a subset of the sample: the respondents that said yes to the RECORD item preceding this one, which asks respondent if they agree that there is collective efficacy in their neighbourhood. Respondent that did not indicate that they feel that there is collective efficacy in their neighbourhood were not asked if they feel part of the area where they live. 
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1365,7 +1365,7 @@ table(env_RECORD_1$env_nbh_clean_1)
 
 
 **Harmonization status**:   complete 
-**Harmonization comment**:   'No, not really' rubbish was coded as area clean. 'Yes, a bit of russbish' was recoded as 'area not clean'.
+**Harmonization comment**:   'No, not really' rubbish was coded as area clean. 'Yes, a bit of rubbish' was recoded as 'area not clean'.
 **R script**:  
 ```{r, echo=TRUE}
 table(RECORD_w1_2$q10_no_pbordure)
@@ -1388,7 +1388,7 @@ table(env_RECORD_0$env_nbh_clean_dich_0)
  
 
 **Harmonization status**:   complete 
-**Harmonization comment**:  'No, not really' rubbish was coded as area clean. 'Yes, a bit of russbish' was recoded as 'area not clean'.
+**Harmonization comment**:  'No, not really' rubbish was coded as area clean. 'Yes, a bit of rubbish' was recoded as 'area not clean'.
 **R script**:  
 ```{r, echo=TRUE}
 table(RECORD_w2$P43_Q5_960) #1= rubbish 462
@@ -1804,7 +1804,7 @@ summary(env_RECORD_1$env_nbh_gv_1)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_0     
-**Variable description**:  Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.  
+**Variable description**:  Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.  
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1824,7 +1824,7 @@ summary(env_RECORD_1$env_nbh_gv_1)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_1     
-**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.         
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.         
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
@@ -1848,7 +1848,7 @@ table(env_RECORD_1$env_nbh_theft_1)
 ```
 ### **Variable label**: Theft of transportation method   
 **Variable name**: env_nbh_theft_2     
-**Variable description**: Indicator of the participant's perception of the occurance of theft of transport vehicle in their neighbourhood.        
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.        
 **Value type**: integer  
 **Variable unit**:  N/A  
 **Category coding**:  
