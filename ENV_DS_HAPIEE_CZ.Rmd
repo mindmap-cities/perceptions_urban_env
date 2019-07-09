@@ -35,13 +35,13 @@ env_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id)
 ```
 # Table of Contents
 
-1. [General neighborhood safety subdomain](#general-neighborhood-safety-subdomain)
+1. [General neighbourhood safety subdomain](#general-neighbourhood-safety-subdomain)
 2. [Social trust subdomain](#social-trust-subdomain)
 3. [Social cohesion subdomain](#social-cohesion-subdomain)  
 4. [Neighbourhood aesthetics subdomain](#vandalism-subdomain)
 5. [Crime and vandalism subdomain](#crime-and-vandalism-subdomain)  
 
-# General neighborhood safety subdomain
+# General neighbourhood safety subdomain
 
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_0   
