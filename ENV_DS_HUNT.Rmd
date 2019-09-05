@@ -1430,7 +1430,8 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 #This is where the R-script will be written
 
 ```
-### **Variable label**: Neighbourhood traffic noise     **Variable name**:  env_nbh_traf_noise_1  
+### **Variable label**: Neighbourhood traffic noise     
+**Variable name**:  env_nbh_traf_noise_1  
 **Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.           
 **Value type**:  integer  
 **Variable unit**:  N/A  
