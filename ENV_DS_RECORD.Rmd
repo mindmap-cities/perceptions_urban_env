@@ -870,6 +870,31 @@ table(env_RECORD_1$env_nbs_coop_1)
 
 
 ```
+
+### **Variable label**: Neighbours get along       
+**Variable name**: env_nbs_along_1   
+**Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.        
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strongly agree that people get along  
+2 | Agree that people get along  
+3 | Neither agree or disagree that people get along   
+4 | Disagree that people get along    
+5 | Strongly disagree that people get along        
+
+**Harmonization status**:   impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+
+
 ### **Variable label**: Neighbours get along       
 **Variable name**: env_nbs_along_2   
 **Variable description**: Indicator of whether the participant agrees that people in their neighbourhood  get along with each other.   
