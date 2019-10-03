@@ -12,7 +12,7 @@ library(epiDisplay)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 ## When you are done with your work, logout of Opal server
-opal.logout(erasmus_opal) 
+# opal.logout(erasmus_opal) 
 # Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
 
 # HAPIEE wave 2 

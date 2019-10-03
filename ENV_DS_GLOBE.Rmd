@@ -13,7 +13,7 @@ library(data.table)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 ## When you are done with your work, logout of Opal server
-opal.logout(erasmus_opal) 
+# opal.logout(erasmus_opal) 
 # Login to Opal server and assign the content of the GLOBE table(s) to your RStudio environment
 opal.assign.table.tibble(erasmus_opal, 'GLOBE1991','GLOBE.GLOBE1991', variables = list('v161','v160')) 
 GLOBE1991 <- opal.execute(erasmus_opal,'GLOBE1991')
