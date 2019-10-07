@@ -56,7 +56,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -75,7 +75,6 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -94,7 +93,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -114,7 +113,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -134,7 +133,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -154,7 +153,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -174,7 +173,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -194,7 +193,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -214,7 +213,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -234,7 +233,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -254,7 +253,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -274,7 +273,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -294,7 +293,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -314,7 +313,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Social trust subdomain
@@ -336,7 +335,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -356,7 +355,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -376,7 +375,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -396,7 +395,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -416,7 +415,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -437,7 +436,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**: 
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood  trust  
@@ -457,7 +456,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**: 
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -480,7 +479,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -500,7 +499,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -520,7 +519,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -540,7 +539,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -560,7 +559,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -581,7 +580,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -602,7 +601,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -623,7 +622,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Cooperating neighbours      
@@ -643,7 +642,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Cooperating neighbours      
@@ -663,7 +662,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 
@@ -686,7 +685,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -708,7 +707,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -730,7 +729,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -752,7 +751,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -774,7 +773,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Neighbours get along       
@@ -796,7 +795,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -818,7 +817,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -840,7 +839,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -862,7 +861,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -884,7 +883,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Friendly neighbours       
@@ -905,7 +904,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -925,7 +924,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -945,7 +944,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -965,7 +964,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -985,7 +984,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1005,7 +1004,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1027,7 +1026,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1049,7 +1048,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1071,7 +1070,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1093,7 +1092,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1115,7 +1114,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Close-knit community        
@@ -1136,7 +1135,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**: Close-knit community        
@@ -1157,7 +1156,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Close-knit community        
@@ -1178,7 +1177,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Close-knit community        
@@ -1199,7 +1198,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Close-knit community        
@@ -1220,7 +1219,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Neighbourhood aesthetics subdomain
@@ -1243,7 +1242,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood cleanliness  (4-level)      
@@ -1264,7 +1263,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood cleanliness  (2-level)   
@@ -1284,7 +1283,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood cleanliness  (2-level)   
@@ -1304,7 +1303,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood cleanliness  (2-level)   
@@ -1324,7 +1323,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1346,7 +1345,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood noisiness (4-level)       
@@ -1367,7 +1366,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)       
@@ -1387,7 +1386,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
@@ -1407,7 +1406,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood traffic noise  
@@ -1427,7 +1426,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood traffic noise     
@@ -1447,7 +1446,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Crime and vandalism subdomain
@@ -1469,7 +1468,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood violence  
@@ -1489,7 +1488,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood violence  
@@ -1509,7 +1508,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
@@ -1529,7 +1528,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
@@ -1549,7 +1548,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
@@ -1569,7 +1568,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
@@ -1589,7 +1588,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
@@ -1609,7 +1608,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism    
@@ -1629,7 +1628,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Theft of transportation method   
@@ -1649,7 +1648,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Theft of transportation method   
@@ -1669,7 +1668,7 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Theft of transportation method   
@@ -1689,6 +1688,6 @@ env_HUNT_2 <- data.frame(id = HUNT3$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
