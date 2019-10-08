@@ -71,17 +71,11 @@ env_LASA1_6 <- data.frame(id= LASA1H$id)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B$bsafe)
-summary(LASA1B$bsafe)
-#0=no 1=yes NOTE: in LASA2 THESE ARE CODED AS 1 and 2 !!!!
-typeof(LASA1B$bsafe)
+
 env_LASA1_0$env_nbh_nsf_0 <- as.integer(ifelse(LASA1B$bsafe == 0, 0,
                                             ifelse(LASA1B$bsafe == 1, 1,
                                                    ifelse(LASA1B$bsafe == -4 |LASA1B$bsafe == -1 , NA,
                                                           NA))))
-table(env_LASA1_0$env_nbh_nsf_0)
-summary(env_LASA1_0$env_nbh_nsf_0)
-
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_1   
@@ -99,15 +93,9 @@ summary(env_LASA1_0$env_nbh_nsf_0)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C$csafe)
-summary(LASA1C$csafe)
-#1=no 2=yes typeof(LASA1C$csafe)
 env_LASA1_1$env_nbh_nsf_1 <- ifelse(LASA1C$csafe == 1, 0,
                                             ifelse(LASA1C$csafe == 2, 1,
                                                NA))
-table(env_LASA1_1$env_nbh_nsf_1)
-summary(env_LASA1_1$env_nbh_nsf_1)
-
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_2   
@@ -125,16 +113,9 @@ summary(env_LASA1_1$env_nbh_nsf_1)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D$dsafe)
-summary(LASA1D$dsafe)
-#1=no 2=yes 
 env_LASA1_2$env_nbh_nsf_2 <- ifelse(LASA1D$dsafe == 1, 0,
                                             ifelse(LASA1D$dsafe == 2, 1,
                                                NA))
-                                                          
-table(env_LASA1_2$env_nbh_nsf_2)
-summary(env_LASA1_2$env_nbh_nsf_2)
-
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_3   
@@ -153,16 +134,9 @@ summary(env_LASA1_2$env_nbh_nsf_2)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E$esafe)
-summary(LASA1E$esafe)
-#1=no 2=yes 
 env_LASA1_3$env_nbh_nsf_3 <- ifelse(LASA1E$esafe == 1, 0,
                                             ifelse(LASA1E$esafe == 2, 1,
                                                NA))
-                                                          
-table(env_LASA1_3$env_nbh_nsf_3)
-summary(env_LASA1_3$env_nbh_nsf_3)
-
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_4   
@@ -181,16 +155,10 @@ summary(env_LASA1_3$env_nbh_nsf_3)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F$fsafe)
-summary(LASA1F$fsafe)
-#1=no 2=yes 
 env_LASA1_4$env_nbh_nsf_4 <- ifelse(LASA1F$fsafe == 1, 0,
                                             ifelse(LASA1F$fsafe == 2, 1,
                                                NA))
                                                           
-table(env_LASA1_4$env_nbh_nsf_4)
-summary(env_LASA1_4$env_nbh_nsf_4) 
-
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_5   
@@ -209,16 +177,10 @@ summary(env_LASA1_4$env_nbh_nsf_4)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G$gsafe)
-summary(LASA1G$gsafe)
-#1=no 2=yes 
 env_LASA1_5$env_nbh_nsf_5 <- ifelse(LASA1G$gsafe == 1, 0,
                                             ifelse(LASA1G$gsafe == 2, 1,
                                                NA))
                                                           
-table(env_LASA1_5$env_nbh_nsf_5)
-summary(env_LASA1_5$env_nbh_nsf_5) 
-
 ```
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_6   
@@ -237,15 +199,9 @@ summary(env_LASA1_5$env_nbh_nsf_5)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H$HSAFE)
-summary(LASA1H$HSAFE)
-#1=no 2=yes 
 env_LASA1_6$env_nbh_nsf_6 <- ifelse(LASA1H$HSAFE == 1, 0,
                                             ifelse(LASA1H$HSAFE == 2, 1,
                                                NA))
-                                                          
-table(env_LASA1_6$env_nbh_nsf_6)
-summary(env_LASA1_6$env_nbh_nsf_6) 
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -265,15 +221,10 @@ summary(env_LASA1_6$env_nbh_nsf_6)
 **Harmonization comment**:  LASA asks about night safety only.  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1B$bsafe)
-summary(LASA1B$bsafe)
-#0=no 1=yes 
 env_LASA1_0$env_nbh_sf_0 <- as.integer(ifelse(LASA1B$bsafe == 0, 0,
                                             ifelse(LASA1B$bsafe == 1, 1,
                                                    ifelse(LASA1B$bsafe == -4 |LASA1B$bsafe == -1 , NA,
                                                           NA))))
-table(env_LASA1_0$env_nbh_sf_0)
-summary(env_LASA1_0$env_nbh_sf_0)
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -293,14 +244,9 @@ summary(env_LASA1_0$env_nbh_sf_0)
 **Harmonization comment**:  LASA asks about night safety only.    
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1C$csafe)
-summary(LASA1C$csafe)
-#1=no 2=yes typeof(LASA1C$csafe)
 env_LASA1_1$env_nbh_sf_1 <- ifelse(LASA1C$csafe == 1, 0,
                                             ifelse(LASA1C$csafe == 2, 1,
                                                NA))
-table(env_LASA1_1$env_nbh_sf_1)
-summary(env_LASA1_1$env_nbh_sf_1)
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
@@ -320,16 +266,10 @@ summary(env_LASA1_1$env_nbh_sf_1)
 **Harmonization comment**:   LASA asks about night safety only.  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1D$dsafe)
-summary(LASA1D$dsafe)
-#1=no 2=yes 
 env_LASA1_2$env_nbh_sf_2 <- ifelse(LASA1D$dsafe == 1, 0,
                                             ifelse(LASA1D$dsafe == 2, 1,
                                                NA))
                                                           
-table(env_LASA1_2$env_nbh_sf_2)
-summary(env_LASA1_2$env_nbh_sf_2)
-
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_3   
@@ -348,16 +288,9 @@ summary(env_LASA1_2$env_nbh_sf_2)
 **Harmonization comment**:  LASA asks about night safety only.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1E$esafe)
-summary(LASA1E$esafe)
-#1=no 2=yes 
 env_LASA1_3$env_nbh_sf_3 <- ifelse(LASA1E$esafe == 1, 0,
                                             ifelse(LASA1E$esafe == 2, 1,
                                                NA))
-                                                          
-table(env_LASA1_3$env_nbh_sf_3)
-summary(env_LASA1_3$env_nbh_sf_3)
-
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_4   
@@ -376,16 +309,10 @@ summary(env_LASA1_3$env_nbh_sf_3)
 **Harmonization comment**:   LASA asks about night safety only.  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1F$fsafe)
-summary(LASA1F$fsafe)
-#1=no 2=yes 
 env_LASA1_4$env_nbh_sf_4 <- ifelse(LASA1F$fsafe == 1, 0,
                                             ifelse(LASA1F$fsafe == 2, 1,
                                                NA))
                                                           
-table(env_LASA1_4$env_nbh_sf_4)
-summary(env_LASA1_4$env_nbh_sf_4) 
-
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_5   
@@ -404,16 +331,10 @@ summary(env_LASA1_4$env_nbh_sf_4)
 **Harmonization comment**:   LASA asks about night safety only.  
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1G$gsafe)
-summary(LASA1G$gsafe)
-#1=no 2=yes 
 env_LASA1_5$env_nbh_sf_5 <- ifelse(LASA1G$gsafe == 1, 0,
                                             ifelse(LASA1G$gsafe == 2, 1,
                                                NA))
                                                           
-table(env_LASA1_5$env_nbh_sf_5)
-summary(env_LASA1_5$env_nbh_sf_5) 
-
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
 **Variable name**: env_nbh_sf_6   
@@ -432,15 +353,10 @@ summary(env_LASA1_5$env_nbh_sf_5)
 **Harmonization comment**:  LASA asks about night safety only.   
 **R script**:  
 ```{r, echo=TRUE}
-table(LASA1H$HSAFE)
-summary(LASA1H$HSAFE)
-#1=no 2=yes 
+
 env_LASA1_6$env_nbh_sf_6 <- ifelse(LASA1H$HSAFE == 1, 0,
                                             ifelse(LASA1H$HSAFE == 2, 1,
                                                NA))
-                                                          
-table(env_LASA1_6$env_nbh_sf_6)
-summary(env_LASA1_6$env_nbh_sf_6) 
 
 ```
 # Social trust subdomain
@@ -462,7 +378,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -482,7 +398,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -502,7 +418,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -522,7 +438,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Trust in neighbours    
@@ -542,7 +458,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -563,7 +479,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**: 
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**:  Neighbourhood  trust  
@@ -583,7 +499,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**: 
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -606,7 +522,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -626,7 +542,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -646,7 +562,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -666,7 +582,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -686,7 +602,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -707,7 +623,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -728,7 +644,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -749,7 +665,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Cooperating neighbours      
@@ -769,7 +685,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Cooperating neighbours      
@@ -789,7 +705,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 
@@ -812,7 +728,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -834,7 +750,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -856,7 +772,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -878,7 +794,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood values and norms       
@@ -900,7 +816,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Neighbours get along       
@@ -922,7 +838,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -944,7 +860,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -966,7 +882,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -988,7 +904,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbours get along       
@@ -1010,7 +926,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Friendly neighbours       
@@ -1031,7 +947,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1051,7 +967,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1071,7 +987,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1091,7 +1007,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1111,7 +1027,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -1131,7 +1047,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1153,7 +1069,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1175,7 +1091,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1197,7 +1113,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1219,7 +1135,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Lonely in neighbourhood        
@@ -1241,7 +1157,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```  
 ### **Variable label**: Close-knit community        
@@ -1262,7 +1178,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ``` 
 ### **Variable label**: Close-knit community        
@@ -1283,7 +1199,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Close-knit community        
@@ -1304,7 +1220,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Close-knit community        
@@ -1325,7 +1241,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Close-knit community        
@@ -1346,7 +1262,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Neighbourhood aesthetics subdomain
@@ -1369,7 +1285,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood cleanliness (4-level)      
@@ -1390,7 +1306,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood cleanliness (2-level)       
@@ -1410,7 +1326,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood cleanliness (2-level)       
@@ -1430,7 +1346,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood cleanliness (2-level)    
@@ -1450,7 +1366,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
@@ -1472,7 +1388,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood noisiness (4-level)       
@@ -1493,7 +1409,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)       
@@ -1513,7 +1429,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
@@ -1533,7 +1449,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood traffic noise        
@@ -1553,7 +1469,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood traffic noise      
@@ -1573,7 +1489,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 # Crime and vandalism subdomain
@@ -1595,7 +1511,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood violence  
@@ -1615,7 +1531,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood violence  
@@ -1635,7 +1551,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
@@ -1655,7 +1571,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
@@ -1675,7 +1591,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood antisocial and aggressive behaviour 
@@ -1695,7 +1611,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
@@ -1715,7 +1631,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
@@ -1735,7 +1651,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism    
@@ -1755,7 +1671,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Theft of transportation method   
@@ -1775,7 +1691,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Theft of transportation method   
@@ -1795,7 +1711,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 ### **Variable label**: Theft of transportation method   
@@ -1815,7 +1731,7 @@ summary(env_LASA1_6$env_nbh_sf_6)
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
 
 ```
 
