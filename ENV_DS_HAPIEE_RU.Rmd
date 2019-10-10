@@ -93,7 +93,7 @@ env_HAPIEE_RU_0$env_nbh_nsf_0 <- as.integer(ifelse((HAPIEE_W1$p59b == '1' | HAPI
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:   
 **R script**:  
 ```{r, echo=TRUE}
