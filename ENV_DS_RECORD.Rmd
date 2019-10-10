@@ -1571,7 +1571,7 @@ env_RECORD_1$env_nbh_violence_1  <- as.integer(ifelse((RECORD_w2$P46_Q5_1028 == 
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:   Complete
+**Harmonization status**:   complete
 **Harmonization comment**:  Similarly to GLOBE, the RECORD variable refers to youth nuisance.  
 **R script**:  
 ```{r, echo=TRUE}
