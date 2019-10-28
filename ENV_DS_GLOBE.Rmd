@@ -1684,6 +1684,6 @@ env_GLOBE_2$env_nbh_gv_2<- ifelse((GLOBE2004$w060 == 0 & GLOBE2004$w059 == 0), 0
 **Harmonization comment**:   GLOBE asks about bicycle theft, RECORD asks about vehicle theft. Category 2, 'sometimes' (bicycle theft occurs in the neighbourhood) is coded as there if theft in the neighbourhood 
 **R script**: 
 ```{r, echo=TRUE}
-env_GLOBE_2$env_nbs_theft_2<-recode(as.integer(GLOBE2004$w062),'1'=0L,'2'=0L,'3'=1L)
+env_GLOBE_2$env_nbh_theft_2<-recode(as.integer(GLOBE2004$w062),'1'=0L,'2'=0L,'3'=1L)
 
 ```
