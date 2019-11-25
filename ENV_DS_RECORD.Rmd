@@ -34,6 +34,10 @@ RECORD_w2 <- opal.execute(erasmus_opal,'RECORD_w2')
 env_RECORD_0 <- data.frame(id = RECORD_w1_1$id)
 env_RECORD_1 <- data.frame(id = RECORD_w2$id)
 ```
+## When you are done with your work, logout of Opal server
+```{r, echo=FALSE}
+opal.logout(erasmus_opal)
+```
 # Table of Contents
 
 1. [General neighbourhood safety subdomain](#general-neighbourhood-safety-subdomain)

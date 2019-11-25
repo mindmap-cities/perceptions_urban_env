@@ -34,6 +34,10 @@ LUCAS_Wave2 <- opal.execute(erasmus_opal,'LUCAS_Wave2')
 env_LUCAS_0 <- data.frame(id= LUCAS_Wave2$id)
 
 ```
+## When you are done with your work, logout of Opal server
+```{r, echo=FALSE}
+opal.logout(erasmus_opal)
+```
 # Table of Contents
 
 1. [General neighbourhood safety subdomain](#general-neighbourhood-safety-subdomain)

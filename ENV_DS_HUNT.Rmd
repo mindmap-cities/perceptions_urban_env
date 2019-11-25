@@ -30,6 +30,10 @@ env_HUNT_0 <- data.frame(id = HUNT1$id)
 env_HUNT_1 <- data.frame(id = HUNT2$id)
 env_HUNT_2 <- data.frame(id = HUNT3$id)
 ```
+## When you are done with your work, logout of Opal server
+```{r, echo=FALSE}
+opal.logout(erasmus_opal)
+```
 # Table of Contents
 
 1. [General neighbourhood safety subdomain](#general-neighbourhood-safety-subdomain)

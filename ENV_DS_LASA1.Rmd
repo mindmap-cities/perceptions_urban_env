@@ -45,6 +45,10 @@ env_LASA1_4 <- data.frame(id= LASA1F$id)
 env_LASA1_5 <- data.frame(id= LASA1G$id)
 env_LASA1_6 <- data.frame(id= LASA1H$id)
 ```
+## When you are done with your work, logout of Opal server
+```{r, echo=FALSE}
+opal.logout(erasmus_opal)
+```
 # Table of Contents
 
 1. [General neighbourhood safety subdomain](#general-neighbourhood-safety-subdomain)
