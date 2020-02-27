@@ -64,7 +64,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:   RECORD item does not ask about night safety in particular but item is comparable to being asked about night safety per B.Chaix. 'Always feels safe' and 'mostly feels safe' have been recoded as 'feels safe'.
 **R script**:  
 ```{r, echo=TRUE}
-env_RECORD_0$env_nbh_nsf_0 <-recode(as.integer(RECORD_w1_2$q12_no_securite),'1'=0L,'2'=0L,'3'=1L,'4'=1L)
+env_RECORD_0$env_nbh_nsf_0 <-recode(as.integer(RECORD_w1_2$q12_no_securite),'1'=1L,'2'=1L,'3'=0L,'4'=0L)
 
 ```
 ### **Variable label**:  Feels safe at night     
@@ -202,7 +202,7 @@ env_RECORD_1$env_nbh_nsf_1 <- as.integer(ifelse((RECORD_w2$P45_Q1_994 == '1' | R
 **Harmonization comment**:  'Always feels safe' and 'mostly feels safe' have been recoded as 'feels safe'. 
 **R script**:  
 ```{r, echo=TRUE}
-env_RECORD_0$env_nbh_sf_0 <-recode(as.integer(RECORD_w1_2$q12_no_securite),'1'=0L,'2'=0L,'3'=1L,'4'=1L)
+env_RECORD_0$env_nbh_sf_0 <-recode(as.integer(RECORD_w1_2$q12_no_securite),'1'=1L,'2'=1L,'3'=0L,'4'=0L)
 
 ```
 ### **Variable label**:  Feels safe in neighbourhood     
