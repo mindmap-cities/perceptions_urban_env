@@ -1140,6 +1140,91 @@ table(soc_CLSA_tra_1$env_nbh_lone_1, useNA="always")
 #This is where the R-script will be written
 
 ``` 
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_1      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_2      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_3      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**: Close-knit community        
+**Variable name**: env_nbh_comm_4      
+**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    
+**Value type**: integer      
+**Variable unit**: N/A       
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+1 | Strong neighbourhood solidarity     
+2 | Some neighbourhood solidarity    
+3 | A little neighbourhood solidarity    
+4 | No neighbourhood solidarity                   
+
+**Harmonization status**:   impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+
 # Neighbourhood aesthetics subdomain
 
 ### **Variable label**: Neighbourhood cleanliness   
@@ -1354,6 +1439,46 @@ soc_CLSA_tra_1$env_nbh_noise_dich_1 <- ifelse(Tra_FU1$ENV_HMPRB_NOI_TRF1 ==1,0L,
 
 table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always") 
 ```
+### **Variable label**: Neighbourhood traffic noise        
+**Variable name**:  env_nbh_traf_noise_0    
+**Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.           
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise         
+
+
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**: Neighbourhood traffic noise      
+**Variable name**:  env_nbh_traf_noise_1  
+**Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.            
+**Value type**:  integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Traffic noise 
+1 | No traffic noise          
+
+
+**Harmonization status**:  impossible 
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
 # Crime and vandalism subdomain
 
 ### **Variable label**: Neighbourhood violence  
@@ -1544,3 +1669,64 @@ table(soc_CLSA_tra_1$env_nbh_gv_1, useNA="always")
 #This is where the R-script will be written
 
 ```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_0     
+**Variable description**:  Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.  
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_1     
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.         
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+  
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**: impossible 
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+### **Variable label**: Theft of transportation method   
+**Variable name**: env_nbh_theft_2     
+**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.        
+**Value type**: integer  
+**Variable unit**:  N/A  
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Theft of vehicle in neighbourhood  
+1 | No theft of vehicle in neighbourhood
+
+
+**Harmonization status**:  impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}
+
+
+```
+
