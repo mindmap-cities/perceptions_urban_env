@@ -2,53 +2,15 @@
 title: "Perceptions of urban environment DataSchema"
 output: html_document
 ---
-```{r, echo=TRUE}
-library(tidyverse)
-library(epiDisplay)
-library(scales) 
-library(car)
-# Connecting with Opal data server
-## Login to server and assign study data
-#Load Opal R library
-library(opalr)
-# Create an opal object with the login information
-erasmus_opal <- opal.login()
-#Login to Opal server and assign the content of the LASA table(s) to your RStudio environment
-# CLSA-tra_0
-opal.assign.table.tibble(erasmus_opal, 'Tra3_4_Baseline', 'CLSA_1.Tra3_4_Baseline', variables = list('ENV_PPLTRST_MCQ','ENV_PPLHLP_MCQ','ENV_PPLFRNDLY_MCQ','ENV_CLEAN_MCQ','ENV_HMPRB_NOI_MCQ','ENV_VNDLSM_MCQ'))
-Tra3_4_Baseline <- opal.execute(erasmus_opal,'Tra3_4_Baseline')
-# CLSA-tra_1
-opal.assign.table.tibble(erasmus_opal, 'Tra_FU1', 'CLSA_1.Tra_FU1', variables = list('ENV_PPLTRST_TRF1','ENV_PPLHLP_TRF1','ENV_PPLFRNDLY_TRF1','ENV_CLEAN_TRF1','ENV_HMPRB_NOI_TRF1','ENV_VNDLSM_TRF1','SPA_COHES_TRF1'))
-Tra_FU1 <- opal.execute(erasmus_opal,'Tra_FU1')
-
-opal.assign.table.tibble(erasmus_opal, 'soc_var_view_tra_baseline', 'CLSA_1.soc_var_view_tra_baseline')
-Tra_baseline_v <- opal.execute(erasmus_opal,'soc_var_view_tra_baseline')
-
-opal.assign.table.tibble(erasmus_opal, 'soc_var_view_tra_FU', 'CLSA_1.soc_var_view_tra_FU')
-Tra_FU1_v <- opal.execute(erasmus_opal,'soc_var_view_tra_FU')
-
-
-
-```
-## Assign participant id as first column of your harmonized dataframes
-```{r, echo=FALSE}
-Tra3_4_Baseline<-merge(Tra3_4_Baseline, Tra_baseline_v, by="id", all=TRUE)
-Tra_FU1<-merge(Tra_FU1, Tra_FU1_v, by="id", all=TRUE)
-
-soc_CLSA_tra_0 <- data.frame(id = Tra3_4_Baseline$id)
-soc_CLSA_tra_1 <- data.frame(id = Tra_FU1$id)
-# When you are done with your work, logout of Opal server
-opal.logout(erasmus_opal)
-```
 # Table of Contents
 
-1. [General neighborhood safety subdomain](#general-neighborhood-safety-subdomain)
+1. [General neighbourhood safety subdomain](#general-neighbourhood-safety-subdomain)
 2. [Social trust subdomain](#social-trust-subdomain)
 3. [Social cohesion subdomain](#social-cohesion-subdomain)  
 4. [Neighbourhood aesthetics subdomain](#vandalism-subdomain)
 5. [Crime and vandalism subdomain](#crime-and-vandalism-subdomain)  
 
-# General neighborhood safety subdomain
+# General neighbourhood safety subdomain
 
 ### **Variable label**:  Feels safe at night     
 **Variable name**: env_nbh_nsf_0   
@@ -62,8 +24,8 @@ opal.logout(erasmus_opal)
 0 |   Does not feel safe at night
 1 |   Feels safe at night 
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -81,8 +43,8 @@ opal.logout(erasmus_opal)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -100,8 +62,8 @@ opal.logout(erasmus_opal)
 0 |   Does not feel safe at night 
 1 |   Feels safe at night 
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -120,8 +82,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -140,8 +102,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe at night  
 
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -160,8 +122,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe at night  
  
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -180,8 +142,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe at night  
   
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -200,8 +162,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe 
  
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -220,8 +182,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe 
   
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -240,8 +202,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe 
   
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -260,8 +222,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe 
  
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -280,8 +242,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe 
  
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -300,8 +262,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe 
  
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -320,8 +282,8 @@ opal.logout(erasmus_opal)
 1 |   Feels safe 
   
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -342,16 +304,12 @@ opal.logout(erasmus_opal)
 1 | People can be trusted    
         
 
-**Harmonization status**:  complete
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$ENV_PPLTRST_MCQ, useNA="always") 
 
-soc_CLSA_tra_0$env_nbh_trust_0 <- ifelse(Tra3_4_Baseline$ENV_PPLTRST_MCQ ==1 | Tra3_4_Baseline$ENV_PPLTRST_MCQ ==2,1L, 
-                                           ifelse(Tra3_4_Baseline$ENV_PPLTRST_MCQ ==3 | Tra3_4_Baseline$ENV_PPLTRST_MCQ ==4,0L,NA))
 
-table(soc_CLSA_tra_0$env_nbh_trust_0, useNA="always") 
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_1   
@@ -366,16 +324,12 @@ table(soc_CLSA_tra_0$env_nbh_trust_0, useNA="always")
 1 | People can be trusted    
        
 
-**Harmonization status**:  complete 
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$ENV_PPLTRST_TRF1, useNA="always") 
 
-soc_CLSA_tra_1$env_nbh_trust_1 <- ifelse(Tra_FU1$ENV_PPLTRST_TRF1 ==1 | Tra_FU1$ENV_PPLTRST_TRF1 ==2,1L, 
-                                           ifelse(Tra_FU1$ENV_PPLTRST_TRF1 ==3 | Tra_FU1$ENV_PPLTRST_TRF1 ==4,0L,NA))
 
-table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always") 
 ```
 ### **Variable label**:  Neighbourhood  trust  
 **Variable name**:  env_nbh_trust_2     
@@ -390,8 +344,8 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | People can be trusted    
     
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -410,8 +364,8 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | People can be trusted    
    
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -430,48 +384,9 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | People can be trusted    
       
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**:  Neighbourhood  trust  
-**Variable name**:  env_nbh_trust_among_0   
-**Variable description**:  Indicator of whether the participant agrees that there is trust among the people in the area where they live (i.e. in their neighbourhood).    
-**Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  
-  
-**Code** | **Category Label**  
-------------- | -------------  
-0 | People do not trust one another 
-1 | People trust one another  
-
-
-**Harmonization status**:   impossible 
-**Harmonization comment**:   
-**R script**: 
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**:  Neighbourhood  trust  
-**Variable name**:  env_nbh_trust_among_1   
-**Variable description**:  Indicator of whether the participant agrees that there is trust among the people in the area where they live (i.e. in their neighbourhood).    
-**Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  
-  
-**Code** | **Category Label**  
-------------- | -------------  
-0 | People do not trust one another 
-1 | People trust one another 
-
-**Harmonization status**:   impossible 
-**Harmonization comment**:   
-**R script**: 
 ```{r, echo=TRUE}
 
 
@@ -492,10 +407,11 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | Neighbours would help me   
        
 
-**Harmonization status**:  impossible
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -511,10 +427,11 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | Neighbours would help me    
        
 
-**Harmonization status**:  impossible
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
+
 
 ```
 ### **Variable label**: Helpful neighbours  
@@ -530,8 +447,8 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | Neighbours would help me    
          
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -550,8 +467,8 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | Neighbours would help me    
         
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -570,8 +487,8 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | Neighbours would help me   
     
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -591,16 +508,11 @@ table(soc_CLSA_tra_1$env_nbh_trust_1, useNA="always")
 1 | People willing to help each other   
        
 
-**Harmonization status**:  complete 
-**Harmonization comment**:  Study specific items asks: Lots of people in local area who would help if in trouble.
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$ENV_PPLHLP_MCQ, useNA="always") 
 
-soc_CLSA_tra_0$env_nbs_coop_0 <- ifelse(Tra3_4_Baseline$ENV_PPLHLP_MCQ ==1 |Tra3_4_Baseline$ENV_PPLHLP_MCQ ==2,1L, 
-                                 ifelse(Tra3_4_Baseline$ENV_PPLHLP_MCQ ==3 |Tra3_4_Baseline$ENV_PPLHLP_MCQ ==4,0L,NA))
-
-table(soc_CLSA_tra_0$env_nbs_coop_0, useNA="always") 
 
 ```
 
@@ -617,16 +529,12 @@ table(soc_CLSA_tra_0$env_nbs_coop_0, useNA="always")
 1 | People willing to help each other   
              
 
-**Harmonization status**:  complete 
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$ENV_PPLHLP_TRF1, useNA="always") 
 
-soc_CLSA_tra_1$env_nbs_coop_1 <- ifelse(Tra_FU1$ENV_PPLHLP_TRF1 ==1 |Tra_FU1$ENV_PPLHLP_TRF1 ==2,1L, 
-                                 ifelse(Tra_FU1$ENV_PPLHLP_TRF1 ==3 |Tra_FU1$ENV_PPLHLP_TRF1 ==4,0L,NA))
 
-table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always") 
 ```
 
 ### **Variable label**: Cooperating neighbours      
@@ -642,8 +550,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 1 | People willing to help each other   
              
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -662,8 +570,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 1 | People willing to help each other   
           
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -682,8 +590,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 1 | People willing to help each other   
             
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -705,8 +613,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -727,8 +635,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms        
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -749,8 +657,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -771,8 +679,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -793,8 +701,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people share similar values and norms  
 5 | Strongly disagree that people share similar values and norms       
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -815,8 +723,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -837,8 +745,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -859,8 +767,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people get along     
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -881,8 +789,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along        
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -903,8 +811,8 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 4 | Disagree that people get along    
 5 | Strongly disagree that people get along         
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -924,18 +832,12 @@ table(soc_CLSA_tra_1$env_nbs_coop_1, useNA="always")
 3 | People are not really friendly  
 4 | People are not friendly    
 
-**Harmonization status**:  complete 
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$ENV_PPLFRNDLY_MCQ, useNA="always") 
 
-soc_CLSA_tra_0$env_nbs_friendly_0 <- ifelse(Tra3_4_Baseline$ENV_PPLFRNDLY_MCQ ==1,1L, 
-                                           ifelse(Tra3_4_Baseline$ENV_PPLFRNDLY_MCQ==2,2L,
-                                            ifelse(Tra3_4_Baseline$ENV_PPLFRNDLY_MCQ==3,3L,
-                                                   ifelse(Tra3_4_Baseline$ENV_PPLFRNDLY_MCQ==4,4L,NA))))
 
-table(soc_CLSA_tra_0$env_nbs_friendly_0, useNA="always") 
 ```
 ### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_0        
@@ -950,11 +852,11 @@ table(soc_CLSA_tra_0$env_nbs_friendly_0, useNA="always")
 1 | Feels part of area     
    
 
-**Harmonization status**:  impossible
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-#not collected at baseline
+
 
 ```
 ### **Variable label**: Belonging to neighbourhood        
@@ -970,18 +872,12 @@ table(soc_CLSA_tra_0$env_nbs_friendly_0, useNA="always")
 1 | Feels part of area     
    
 
-**Harmonization status**:  complete     
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
-# per Paraminder, PI, use this not ENV_FLPRTAREA_MCQ
-table(Tra_FU1$SPA_COHES_TRF1, useNA="always") 
 
-soc_CLSA_tra_1$env_nbh_belong_1 <- ifelse(Tra_FU1$SPA_COHES_TRF1 ==1 | Tra_FU1$SPA_COHES_TRF1==2,1L, 
-                                            ifelse(Tra_FU1$SPA_COHES_TRF1==3 | Tra_FU1$SPA_COHES_TRF1==4,0L,NA))
-
-table(soc_CLSA_tra_1$env_nbh_belong_1, useNA="always") 
 ```
 ### **Variable label**: Belonging to neighbourhood        
 **Variable name**: env_nbh_belong_2      
@@ -996,8 +892,8 @@ table(soc_CLSA_tra_1$env_nbh_belong_1, useNA="always")
 1 | Feels part of area     
      
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1016,8 +912,8 @@ table(soc_CLSA_tra_1$env_nbh_belong_1, useNA="always")
 1 | Feels part of area     
      
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1036,8 +932,8 @@ table(soc_CLSA_tra_1$env_nbh_belong_1, useNA="always")
 1 | Feels part of area     
    
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1058,22 +954,12 @@ table(soc_CLSA_tra_1$env_nbh_belong_1, useNA="always")
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   Specific study items's category: don't know/ no answer, is categorized as 3 | Neither agree or disagree that they feel lonely 
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
-#this is what my supervisors said to do, categorize don't know as the neutral , please change as you see fit
 
-table(Tra3_4_Baseline$ENV_FLLNLY_MCQ, useNA="always") 
-
-soc_CLSA_tra_0$env_nbh_lone_0 <- ifelse(Tra3_4_Baseline$ENV_FLLNLY_MCQ==1,1L, 
-                                 ifelse(Tra3_4_Baseline$ENV_FLLNLY_MCQ==2,2L,
-                                 ifelse(Tra3_4_Baseline$ENV_FLLNLY_MCQ==3,4L,
-                                 ifelse(Tra3_4_Baseline$ENV_FLLNLY_MCQ==4,5L,
-                                 ifelse(Tra3_4_Baseline$ENV_FLLNLY_MCQ==8,3L,NA)))))
-
-table(soc_CLSA_tra_0$env_nbh_lone_0, useNA="always") 
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_1      
@@ -1090,19 +976,12 @@ table(soc_CLSA_tra_0$env_nbh_lone_0, useNA="always")
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$ENV_FLLNLY_TRF1, useNA="always") 
 
-soc_CLSA_tra_1$env_nbh_lone_1 <- ifelse(Tra_FU1$ENV_FLLNLY_TRF1==1,1L, 
-                                 ifelse(Tra_FU1$ENV_FLLNLY_TRF1==2,2L,
-                                 ifelse(Tra_FU1$ENV_FLLNLY_TRF1==3,4L,
-                                 ifelse(Tra_FU1$ENV_FLLNLY_TRF1==4,5L,
-                                 ifelse(Tra_FU1$ENV_FLLNLY_TRF1==8,3L,NA)))))
 
-table(soc_CLSA_tra_1$env_nbh_lone_1, useNA="always") 
 ```
 ### **Variable label**: Lonely in neighbourhood        
 **Variable name**: env_nbh_lone_2      
@@ -1119,8 +998,8 @@ table(soc_CLSA_tra_1$env_nbh_lone_1, useNA="always")
 4 | Disagree that they feel lonely 
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1141,8 +1020,8 @@ table(soc_CLSA_tra_1$env_nbh_lone_1, useNA="always")
 4 | Disagree that they feel lonely   
 5 | Strongly disagree that they feel lonely        
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1163,8 +1042,8 @@ table(soc_CLSA_tra_1$env_nbh_lone_1, useNA="always")
 4 | Disagree that they feel lonely  
 5 | Strongly disagree that they feel lonely         
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1184,98 +1063,13 @@ table(soc_CLSA_tra_1$env_nbh_lone_1, useNA="always")
 3 | A little neighbourhood solidarity    
 4 | No neighbourhood solidarity                   
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
 
 ``` 
-### **Variable label**: Close-knit community        
-**Variable name**: env_nbh_comm_1      
-**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    
-**Value type**: integer      
-**Variable unit**: N/A       
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Strong neighbourhood solidarity     
-2 | Some neighbourhood solidarity    
-3 | A little neighbourhood solidarity    
-4 | No neighbourhood solidarity                   
-
-**Harmonization status**:   impossible
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**: Close-knit community        
-**Variable name**: env_nbh_comm_2      
-**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    
-**Value type**: integer      
-**Variable unit**: N/A       
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Strong neighbourhood solidarity     
-2 | Some neighbourhood solidarity    
-3 | A little neighbourhood solidarity    
-4 | No neighbourhood solidarity                   
-
-**Harmonization status**:   impossible
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**: Close-knit community        
-**Variable name**: env_nbh_comm_3      
-**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    
-**Value type**: integer      
-**Variable unit**: N/A       
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Strong neighbourhood solidarity     
-2 | Some neighbourhood solidarity    
-3 | A little neighbourhood solidarity    
-4 | No neighbourhood solidarity                   
-
-**Harmonization status**:   impossible
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**: Close-knit community        
-**Variable name**: env_nbh_comm_4      
-**Variable description**: Indicator of whether the participant agrees that members of the area in which participant lives are close-knit (community solidarity).    
-**Value type**: integer      
-**Variable unit**: N/A       
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-1 | Strong neighbourhood solidarity     
-2 | Some neighbourhood solidarity    
-3 | A little neighbourhood solidarity    
-4 | No neighbourhood solidarity                   
-
-**Harmonization status**:   impossible
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-
 # Neighbourhood aesthetics subdomain
 
 ### **Variable label**: Neighbourhood cleanliness   
@@ -1292,18 +1086,12 @@ table(soc_CLSA_tra_1$env_nbh_lone_1, useNA="always")
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$ENV_CLEAN_MCQ, useNA="always") 
 
-soc_CLSA_tra_0$env_nbh_clean_0 <- ifelse(Tra3_4_Baseline$ENV_CLEAN_MCQ ==1,4L, 
-                                           ifelse(Tra3_4_Baseline$ENV_CLEAN_MCQ==2,3L,
-                                            ifelse(Tra3_4_Baseline$ENV_CLEAN_MCQ==3,2L,
-                                                   ifelse(Tra3_4_Baseline$ENV_CLEAN_MCQ==4,1L,NA))))
 
-table(soc_CLSA_tra_0$env_nbh_clean_0, useNA="always") 
 ```
 ### **Variable label**: Neighbourhood cleanliness   
 **Variable name**:  env_nbh_clean_1  
@@ -1319,18 +1107,12 @@ table(soc_CLSA_tra_0$env_nbh_clean_0, useNA="always")
 3 | Area mostly clean   
 4 | Area clean             
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$ENV_CLEAN_TRF1, useNA="always") 
 
-soc_CLSA_tra_1$env_nbh_clean_1 <- ifelse(Tra_FU1$ENV_CLEAN_TRF1 ==1,4L, 
-                                           ifelse(Tra_FU1$ENV_CLEAN_TRF1==2,3L,
-                                            ifelse(Tra_FU1$ENV_CLEAN_TRF1==3,2L,
-                                                   ifelse(Tra_FU1$ENV_CLEAN_TRF1==4,1L,NA))))
 
-table(soc_CLSA_tra_1$env_nbh_clean_1, useNA="always") 
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
 **Variable name**:  env_nbh_clean_dich_0  
@@ -1345,16 +1127,12 @@ table(soc_CLSA_tra_1$env_nbh_clean_1, useNA="always")
 1 | Area clean             
 
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$ENV_CLEAN_MCQ, useNA="always") 
 
-soc_CLSA_tra_0$env_nbh_clean_0 <- ifelse(Tra3_4_Baseline$ENV_CLEAN_MCQ ==1 | Tra3_4_Baseline$ENV_CLEAN_MCQ==2,1L, 
-                                  ifelse(Tra3_4_Baseline$ENV_CLEAN_MCQ==3 | Tra3_4_Baseline$ENV_CLEAN_MCQ==4,0L,NA))
 
-table(soc_CLSA_tra_0$env_nbh_clean_0, useNA="always") 
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
 **Variable name**:  env_nbh_clean_dich_1    
@@ -1369,16 +1147,12 @@ table(soc_CLSA_tra_0$env_nbh_clean_0, useNA="always")
 1 | Area clean             
  
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$ENV_CLEAN_TRF1, useNA="always") 
 
-soc_CLSA_tra_1$env_nbh_clean_1 <- ifelse(Tra_FU1$ENV_CLEAN_TRF1 ==1 | Tra_FU1$ENV_CLEAN_TRF1==2,1L, 
-                                  ifelse(Tra_FU1$ENV_CLEAN_TRF1==3 | Tra_FU1$ENV_CLEAN_TRF1==4,0L,NA))
 
-table(soc_CLSA_tra_1$env_nbh_clean_1, useNA="always") 
 ```
 ### **Variable label**: Neighbourhood cleanliness dichotomized     
 **Variable name**:  env_nbh_clean_dich_2    
@@ -1393,8 +1167,8 @@ table(soc_CLSA_tra_1$env_nbh_clean_1, useNA="always")
 1 | Area clean             
  
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1415,10 +1189,11 @@ table(soc_CLSA_tra_1$env_nbh_clean_1, useNA="always")
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
+
 
 ```
 ### **Variable label**: Neighbourhood noisiness (4-level)       
@@ -1435,8 +1210,8 @@ table(soc_CLSA_tra_1$env_nbh_clean_1, useNA="always")
 3 | A little excessive noise    
 4 | No excessive noise            
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1455,16 +1230,12 @@ table(soc_CLSA_tra_1$env_nbh_clean_1, useNA="always")
 1 | Not noisy         
        
 
-**Harmonization status**:  complete  
-**Harmonization comment**: Study specific item asks about noise problems in current home, use with caution.    
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$ENV_HMPRB_NOI_MCQ, useNA="always") 
 
-soc_CLSA_tra_0$env_nbh_noise_dich_0 <- ifelse(Tra3_4_Baseline$ENV_HMPRB_NOI_MCQ ==1,0L, 
-                                       ifelse(Tra3_4_Baseline$ENV_HMPRB_NOI_MCQ ==0,1L,NA))
 
-table(soc_CLSA_tra_0$env_nbh_noise_dich_0, useNA="always") 
 ```
 ### **Variable label**: Neighbourhood noisiness (2-level)     
 **Variable name**:  env_nbh_noise_dich_1  
@@ -1479,52 +1250,8 @@ table(soc_CLSA_tra_0$env_nbh_noise_dich_0, useNA="always")
 1 | Not noisy         
       
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-table(Tra_FU1$ENV_HMPRB_NOI_TRF1, useNA="always") 
-
-soc_CLSA_tra_1$env_nbh_noise_dich_1 <- ifelse(Tra_FU1$ENV_HMPRB_NOI_TRF1 ==1,0L, 
-                                       ifelse(Tra_FU1$ENV_HMPRB_NOI_TRF1==0,1L,NA))
-
-table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always") 
-```
-### **Variable label**: Neighbourhood traffic noise        
-**Variable name**:  env_nbh_traf_noise_0    
-**Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.           
-**Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  
-  
-**Code** | **Category Label**  
-------------- | -------------  
-0 | Traffic noise 
-1 | No traffic noise         
-
-
-**Harmonization status**:  impossible
-**Harmonization comment**: 
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**: Neighbourhood traffic noise      
-**Variable name**:  env_nbh_traf_noise_1  
-**Variable description**:  Indicator of  the participant's perception of presence of noise from traffic, in their neighbourhood.            
-**Value type**:  integer  
-**Variable unit**:  N/A  
-**Category coding**:  
-  
-**Code** | **Category Label**  
-------------- | -------------  
-0 | Traffic noise 
-1 | No traffic noise          
-
-
-**Harmonization status**:  impossible 
-**Harmonization comment**:  
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1545,8 +1272,8 @@ table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always")
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1565,8 +1292,8 @@ table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always")
 1 | No violence in neighbourhood
      
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1585,8 +1312,8 @@ table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always")
 1 | No violence in neighbourhood
    
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1605,8 +1332,8 @@ table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always")
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1625,8 +1352,8 @@ table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always")
 1 | No antisocial and aggressive behavior in neighbourhood
      
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1645,8 +1372,8 @@ table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always")
 1 | No antisocial and aggressive behavior in neighbourhood
     
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1665,16 +1392,12 @@ table(soc_CLSA_tra_1$env_nbh_noise_dich_1, useNA="always")
 1 | Graffiti and/or vandalism  
              
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra3_4_Baseline$ENV_VNDLSM_MCQ, useNA="always") 
 
-soc_CLSA_tra_0$env_nbh_gv_0 <- ifelse(Tra3_4_Baseline$ENV_VNDLSM_MCQ ==1 | Tra3_4_Baseline$ENV_VNDLSM_MCQ==2,1L, 
-                               ifelse(Tra3_4_Baseline$ENV_VNDLSM_MCQ ==3 | Tra3_4_Baseline$ENV_VNDLSM_MCQ==4,0L,NA))
 
-table(soc_CLSA_tra_0$env_nbh_gv_0, useNA="always") 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism  
 **Variable name**:  env_nbh_gv_1    
@@ -1689,16 +1412,12 @@ table(soc_CLSA_tra_0$env_nbh_gv_0, useNA="always")
 1 | Graffiti and/or vandalism  
              
 
-**Harmonization status**:  complete  
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
-table(Tra_FU1$ENV_VNDLSM_TRF1, useNA="always") 
 
-soc_CLSA_tra_1$env_nbh_gv_1 <- ifelse(Tra_FU1$ENV_VNDLSM_TRF1 ==1 | Tra_FU1$ENV_VNDLSM_TRF1==2,1L, 
-                               ifelse(Tra_FU1$ENV_VNDLSM_TRF1 ==3 | Tra_FU1$ENV_VNDLSM_TRF1==4,0L,NA))
 
-table(soc_CLSA_tra_1$env_nbh_gv_1, useNA="always") 
 ```
 ### **Variable label**: Neighbourhood graffiti and vandalism    
 **Variable name**:  env_nbh_gv_2  
@@ -1713,71 +1432,10 @@ table(soc_CLSA_tra_1$env_nbh_gv_1, useNA="always")
 1 | No graffiti and/or vandalism   
            
 
-**Harmonization status**:  impossible   
-**Harmonization comment**:   
+**Harmonization status**:  impossible  
+**Harmonization comment**:    
 **R script**:  
 ```{r, echo=TRUE}
 
 
 ```
-### **Variable label**: Theft of transportation method   
-**Variable name**: env_nbh_theft_0     
-**Variable description**:  Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.  
-**Value type**: integer  
-**Variable unit**:  N/A  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 | Theft of vehicle in neighbourhood  
-1 | No theft of vehicle in neighbourhood
-
-
-**Harmonization status**:  impossible
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**: Theft of transportation method   
-**Variable name**: env_nbh_theft_1     
-**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.         
-**Value type**: integer  
-**Variable unit**:  N/A  
-**Category coding**:  
-  
-**Code** | **Category Label**  
-------------- | -------------  
-0 | Theft of vehicle in neighbourhood  
-1 | No theft of vehicle in neighbourhood
-
-
-**Harmonization status**: impossible 
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-### **Variable label**: Theft of transportation method   
-**Variable name**: env_nbh_theft_2     
-**Variable description**: Indicator of the participant's perception of the occurrence of theft of transport vehicle in their neighbourhood.        
-**Value type**: integer  
-**Variable unit**:  N/A  
-**Category coding**:  
-
-**Code** | **Category Label**  
-------------- | -------------  
-0 | Theft of vehicle in neighbourhood  
-1 | No theft of vehicle in neighbourhood
-
-
-**Harmonization status**:  impossible
-**Harmonization comment**:   
-**R script**:  
-```{r, echo=TRUE}
-
-
-```
-
